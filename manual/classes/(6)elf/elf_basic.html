@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>엘프 기본사항</title>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(6)elf/elf_basic.html">http://crassus.ivyro.net/manual/classes/(6)elf/elf_basic.html</a><br>
+<b>Title:</b> 엘프 기본사항 &nbsp;&bull;&nbsp; <b>Size:</b> 16185<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td><table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="20"><hr color="#614012" size="1" width="500" /></td>
+      </tr>
+	  <tr>
+        <td><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td><a href="elf_basic.html" class="style2">기본 사항</a></td>
+			<td width="20" class="style2">|</td>
+            <td><a href="elf_con.html" class="style2">기본 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td><a href="elf_advcon.html" class="style2">고급 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td><a href="elf_spell.html" class="style2">주문</a></td>
+			<td width="20" class="style2">|</td>
+            <td><a href="../combo/combo.html" class="style2">콤보의 법칙</a></td>
+			<td width="20" class="style2">|</td>
+            <td><a href="../autofire-12/auto12.html" class="style2">12연사</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr align="center">
+        <td><pre><font color="#33CC66" class="style1">                                                                     ELF</font></pre></td>
+      </tr>
+	  <tr>
+        <td>&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="330" valign="top"><br />
+                <br />
+                <img src="img/elf.png" width="340" height="469" /></td>
+            <td><b class="style24">엘프(Elf) - Graceful and Smart, Protector of Nature</b><br/>
+			<br/>
+			<span class="style32">엘프는 시, 노래, 춤, 학문과 마법 기술로 유명하다.<br/>
+			자연적이고 단순한 아름다움을 좋아하며 그들의 숲이 위협을 받는다면
+			상당히 전투적인 모습을 보여준다.</span><br/>
+			<br/>
+			<span class="style32">재물욕보다 지식욕이 더욱 강하며 수명이 길기 때문에
+			사물과 사건을 보는 관점이 넓고 사소한 일에 동요하지 않는다.
+			자유와 다양성을 사랑하기 때문에 가치관은 혼돈(chaos)를 지향하는 경향이 있으며 친구든 적이든
+			만드는 것이 느리고 그들을 잊는 것은 더욱 느리다.</span><br/>
+			<br/>
+			<span class="style32">그들은 작고 가냘프다. 그리고 아름답지만 허약하며 우아하고
+			기품이 있지만 다소 거만하다. 몸에 잔털이나 수염이 없는 것이 특징이고
+			단순하고 편한 의상을 좋아하며 특히 부드러운 청색과 녹색을 좋아한다.<br/>
+			110세를 전후해서 성인기를 거치고 700년 이상을 산다.</span><br/>
+			<br/>
+			<span class="style32">잠을 자지 않는 것 또한 엘프들의 특징인데 대신 명상을 통해서
+			휴식을 취한다. 하루에 4시간의 명상을 통해 쉬는데 이것은 인간이 8시간동안
+			잠을 잔 것과 동일한 효과를 가진다.<br/>
+			그들은 이 명상을 '트랜스(trance)'라 부른다.</span><br/>
+			<br/>
+			<span class="style32">그들의 거주지는 숲속에 있으며 잘 숨겨져 있고 또 숲과
+			자연스러운 조화를 이룬다. 그들의 생활 또한 자연에 거의 해가 되지 않는다.
+			(인간들이 자연을 파괴하는 것과 아주 대조적이다.)</span><br/>
+			<br/>
+			<span class="style32">엘프들은 인간은 다소 천하다고 여기고 놈(Gnome)은 하찮게 여기며
+			드워프는 정말 재미없는 무리라 여기고 하플링은 진부하다 여긴다.
+			그리고 하프엘프(그들 입장에선 하프휴먼이지만)는 불쌍한 무리라
+			여기고 하프오크는 무자비한 괴한이라 여긴다.</span><br/>
+			<br/>
+			<span class="style32">그러나 거만한 구석이 있다 하더라도 드워프나 놈처럼 까다롭게
+			굴지는 않으며 대부분은 명량하고 친절한 모습을 보여준다.</span><br/>
+			<br/>
+			<span class="style32">타지에서의 엘프는 음유시인, 예술가, 현자로 주로 활동을 하며
+			귀족들은 검술이 뛰어난 엘프를 검술지도자로 모셔가려고 경쟁을 한다.</span><br/> 
+			<br/>
+			<br/>
+			<span class="style3">스탯</span> (스탯만 놓고 보면 그야말로 축캐. 전 클래스 중 최강)<br/>
+			<table width="300" border="0" cellspacing="0" cellpadding="0">
+              <tr align="center">
+                <td height="30">&nbsp;</td>
+                <td class="style24">1p</td>
+                <td class="style22">2p</td>
+              </tr>
+              <tr align="center">
+                <td height="30">영문판 이름</td>
+                <td class="style24">Lucia</td>
+                <td class="style22">Kayla</td>
+              </tr>
+              <tr align="center">
+                <td height="30">일본판 이름 </td>
+                <td class="style24">ルシア(루시아)</td>
+                <td class="style22">ケイラ(케이라)</td>
+              </tr>
+			</table>
+			<br/>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="80" height="30">초기레벨</td>
+                <td width="80" height="30" class="style24">&nbsp;8</td>
+                <td width="80" height="30">나이</td>
+                <td height="30" class="style24">101</td>
+              </tr>
+              <tr>
+                <td height="30">Strength</td>
+                <td height="30" class="style24">&nbsp;7</td>
+                <td height="30">Dexterity</td>
+                <td height="30" class="style24">&nbsp;15</td>
+              </tr>
+              <tr>
+                <td height="30">Constitution</td>
+                <td height="30" class="style24">&nbsp;8</td>
+                <td height="30">Intelligence</td>
+                <td height="30" class="style24">&nbsp;15</td>
+              </tr>
+              <tr>
+                <td height="30">Wizdom</td>
+                <td height="30" class="style24">13</td>
+                <td height="30">Charisma</td>
+                <td height="30" class="style24">&nbsp;14</td>
+              </tr>
+			</table></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="650" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">게임에서의 특징</span><br/>
+			<br/>
+			&nbsp;무기와 마법을 동시에 사용하기 때문에 여러가지 상황에 대처하기가 용이하며 다방면에 걸쳐서 뛰어난<br/>
+			<br/>
+			&nbsp;능력을 보여줍니다. 그러나 무기사용은 파이터보다 뒤쳐지며 마법은 매직 유저보다 뒤쳐지기 때문에<br/>
+			<br/>
+			&nbsp;어정쩡한 면도 있으며 가장 낮은 HP와 낮은 방어력은 조금 부담이 됩니다.<br/>
+			<br/>
+			<br/>
+			&nbsp;&nbsp;<span class="style12">- 양손무기와 스태프류와 완드류를 제외한 모든 무기의 사용이 가능합니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 최대 10레벨까지 오릅니다. 따라서 매직 유저에 비해 주문의 종류와 횟수가 적으며 데미지도 좀 낮습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 화살을 무한대로 보유하고 있으며 공중에서도 쏠 수 있습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;그리고 은화살/불화살을 공중에서 사용시 갯수가 줄어들지 않습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 구울의 공격에 마비되지 않으며 괴물들의 문자를 읽을 수 있습니다.</span><br/>
+			<br/>
+			&nbsp;&nbsp;<span class="style15">- 시프나 매직유저를 제외하면 방어력이 가장 약하기 때문에 적이나 트랩으로 부터 많은 데미지를 입습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 	기본HP가 적은 데다가 레벨상승으로 얻는 HP도 적어서 HP보유상황이 가장 안좋습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 힘이 약해서 상자를 들거나 장애물을 미는 속도가 느립니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 쓰로잉 해머의 투척속도가 드워프를 제외하면 가장 느리며 오일류의 투척속도도 조금 느립니다.</span><br/>
+			<br/>
+			&nbsp;&nbsp;<span class="style17">- 기본 무기인 숏소드의 레벨이 처음부터 2레벨이고 타 클래스보다(드워프제외) 이른 시점에 4레벨에 도달하기 때문에<br/>
+			<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;건틀릿이나 브레슬릿이 없어도 데미지가 제법 강합니다. 그러나 리치가 많이 짧은 것이 약점입니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 화살이 무한이라서 언제든지 화살로 득점이 가능하기 때문에 스코어 어택에 유리한 점이 있습니다.</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style3">이름과 타입</span><br/>
+			<br/>
+			&nbsp;&nbsp;보통은 워 머신과 맨 스콜피온에게 라이트닝 볼트 크리티컬을 노리기 위해 <span class="style11">타입 H <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">(이어링)</a></span>을 선택합니다.<br/>
+			<br/>
+			&nbsp;&nbsp;그러나 다크 워리어1 코스로 간다면 <span class="style11">타입 G <a href="http://crassus.ivyro.net/manual/items/item_equip.html#gofp" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">(건틀릿)</a></span>을 선택 하는 것도 좋습니다.<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style3">기본 무기와 초기 레벨/HP, 보유 아이템, 주문량</span><br/>
+			<br/>
+			&nbsp;&nbsp;- 기본 무기 : <span class="style14"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#ss"><img src="../../items/img/a1-s_sword.png" width="43" height="19" border="0" /></a> 숏 소드(short sword)</span> * 처음부터 무기 레벨이 2입니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 초기 레벨/HP(단위:픽셀) : <span class="style14">8/96</span><br/>
+			<br/>
+			&nbsp;&nbsp;- 초기 보유 아이템 : <a href="http://crassus.ivyro.net/manual/items/item_tools.html#a" onFocus="this.blur()"><img src="../../items/img/j4-arrow.gif" alt="arrow" width="32" height="16" border="0" /></a> x ∞ &nbsp;<a href="http://crassus.ivyro.net/manual/items/item_tools.html#d" onFocus="this.blur()"><img src="../../items/img/k4-dagger.gif" alt="dagger" width="32" height="16" border="0" /></a> x 2 &nbsp;<a href="http://crassus.ivyro.net/manual/items/item_tools.html#bo" onFocus="this.blur()"><img src="../../items/img/k2-b-oil.gif" alt="burning oil" width="32" height="16" border="0" /></a> x 2 &nbsp;<a href="http://crassus.ivyro.net/manual/items/item_tools.html#th" onFocus="this.blur()"><img src="../../items/img/k1-hammer.gif" alt="throwing hammer" width="32" height="16" border="0" /></a> x 2<br/>
+			<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="style28">(화살은 팔거나 없앨 수 없으므로 실질적으로 활용 가능한 아이템 칸은 5칸입니다.)</span><br/>
+			<br/>
+			&nbsp;&nbsp;- 초기 주문량 : <span class="style14"><font color="#77ffff">1레벨 x 4 </font> , <font color="#55bbff">2레벨 x 3 ,</font> <font color="#55dd99">3레벨 x 2 </font> , <font color="#66eebb">4레벨 x 2</font></span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style3">레벨과 HP, 습득주문, 주문의 양, 주문의 회복 시점</span>
+			<br/>
+			<br/>
+			<table width="100%" border="0" cellpadding="0" cellspacing="1">
+              <tr align="center" bgcolor="31180F">
+                <td height="60" bgcolor="#333333">레벨업 시점/<br/>주문 회복 시점<br/>(클리어 후)</td>
+                <td>다크 워리어1<br/>맨 스콜피온</td>
+                <td>오우거<br/>비홀더<br/>그린 드래곤</td>
+                <td width="80">디스플레이서<br/>
+                  비스트</td>
+                <td>레드 드래곤</td>
+                <td width="80">에저홀덴</td>
+                <td>나그파</td>
+              </tr>
+              <tr align="center" bgcolor="#003300">
+                <td height="30" bgcolor="#333333">레벨</td>
+                <td>9</td>
+                <td>10</td>
+                <td>주문 회복</td>
+                <td>주문 회복</td>
+                <td>주문 회복</td>
+                <td>주문 회복</td>
+              </tr>
+              <tr align="center" bgcolor="#31180F">
+                <td height="30" bgcolor="#333333">HP</td>
+                <td>104</td>
+                <td>112</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+			  <tr align="center" bgcolor="#003300">
+                <td height="30" bgcolor="#333333">무기 레벨</td>
+                <td>3</td>
+                <td>4</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr align="center" bgcolor="#31180F">
+                <td height="40" bgcolor="#333333">습득 주문</td>
+                <td>-</td>
+                <td>Conjure<br/>Elemental</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr align="center" bgcolor="#003300">
+                <td height="80" bgcolor="#333333">주문의 양<br/>(레벨/양)</td>
+                <td>1 / 4<br/>2 / 4<br/>3 / 3<br/>4 / 2<br/>5 / 0</td>
+                <td>1 / 5<br/>2 / 4<br/>3 / 3<br/>4 / 2<br/>5 / 1</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </table>
+            <br/>
+            <br/>
+            - 원작의 메모라이징 대신 레벨업과 동시에 주문횟수가 회복됩니다.<br/>
+			<br/>
+			- 드워프 지하 동굴로 진행을 해서 텔 엘레론을 살려뒀을 경우 나그파 클리어 후 주문 회복이 안됩니다.</td>          
+          </tr>
+          <tr>
+			<td height="50">&nbsp;</td>
+          </tr>
+          <tr>
+			<td align="left"><span class="style3">*추가 정보 - 새로 컨티뉴 했을 때의 기본 보유 아이템 (화살을 제외한 나머지)</span><br/>
+			<br/>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" class="style14">&nbsp;스테이지4(하피)</td>
+                <td> : 단검 <span class="style13">x 3</span>, 버닝 오일 <span class="style13">x 3</span>, 쓰로잉 해머 <span class="style13">x 3</span>, <span class="style13">은화살 x 2</span></td>
+              </tr>
+              <tr>
+                <td height="30" class="style14">&nbsp;스테이지6(맨티코어)</td>
+                <td>: <span class="style13">은단검 x 3</span>, <span class="style13">LB 오일 x 3</span>, 쓰로잉 해머 <span class="style13">x 4</span>, 은화살 <span class="style13">x 4</span></td>
+              </tr>
+			</table></td>
+          </tr>
+        </table></td>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+      </tr>
+	  <tr>
+        <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

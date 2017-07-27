@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>매직유저 고급조작</title>
+<script language="javascript" src="../../../script/iezn_embed_patch.js" type="text/javascript"></script>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(2)muser/muser_advcon.html">http://crassus.ivyro.net/manual/classes/(2)muser/muser_advcon.html</a><br>
+<b>Title:</b> 매직유저 고급조작 &nbsp;&bull;&nbsp; <b>Size:</b> 23465<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td><table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="20"><hr color="#614012" size="1" width="500" /></td>
+      </tr>
+	  <tr>
+        <td align="center"><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="muser_basic.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">기본 정보</a></td>
+            <td width="20" align="center" class="style2">|</td>
+            <td><a href="muser_con.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">기본 조작</a></td>
+            <td width="20" align="center" class="style2">|</td>
+            <td><a href="muser_advcon.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">고급 조작</a></td>
+            <td width="20" align="center" class="style2">|</td>
+            <td><a href="muser_spell.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">주문</a></td>
+            <td width="20" align="center" class="style2">|</td>
+            <td><a href="../combo/combo.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">콤보의 법칙</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="center"><pre><font color="#5C6785" class="style1">                                                     MAGIC USER</font></pre></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="../t2.png" width="492" height="38" /></td>
+      </tr>
+	  <tr>
+        <td height="30">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style6">여기서의 데미지는 상대적인 데미지를 뜻합니다.<br/>
+			    <br/>
+			이곳에 적은 콤보가 전부는 아니므로 자신만의 콤보를 개발하는 것도 좋습니다.<br/>
+			</span><br/>
+			<br/>
+			<br/>
+			<span class="style5">슬래쉬, 대공기, A+B가 없기 때문에 콤보의 수가 상당히 적으며 위력도 약합니다.<br/>
+			<br/>
+			따라서 강공격의 크리티컬을 많이 기대하게 되지만 확률에 따라 안 터질 가능성도 많으니.<br/>
+			<br/>
+			안 터질 수도 있다는 점을 염두에 두고 플레이 하는 것이 좋습니다.</span><br/>
+			<br/>
+			<br/>
+			<span class="style14">강공격:→A &nbsp;&nbsp; 슬래쉬:↓↘→A &nbsp;&nbsp; 대공기:↓↑A</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style3">A → 강공격 → A → 강공격</span><br/>
+			<br/>
+			<span class="style13">(데미지 : 2+@ / 성공률 : 높음)</span><br/>
+			<br/>
+			<br/>
+			기본이 되는 콤보로 데미지 자체는 별 것 없지만 평타사이에 강공격을 끼워 넣음으로써 크리티컬을 기대하는<br/>
+			<br/>
+			콤보입니다. 어떤 상황이던지 쓸 수 있는 간편한 콤보지만 가드를 잘 하는 보스에게는 투척무기로 가드를 풀고<br/>
+			<br/>
+			사용하는 것이 좋습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 그린 드래곤, 블랙 드래곤을 제외한 모든 보스</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_combo1.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_combo1.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬 공격 → 강공격 → A → 강공격 → A</span><br/>
+			<br/>
+			<span class="style13">(데미지 : 4+@ / 성공률 : 보통)</span><br/>
+			<br/>
+			<br/>
+			대쉬 공격 2히트를 넣음으로써 데미지를 조금 더 보강한 콤보로 가드 후 카운터가 날아올 수 있으니 후위를<br/>
+			<br/>
+			노리는 것이 좋습니다. 다만 만티코어는 꼬리에도 데미지 판정이 있으니 시도하지 않는것이 좋습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 텔아린, 오우거</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_combo2.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_combo2.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬공격 → 캔슬 백스텝 → 이하 반복</span><br/>
+			<br/>
+			<span class="style13">(데미지 : 일반 몬스터 8, 비홀더 ∞ / 성공률 : 보통)</span><br/>
+			<br/>
+			<br/>
+			대쉬 공격과 백스텝을 서로 캔슬 하며 반복해서 넣는 콤보로 몇개 없는 매직 유저의 콤보중 고블린이나 액스놀을<br/>
+			<br/>
+			콤보 한 번으로 없앨 수 있는 유일한 콤보니 익혀두면 유용하게 사용 할 수 있습니다.<br/>
+			<br/>
+			비홀더에게도 크리티컬에 의존하지 않고 일정한 데미지를 주고자 할 때 사용합니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 비홀더</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_combo3.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_combo3.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">단검류 x 3 → A → 강공격 → 이하 세번 반복 → A → 강공격</span><br/>
+			<br/>
+			<span class="style13">(데미지 : 13+@ / 성공률 : 보통)</span><br/>
+			<br/>
+			<br/>
+			다른 보스에게도 응용가능 하지만 기본적으로 하피 전용 콤보로 하피가 공중에 날기 시작하면 마땅히 견제 할 공격이<br/>
+			<br/>
+			없으며 주문을 남발하면 다음 스테이지에서 고전하기 때문에 하피에게 주로 쓰는 콤보입니다.<br/>
+			<br/>
+			강공격 3번중에 크리티컬이 터지면 금상첨화.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 다크워리어, 하피, 텔아린, 만티코어</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_combo4.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_combo4.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">D → B → 이하 반복</span><br/>
+			<br/>
+			<br/>
+			무적 시간이 있는 D키(주문)과 백스텝을 번갈아 가면서 사용하는 초창기부터 애용되던 매직 유저만의 완벽한<br/>
+			<br/>
+			무적 기술로 거의 모든 공격을 회피 할 수 있습니다. 다만 리치나 텔아린, 나그파가 주문을 시전하는 경우나<br/>
+			<br/>
+			레드 드래곤이나 synn이 브레스를 사용하는 D키가 발동하지 않는 상황에서는 사용이 불가능하니 주의하는게 좋습니다.<br/>
+			<br/>
+			B → D 사이를 약간 늦추면 뒤로 조금씩 이동 할 수 있습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_dodge_combo.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_dodge_combo.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">주문의 체인 콤보</span><br/>
+			<br/>
+			<br/>
+			라이트닝 볼트, 월 오브 파이어, 플래쉬 투 스톤의 경우 2명 이상의 적이 연속해서 맞았다면<br/>
+			<br/>
+			나중에 맞는 적일수록 기존 데미지보다 두배 이상 증폭이 됩니다.<br/>
+			<br/>
+			파이어 볼의 경우 폭발범위의 끝자락에 있을 수록 데미지가 증폭이 됩니다.<br/>
+			<br/>
+			이런 원리를 이용하면 일반몬스터들이 졸개로 나오는 보스전에서 상당히 유용하게 써먹을 수 있습니다.<br/>
+			<br/>
+			엘프의 파이어 볼, 라이트닝 볼트와 파이어 볼 반지, 라이트닝 볼트 반지 또한 마찬가지로 체인 콤보가 적용됩니다.<br/>
+			<br/>
+			다만 매직 유저의 경우 워저드리 스태프 + 이어링 + 파이어/라이트닝 로드를 착용하고 체인 콤보 시도시<br/>
+			<br/>
+			명중하는 적의 수에 따라 데미지가 오히려 반감되는 버그아닌 버그가 있습니다(대체로 4명이상 명중시).<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_spell_combo.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_spell_combo.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><a name="lc"></a><span class="style6">※ 라이트닝 볼트 크리티컬 (이하 '라크리')</span><br/>
+			<br/>
+			<br/>
+			<span class="style15">레드 드래곤과 synn에게 사용가능한 일종의 버그성 크리티컬 입니다.<br/>
+			<br/>
+			3히트 후 라이트닝 볼트를 시전해서 명중하면 레드 드래곤이나 synn이 인상을 찡그릴 때가 있는데<br/>
+			<br/>
+			그러면 성공을 한 것이며 3히트는 일반공격뿐만 아니라 주문이나 아이템 또한 포함 됩니다.<br/>
+			<br/>
+			다만 3히트 도중에 레드 드래곤이나 synn이 다른 행동을 취하면 히트수가 초기화 될 수 있어서<br/>
+			<br/>
+			성공률이 좋지만은 않습니다.</span></span><br/>
+			<br/>
+			<br/>
+			매직유저뿐만이 아니라 타 클래스도 주문이나 반지로 가능합니다. 타 클래스의 방법은 '보스 공략'을 참조.<br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style21">장비에 따라 한번에 끝낼 수도 있고 HP가 남을 수도 있습니다.<br/>
+			<br/>
+			레드 드래곤의 경우 이어링과 라이트닝 로드를 동시에 장비하고 있어야 한번에 끝낼 수 있으며<br/>
+			<br/>
+			synn의 경우 위저드리 스태프, 매지컬 파워 스태프, 이어링중 하나만 있어도 한번에 끝낼 수 있지만<br/>
+			<br/>
+			이어링 + 라이트닝 로드의 조합은 오히려 HP가 남습니다.</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style3">A → 강공격 → A → 라이트닝 볼트</span><br/>
+			<br/>
+			<br/>
+			가장 평범한 방법으로 A공격이 느리기 때문에 3히트가 제대로 안 이루어지는 경우가 많고 빈틈이 많습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_lbolt_critical1.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_lbolt_critical1.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬공격 → 강공격 → 라이트닝 볼트</span><br/>
+			<br/>
+			<br/>
+			위의 방법보다 빠르게 3히트를 넣는 방법 입니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_lbolt_critical2.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_lbolt_critical2.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">라이트닝 완드 1회 → 라이트닝 볼트</span><br/>
+			<br/>
+			<br/>
+			<a href="http://crassus.ivyro.net/manual/items/item_weapons.html#wofl" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">라이트닝 완드(wand of lightning)</a>를 휘두르면 나가는 번개줄기로 3히트를 넣는 방법으로 서서 휘두를 경우<br/>
+			<br/>
+			직접 타격이 맞아서 3히트를 넘길 수 있으니 앉아서 휘두르는게 좋으며 휘두른 후 약간 느리게 라이트닝 볼트를<br/>
+			<br/>
+			시전하는게 좋습니다. 라크리를 가장 높은 확률로 성공 시킬 수 있는 방법이기도 합니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_lbolt_critical3.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_lbolt_critical3.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style6">※ 더블 크리티컬</span><br/>
+			<br/>
+			<br/>
+			<span class="style15">쉽게 이야기 해서 LB오일 크리티컬(이하 오일크리)을 넣는 중에 오일이 3히트하는 점을 이용해서 라크리를 연이어<br/>
+			<br/>
+			넣는 방법입니다(오일크리에 대한 설명은 <a href="http://crassus.ivyro.net/manual/items/lbo/lbo.html#oc" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">'여기'</a>를 클릭).<br/>
+			<br/>
+			레드 드래곤이나 synn과의 대결에서 파이어 로드가 없어서 오일크리만으로 끝낼 수 없고 라크리의 데미지도 부족할 때<br/>
+			<br/>
+			사용하기에 좋은 방법으로 매직 유저나 엘프가 아닌 타 클래스가 시도 해 볼만 합니다.</span></span><br/>
+			<br/>
+			<br/>
+			- 매직 유저나 엘프는 라크리 한번으로 끝낼 수 있는 상황을 쉽게 만들 수 있어서 그다지 필요가 없습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/double_critical_red.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/double_critical_red.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+	  </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><br/>
+			<br/>
+			먼저 LB오일 - 라이트닝 볼트 반지 순으로 아이템을 정리 해놓습니다.<br/>
+			<br/>
+			그다음 영상에서처럼 최소 5발 이상 오일크리를 넣고 재빨리 반지로 바꿔서 라크리를 넣어줍니다.<br/>
+			<br/>
+			다만 LB오일을 8개 이상 넣은 상황에서는 타이밍 맞추기가 어려울 수 있으니 6~7개 정도 써주고 넣는게 좋으며<br/>
+			<br/>
+			레드 드래곤과 만나기 전에 나오는 이어링을 챙겨두는게 좋습니다.<br/>
+			<br/>
+			<span class="style28">(데미지가 부족해서 한번에 안끝날 가능성이 높기 때문)</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/double_critical_synn.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/double_critical_synn.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><br/>
+			<br/>
+			synn과의 대결에선 <a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofrf" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">파이어 레지스트 반지(ring of resist fire)</a>가 없다면 메테오를 피한 후 오일크리를 넣기가<br/>
+			<br/>
+			매우 힘드므로 영상에서처럼 LB오일 1~2칸 앞에 지니반지나 이프리트 항아리를 준비해서 메테오를 피한 후<br/>
+			<br/>
+			크리를 시도 하는게 좋습니다.<br/>
+			<br/>
+			물론 파이어 레지스트 반지가 있다면 바로 시도하면 됩니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><a name="fs"></a><span class="style6">※ 파이널 스트라이크(Final Strike)</span><br/>
+			<br/>
+			<br/>
+			<span class="style12">매직 유저 궁극의 마법이라 할 수 있는 기술입니다(사실 기술이라기 보다는 주문쪽으로 가야겠지만).</span><br/>
+			<br/>
+			<span class="style15"><br/>
+			조건 : 3인 이상 플레이, 모든 플레이어의 xp합계가 200만 이상, 매직유저는 위저드리 스태프 착용.</span><br/>
+			<br/>
+			<span class="style17">커맨드 : 모든 플레이어가 동시에 A+B+C (정확하게 타이밍을 맞출 필요 없이 그냥 누르고 있으면 됨).</span><br/>
+			<br/>
+			<span class="style13">주의점 : 연사기능을 켜뒀다면 꺼야 성공확률이 높습니다.</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/muser_final_strike.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(2)magic_user/thumbs/muser_final_strike.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+	  </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><br/>
+			<br/>
+			베수비아 강 중반의 목소리가 언급하는 내용 중 두번째가 바로 이 주문에 대한 것으로<br/>
+			<br/>
+			synn을 제외한 그 어떤 적이라도 단 한번으로 끝낼 수 있는 위력을 가지고 있습니다.<br/>
+			<br/>
+			다만, 그에 상응하는 패널티가 존재하는데 시전하고 나면 위저드리 스태프는 파괴되며 플레이어 전원의 HP는<br/>
+			<br/>
+			1도트만 남게 됩니다. 따라서 사실상 1회용이라 볼 수 있습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+      </tr>
+	  <tr>
+        <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

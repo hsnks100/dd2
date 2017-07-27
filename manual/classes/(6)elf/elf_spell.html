@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>엘프 주문</title>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(6)elf/elf_spell.html">http://crassus.ivyro.net/manual/classes/(6)elf/elf_spell.html</a><br>
+<b>Title:</b> 엘프 주문 &nbsp;&bull;&nbsp; <b>Size:</b> 23063<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td><table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="20"><hr color="#614012" size="1" width="500" /></td>
+      </tr>
+	  <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="elf_basic.html" class="style2">기본 사항</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="elf_con.html" class="style2">기본 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="elf_advcon.html" class="style2">고급 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="elf_spell.html" class="style2">주문</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../combo/combo.html" class="style2">콤보의 법칙</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../autofire-12/auto12.html" class="style2">12연사</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr align="center">
+        <td align="center"><pre><font color="#33CC66" class="style1">                                                                     ELF</font></pre></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="../t3.png" width="380" height="38" /></td>
+      </tr>
+	  <tr>
+        <td height="40">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table border="0" cellspacing="0" cellpadding="0">
+          <tr align="center" valign="top">
+            <td height="20"><a href="#mm" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">매직 미사일 </a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="#is" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">아이스 스톰 </a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="#lb" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">라이트닝 볼트 </a></td>
+			<td width="20" class="style2">|</td>
+			<td><a href="#fb" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">파이어 볼 </a></td>
+          </tr>
+        </table>
+		<table border="0" cellspacing="0" cellpadding="0">
+          <tr align="center" valign="bottom">
+            <td height="20"><a href="#i" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">인비지빌리티 </a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="#ce" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">컨주어 엘리멘탈 </a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="#po" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">폴리모프 오더 </a></td>
+			<td width="20" class="style2">|</td>
+			<td><a href="#h" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">헤이스트 </a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="40"><a name="mm"></a>&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style5">※ 데미지는 1인용을 기준으로 합니다.</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<img src="../(2)muser/img/m_mm.gif" width="32" height="16" /><span class="style3"> Magic Missile (MM) - 1레벨 주문</span><br/>
+			<br/>
+			<br/>
+			기본적인 성능은 매직 유저와 같지만 레벨이 낮아서 발사가능한 갯수가 적고 데미지도 낮기 때문에<br/>
+			<br/>
+			효율이 떨어지는 편이며 와이번을 탄 셰도우 엘프를 견제하거나 가고일을 잡을 때 쓸만 합니다.<br/>
+			<br/>
+			<a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">이어링(earring)</a>의 영향을 받습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style5">데미지 (단위 : 픽셀) - 약간 랜덤성이 있습니다.</span><br/>
+			<br/>
+			<table border="0" cellspacing="0" cellpadding="0">
+              <tr align="center">
+                <td width="80" height="30">레벨</td>
+                <td width="40" height="30" class="style23">8</td>
+                <td width="40" height="30" class="style15">9</td>
+                <td width="40" height="30" class="style13">10</td>
+              </tr>
+              <tr align="center">
+                <td height="30">일반 몬스터</td>
+                <td height="30" class="style23">16</td>
+                <td height="30" class="style15">16</td>
+                <td height="30" class="style13">18</td>
+              </tr>
+              <tr align="center">
+                <td height="30">보스</td>
+                <td height="30" class="style23">12</td>
+                <td height="30" class="style15">14</td>
+                <td height="30" class="style13">14</td>
+              </tr>
+			  <tr align="center">
+                <td height="40" class="style14">미사일의<br/>갯수</td>
+                <td height="40" class="style14">2</td>
+                <td height="40" class="style14">2</td>
+                <td height="40" class="style14">3</td>
+              </tr>
+            </table>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/es01.png" width="643" height="85" /></td>
+      </tr>
+	  <tr>
+        <td height="50"><a name="is">&nbsp;</a></td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><img src="../(2)muser/img/m_is.gif" width="32" height="16" /><span class="style3"> Ice Storm (IS) - 4레벨 주문</span><br/>
+			<br/>
+			<br/>
+			기본적인 성능은 역시 매직유저와 같으며 데미지가 상대적으로 낮고 시전횟수가 적다는게 흠이지만 대신<br/>
+			<br/>
+			매직유저보다 일반 공격 속도가 빠르기 때문에 시전 후 콤보를 넣기에 더 유용하므로 활용성은 좋습니다.<br/>
+			<br/>
+			8~9레벨에 시전시 매직유저보다 시전시간이 짧지만 10레벨이 되면 거의 동일 해 집니다.<br/>
+			<br/>
+			<span class="style28">(8~9레벨 : 약 3초, 10레벨 : 약 4초)</span><br/>
+			<br/>
+			<a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">이어링(earring)</a>, <a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofc" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">콜드 로드(rod of cold)</a>의 영향을 받습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style5">데미지 (단위 : 픽셀)</span><br/>
+			<br/>
+			<table border="0" cellspacing="0" cellpadding="0">
+              <tr align="center">
+                <td width="80" height="30">레벨</td>
+                <td width="40" height="30" class="style23">8</td>
+                <td width="40" height="30" class="style15">9</td>
+                <td width="40" height="30" class="style13">10</td>
+              </tr>
+              <tr align="center">
+                <td height="30">일반 몬스터</td>
+                <td height="30" class="style23">24</td>
+                <td height="30" class="style15">24</td>
+                <td height="30" class="style13">30</td>
+              </tr>
+              <tr align="center">
+                <td height="30">보스</td>
+                <td height="30" class="style23">24</td>
+                <td height="30" class="style15">24</td>
+                <td height="30" class="style13">30</td>
+              </tr>
+            </table>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style12">※ 플레임 샐러맨더에게 증가된 데미지를 줍니다(30 → 45).</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/es02.png" width="673" height="176" /></td>
+      </tr>
+	  <tr>
+        <td height="50"><a name="lb">&nbsp;</a></td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><img src="../(2)muser/img/m_lb.gif" width="32" height="16" /><span class="style3"> Lightning Bolt (LB) - 3레벨 주문</span><br/>
+			<br/>
+			<br/>
+			매직유저와는 달리 워머신과 에저홀덴, 그리고 사라만다에게 2히트가 이루어집니다.<br/>
+			<br/>
+			그리고 8~9레벨에 시전시 시전시간이 매직유저보다 짧지만 10레벨에 시전시 오히려 길어집니다.<br/>
+			<br/>
+			<span class="style28">(8~9레벨 : 약 3초, 10레벨 : 약 5초)</span><br/>
+			<br/>
+			레드 드래곤, synn에게 라이트닝 크리티컬 성공시 가장 데미지가 높은데 <span class="style28">(유일하게 레드 드래곤을 이어링이나<br/>
+			<br/>
+			라이트닝 로드 하나만으로 한번에 끝내는게 가능)</span> 이는 엘프만의 <b>'특혜'</b>라고 할 수 있겠습니다.<br/>
+			<br/>
+			<span class="style28">(드워프의 경우 레벨이 낮다는 이유로 이어링과 라이트닝 로드가 둘 다 있어도 한번에 끝낼 수 없습니다.)</span><br/>
+			<br/>
+			<a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">이어링(earring)</a>, <a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofl"  class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">라이트닝 로드(rod of lightning)</a>의 영향을 받습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style5">데미지 (단위 : 픽셀) - 약간 랜덤성이 있습니다.</span><br/>
+			<br/>
+			<table border="0" cellspacing="0" cellpadding="0">
+              <tr align="center">
+                <td width="80" height="30">레벨</td>
+                <td width="40" height="30" class="style23">8</td>
+                <td width="40" height="30" class="style15">9</td>
+                <td width="40" height="30" class="style13">10</td>
+              </tr>
+              <tr align="center">
+                <td height="30">일반 몬스터</td>
+                <td height="30" class="style23">28</td>
+                <td height="30" class="style15">28</td>
+                <td height="30" class="style13">34</td>
+              </tr>
+              <tr align="center">
+                <td height="30">보스</td>
+                <td height="30" class="style23">26</td>
+                <td height="30" class="style15">26</td>
+                <td height="30" class="style13">30</td>
+              </tr>
+            </table>			
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/es03.png" width="662" height="177" /></td>
+      </tr>
+	  <tr>
+        <td height="50"><a name="fb"></a>&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><img src="../(2)muser/img/m_fb.gif" width="32" height="16" /><span class="style3"> Fire Ball (FB) - 3레벨 주문</span><br/>
+			<br/>
+			<br/>
+			기본적인 성능은 매직 유저와 같으며 역시 데미지가 낮아서 라이트닝 볼트에 밀려 거의 쓰이지 않습니다.<br/>
+			<br/>
+			타임어택시 몰려있는 고블린을 몰살시킬 때 가끔 씁니다.<br/>
+			<br/>
+			<a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">이어링(earring)</a>, <a href="http://crassus.ivyro.net/manual/items/item_equip.html#roff" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">파이어 로드(rod of fire)</a>의 영향을 받습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style5">데미지 (단위 : 픽셀) - 약간 랜덤성이 있습니다.</span><br/>
+			<br/>
+			<table border="0" cellspacing="0" cellpadding="0">
+              <tr align="center">
+                <td width="80" height="30">레벨</td>
+                <td width="40" height="30" class="style23">8</td>
+                <td width="40" height="30" class="style15">9</td>
+                <td width="40" height="30" class="style13">10</td>
+              </tr>
+              <tr align="center">
+                <td height="30">일반 몬스터</td>
+                <td height="30" class="style23">20</td>
+                <td height="30" class="style15">24</td>
+                <td height="30" class="style13">24</td>
+              </tr>
+              <tr align="center">
+                <td height="30">보스</td>
+                <td height="30" class="style23">18</td>
+                <td height="30" class="style15">20</td>
+                <td height="30" class="style13">20</td>
+              </tr>
+            </table>			
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/es04.png" width="604" height="142" /></td>
+      </tr>
+	  <tr>
+        <td height="50"><a name="i"></a>&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><img src="img/e_i.gif" width="32" height="16" /><span class="style3"> Invisibility (I) - 2레벨 주문</span><br/>
+			<br/>
+			<br/>
+			시전자 혹은 목표물(게임상에선 파티원)을 시야에서 사라지게 만드는 주문입니다.<br/>
+			<br/>
+			원래는 소리까지 지우지는 못해서 적들이 발자국 소리를 듣고 위치를 눈치 챌 수도 있지만<br/>
+			<br/>
+			이곳 게임상에선 특별히 그런것은 없으며 몇몇 보스들에게는 이 주문이 소용이 없습니다.<br/>
+			<br/>
+			시전 후 1~2초간은 적들이 위치를 파악하고 공격 해오는 경우가 있으니 방심하지 않는게 좋습니다.<br/>
+			<br/>
+			공격, 아이템 사용, 주문 시전시 효과가 풀리며 <a href="#h" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">헤이스트</a>, <a href="http://crassus.ivyro.net/manual/classes/(4)cleric/cleric_spell.html#b" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">블레스</a>의 효과와 중첩되지 않습니다.<br/>
+			<br/>
+			지속 시간이 길기 때문에 적들을 피하고자 할 때 쓸만 합니다<span class="style28">(대쉬를 통해 부딛혔을 때에도 효과가 풀리니 주의)</span>.<br/>
+			<br />
+			이 마법은 시전이 된이후로 공격이 들어가면 타격수만큼 시간을 보상받습니다. 다만, 일반공격을 하면 풀리기때문에 <br />
+			<br />
+			백점프공격으로 해야되지만, 그렇게까지 쓸일은 없습니다.<br />
+			<br/>
+			<br/>
+			<span class="style4">지속 시간(단위:초) &nbsp;&nbsp; 30</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style12">※ 다른 파티원이 저주의 검을 휘둘러서 데미지를 입기 직전에 걸어주면 모션을 캔슬시켜 데미지를 무효화 할 수 있으며<br/>
+			<br/>
+			&nbsp;&nbsp;&nbsp;또한 넘어지는 아군이 땅에 한번 튕길 시점에 걸어주면 넘어지는 모션도 캔슬시킬수 있습니다.</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/es05.png" width="622" height="176" /></td>
+      </tr>
+	  <tr>
+        <td height="50"><a name="ce">&nbsp;</a></td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><img src="img/e_ce.gif" width="32" height="16" /><span class="style3"> Conjure Elemental (CE) - 5레벨 주문</span><br/>
+			<br/>
+			<br/>
+			10레벨이 되면 사용 가능한 주문으로 시전시간이 매직유저에 비해 상당히 깁니다.<br/>
+			<br/>
+			<span class="style28">(바람의 정령 : 약 7초, 땅의 정령 : 약 8초, 매직 유저의 시전시간은 약 4초)</span><br/>
+			<br/>
+			매직유저처럼 보는 방향에 따라 소환하는 정령이 달라지는데 왼쪽을 보고 있을 경우 바람의 정령을 소환하고<br/>
+			<br/>
+			오른쪽을 보고 있을 경우 땅의 정령을 소환합니다. 땅의 정령을 소환시 지면에 붙어 있는 적에게만 데미지를<br/>
+			<br/>
+			줄 수 있으며 바람의 정령은 화면상에 존재하는 모든 적에게 데미지를 주지만 리치나 드래곤, 에저홀덴 같은<br/>
+			<br/>
+			공중에 떠 있는 적을 제외하면 사방팔방으로 흩어지면서 구석으로 처박히는게 흠입니다.<br/>
+			<br/>
+			시전 가능한 횟수가 너무 적다는 것 또한 흠이라면 흠. <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">이어링(earring)</a>의 영향을 받습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style5">데미지 (단위 : 픽셀) &nbsp;&nbsp; 32</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/es06a.png" width="680" height="176" /><br/>
+		<br/>
+		<br/>
+		<img src="img/es06b.png" width="680" height="175" /></td>
+      </tr>
+	  <tr>
+        <td height="50"><a name="po"></a>&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><img src="img/e_po.gif" width="32" height="16" /><span class="style3"> Polymorph Other (PO) - 4레벨 주문</span><br/>
+			<br/>
+			<br/>
+			목표물 하나를 무해한 동물로 바꾸는 주문입니다. HP에 상관없이 한번에 처리 할 수 있다는 장점이 있긴 하지만<br/>
+			<br/>
+			이렇게 처리된 적은 아이템을 떨구지 않으며 딱 한명에게만 적용되기 때문에 아이스 스톰에 밀려 별로 쓰진 않습니다.<br/>
+			<br/>
+			예외적으로 가고일은 동물로 변하지 않고 즉사하며 아이템을 떨굽니다.<br/>
+			<br/>
+			목표물에 가깝게 접근해서 시전해야 하며 누워있는 몬스터에게는 영향을 줄 수 없습니다.<br/>
+			<br/>
+			또한 보스에게는 아무런 영향을 줄 수 없습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/es07.png" width="669" height="133" /></td>
+      </tr>
+	  <tr>
+        <td height="50"><a name="h">&nbsp;</a></td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><img src="img/e_h.gif" width="32" height="16" /><span class="style3"> Haste (H) - 3레벨 주문</span><br/>
+			<br/>
+			<br/>
+			시전자 혹은 목표물의 모든 행동을 빠르게 하는 주문으로 게임상에선 클레릭의 블레스처럼 시전시 자신과 모든<br/>
+			<br/>
+			파티원에게 효과가 적용되며 아이템 투척속도와 주문 시전을 제외한 모든 행동이 빨라집니다.<br/>
+			<br/>
+			<span class="style28">(아이템 중에선 예외적으로 엘프의 화살 발사속도, 공중 은화살 발사속도와 시프의 슬링 투척속도도 빨라집니다.)</span><br/>
+			<br/>
+			보스를 빠르게 공략하거나 스테이지를 빠르게 이동하거나 할 때 효과가 좋지만 행동이 너무 빨라져서<br/>
+			<br/>
+			숙련되지 않았다면 컨트롤 하기가 힘든 면이 있으며 특히 2인 이상 플레이시 호흡이 잘 안맞는 상태에서<br/>
+			<br/>
+			시전했다면 안쓰니만 못한 상황을 연출 할 수도 있습니다.<br/>
+			<br/>
+			그리고 에뮬레이터의 연사기능을 사용하지 않는다면 평타 공격시 D키 공격이 자주 나갈 수 있습니다.<br/>
+			<br/>
+			앉았다 일어나거나 마법창과 아이템창을 교환하거나 할 때 백스텝이 발동하는 경우가 많은데<br/>
+			<br/>
+			평소보다 B버튼을 약간 더 길게 누르면 백스텝이 발동하는 걸 막을 수 있습니다.<br />
+			<br />
+			시전된 상태에서 공격이 들어가면 들어간만큼 시간을 보상받습니다. 즉, 공격되는 찰나의 시간은 마법 지속시간에<br />
+			<br />
+			포함되지 않는 공식이 성립됩니다. 레드드래곤에서 사용하면, 최대 2배까지 효과를 볼 수 있습니다.(20초)<br/>
+			<br/>
+			<a href="#i" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">인비지빌리티</a>, <a href="http://crassus.ivyro.net/manual/classes/(4)cleric/cleric_spell.html#b" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">블레스</a>의 효과와 중첩 되지 않습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style4">지속 시간(단위:레벨/초)</span> &nbsp; <span class="style23">8/8</span> &nbsp; <span class="style15">9/9</span> &nbsp; <span class="style13">10/10</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/es08.png" width="498" height="177" /></td>
+      </tr>
+      <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+      </tr>
+	  <tr>
+        <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

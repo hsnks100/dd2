@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>매직유저 주문</title>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.text {
+	margin:20px;
+	margin-top:50px;
+	margin-bottom:30px
+}
+.text2 {
+	margin-top:20px;
+	margin-left:10px;
+}
+.text3 {
+	margin-top:20px;
+	margin-left:50px;
+	margin-right:50px;
+}
+-->
+</style>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(2)muser/muser_spell.html">http://crassus.ivyro.net/manual/classes/(2)muser/muser_spell.html</a><br>
+<b>Title:</b> 매직유저 주문 &nbsp;&bull;&nbsp; <b>Size:</b> 51378<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr align="center">
+          <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()"><b>파이터</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()"><b>매직 유저</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()"><b>시프</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()"><b>클레릭</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()"><b>드워프</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()"><b>엘프</b></a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="20"><hr color="#614012" size="1" width="500" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><a href="muser_basic.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">기본 정보</a></td>
+        <td width="20" align="center" class="style2">|</td>
+        <td><a href="muser_con.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">기본 조작</a></td>
+        <td width="20" align="center" class="style2">|</td>
+        <td><a href="muser_advcon.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">고급 조작</a></td>
+        <td width="20" align="center" class="style2">|</td>
+        <td><a href="muser_spell.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">주문</a></td>
+        <td width="20" align="center" class="style2">|</td>
+        <td><a href="../combo/combo.html" class="style2" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">콤보의 법칙</a></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><pre><font color="#5C6785" class="style1">                                                     MAGIC USER</font></pre></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="../t3.png" width="380" height="38" />
+      <p>&nbsp;</p>
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" class="style4">첫번째 서클의<br />
+            주문</td>
+          <td align="center" class="style4">&nbsp;</td>
+          <td><a href="#fb" onFocus="this.blur()"><img src="img/m_fb.gif" alt="파이어 볼 (Fire Ball)" width="32" height="16" hspace="20" vspace="10" border="0" align="middle" /></a></td>
+          <td><a href="#is" onFocus="this.blur()"><img src="img/m_is.gif" alt="아이스 스톰 (Ice Storm)" width="32" height="16" hspace="20" vspace="10" border="0" /></a></td>
+          <td><a href="#ce" onFocus="this.blur()"><img src="img/m_ce.gif" alt="컨주어 엘리멘탈 (Conjure Elemental)" width="32" height="16" hspace="20" vspace="10" border="0" /><br />
+            </a><a href="#ck" onfocus="this.blur()"><img src="img/m_ck.gif" alt="클라우드 킬 (Cloud Kill)" width="32" height="16" hspace="20" border="0" /></a></td>
+          <td><a href="#rg" onFocus="this.blur()"><img src="img/m_rg.gif" alt="리버스 그래비티 (Reverse Gravity)" width="32" height="16" hspace="20" vspace="10" border="0" /></a></td>
+          <td><a href="#ms" onFocus="this.blur()"><img src="img/m_ms.gif" alt="메테오 스웜 (Meteor Swarm)" width="32" height="16" hspace="20" vspace="10" border="0" /><br />
+            </a><a href="#pk" onfocus="this.blur()"><img src="img/m_pk.gif" alt="파워 워드 킬 (Power Ward Kill)" width="32" height="16" hspace="20" border="0" /></a></td>
+        </tr>
+        <tr>
+          <td height="20" colspan="7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="bottom" class="style5">두번째 서클의<br />
+            주문</td>
+          <td align="center" class="style5">&nbsp;</td>
+          <td><a href="#fb" onFocus="this.blur()"><img src="img/m_mm.gif" alt="매직 미사일 (Magic Missile)" width="32" height="16" hspace="20" vspace="10" border="0" align="middle" /></a></td>
+          <td><a href="#lb" onFocus="this.blur()"><img src="img/m_lb.gif" alt="라이트닝 볼트 (Lightning Bolt)" width="32" height="16" hspace="20" vspace="10" border="0" /></a></td>
+          <td><a href="#fs" onFocus="this.blur()"><img src="img/m_fs.gif" alt="플레쉬 투 스톤 (Flesh to Stone)" width="32" height="16" hspace="20" vspace="10" border="0" /></a></td>
+          <td><a href="#wf" onFocus="this.blur()"><img src="img/m_wf.gif" alt="월 오브 파이어 (Wall of Fire)" width="32" height="16" hspace="20" vspace="10" border="0" /></a></td>
+          <td><a href="#pi" onFocus="this.blur()"><img src="img/m_pi.gif" alt="프로젝티드 이미지 (Projected Image)" width="32" height="16" hspace="20" vspace="10" border="0" /></a></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <div align="left" class="style13">※ 데미지는 1인 플레이를 기준으로 한다.</div>
+      <div align="left" class="style32 text"><a name="mm" id="mm"></a><img src="img/m_mm.gif" width="32" height="16" border="0" /> <b class="color_4p">매직 미사일 (Magic Missile) - 1레벨 주문</b>
+        <div class="text2">
+          <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+            <tr>
+              <td height="30" class="style5" colspan="4">평균 데미지 (약간 랜덤성이 있다)</td>
+            </tr>
+            <tr align="center">
+              <td width="80" height="30" class="style14">레벨</td>
+              <td width="50" height="30" class="style23">14</td>
+              <td width="60" height="30" class="style15">15~19</td>
+              <td width="60" height="30" class="style13">20~21</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style12">일반 몬스터</td>
+              <td height="30" class="style23">18</td>
+              <td height="30" class="style15">20</td>
+              <td height="30" class="style13">24</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style13">보스</td>
+              <td height="30" class="style23">14</td>
+              <td height="30" class="style15">12</td>
+              <td height="30" class="style13">10</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="color_4p">미사일의 갯수</td>
+              <td height="30" class="style23">3</td>
+              <td height="30" class="style15">4</td>
+              <td height="30" class="style13">5</td>
+            </tr>
+          </table>
+          <br />
+          적을 끝까지 쫓아가는 유도성질을 가진 마법 에너지 화살을 쏘는 주문으로 가장 기초적인 공격주문 중 하나다. 여기서는 양손으로 번갈아가며 하나씩 미사일을 발사한다. 
+          원래는 목표물을 지정해서 시전하는 주문이지만 여기선 약간 무작위로 날아가서 적들이 많다면 원하는 적에게 맞추기가 좀 어려울 수 있다.<br />
+          <br />
+          적이 무적 상태인 경우<span class="style28">(예를 들면 쓰러졌다가 일어날 때)</span> 근처를 선회하다가 무적 상태가 끝남과 동시에 추적 후 명중되며 만약 일정시간 동안 명중되지 않으면 그냥 화면 밖으로 사라질 수도 있다. 또한 화면상의 적들이 전부 쓰러져 있는 상태에서 시전을 했다면 목표를 잃고 화면 밖으로 사라진다. <br />
+          <br />
+          레벨에 따라 발사되는 미사일 갯수가 증가하는데 만약 화면안에 매직 마시일이 5발이 있다면 그후로 시전하는 매직 미사일은 발사가 안되고 전부 사라진다. 또한 프로스트 샐러맨더를 만나자 마자 시전하거나 스테이지 10-4(배틀로얄) 후반부의 숨겨진 방 중 중간(가고일 나오는 곳)방에서는 가고일이 깨어날 때 시전하면 처음 발사되는 매직 미사일이 사라진다.<br />
+          <br />
+          매직 미사일을 맞은 후 공중에 뜬 적에게 다른 공격을 넣어줄 수 있다. 하피 스테이지에서  와이번에 탄 셰도우 엘프를 격추 시킬 수 있는 유일한 주문이기도 하다.</div>
+      </div>
+      <img src="img/ms01.png" width="610" height="98" />
+      <div align="left" class="style15 style32 text3">라이트닝볼트, 파이어볼들과 마찬가지로 동시에 맞는 적이 많을수록 그 데미지는 현저하게 증가된다. 그러나 범위 마법도 아니고 단발로 나가기때문에 1발이 동시에 적을 때리긴 어렵다. 특정지역에 같은 크기의 적을 겹쳐놓고 모인상태에서 날리면 효과를 볼수 있다. (증가배율은 다른 마법과 동일)<br />
+      이것에 관련된 영상은 FAQ에 기재되어있다.</div>
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="fb"></a><img src="img/m_fb.gif" width="32" height="16" border="0" /> <span class="style5">파이어 볼 (Fire Ball) - 3레벨 주문</span>
+        <div class="text2">
+          <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+            <tr>
+              <td class="style5">데미지</td>
+              <td width="20">&nbsp;</td>
+              <td class="style15">일반 몬스터 : 20~25</td>
+              <td width="20">&nbsp;</td>
+              <td class="style17">보스 몬스터 : 16~20</td>
+            </tr>
+          </table>
+          폭발하는 불덩이를 만들어서 던지는 주문으로 판타지에서 가장 흔하게 볼 수 있는 마법이다.<br />
+          <br />
+          머리 위에서 시작해서 바닥을 향해 던지며 바닥에 닿는 즉시 폭발한다. 날아가는 도중에 파이어 볼에 닿거나 폭발범위 안에 서 있으면 데미지를 입는다. 적에게 연속해서 명중시킬 수 없으며<span class="style28">(적이 파이어볼을 맞고 쓰러졌으면 다시 일어나기 전까지는 맞지 않는다)</span> 적이 무적판정인 상태일 때에도<span class="style28">(예를 들면 쓰러졌다가 일어날 때)</span> 명중되지 않는다.<br />
+          <br />
+          원래는 <a href="lb" onFocus="this.blur()">라이트닝 볼트</a>와 데미지가 같은 주문이지만 여기 SOM에는 데미지가 더 낮으며 또 레벨이 올라가도 데미지가 그대로다. 같은 3레벨 주문이라서 사용빈도가 상당히 낮아진 주문이다. <span class="style28">(전작 TOD에선 2히트가 되서 데미지가 강했었다.) </span> 대신 시전속도가 빨라서 가끔 고블린 무리들을 처리할 땐 쓸만하다.<br />
+          <br />
+          불의 속성에 대해 면역성이 있는 헬하운드/플레임 샐러맨더에게는 데미지를 줄 수 없다. 또한 리치의 경우 3레벨 이하의 주문에 대해 면역성이 있어서 마찬가지로 데미지를 줄 수 없다.<br />
+        </div>
+      </div>
+      <img src="img/ms02a.png" width="582" height="175" /><br />
+      <br />
+      <img src="img/ms02b.png" width="402" height="210" />
+      <div align="left" class="style15 style32 text3">피해를 입은 적이 폭발의 중심지에서 멀수록 기본 데미지 보다 더 많은 데미지를 입는다. 또한 데미지를 증가시키는 장비(예를 들면 이어링같은)를 하나 이상 착용했을 경우 범위 안에 적들의 수가 많을 수록 데미지 증가폭이 높아진다. 폭발 전의 파이어 볼에 맞은 적은 기본 데미지만 입는다.</div>
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="lb" id="lb"></a><img src="img/m_lb.gif" width="32" height="16" border="0" /> <b class="style23">라이트닝 볼트 (Lightning Bolt) - 3레벨 주문</b>
+        <div class="text2">
+          <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+            <tr>
+              <td height="30" class="style5" colspan="4">평균 데미지 (약간 랜덤성이 있다)</td>
+            </tr>
+            <tr align="center">
+              <td width="80" height="30" class="style14">레벨</td>
+              <td width="50" height="30" class="style23">14</td>
+              <td width="60" height="30" class="style15">15~19</td>
+              <td width="60" height="30" class="style13">20~21</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style12">일반 몬스터</td>
+              <td height="30" class="style23">34</td>
+              <td height="30" class="style15">40</td>
+              <td height="30" class="style13">46</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style13">보스</td>
+              <td height="30" class="style23">30</td>
+              <td height="30" class="style15">36</td>
+              <td height="30" class="style13">40</td>
+            </tr>
+          </table>
+          <br />
+          번개 줄기를 소환하는 주문이다. 전작 TOD와는 달리 위 아래로 방향 조절이 가능하다. 공중에 뜬 적들의 경우 고도에 따라 맞지 않을 수도 있다. 또한 적이 무적판정인 상태일 때에도<span class="style28">(예를 들면 쓰러졌다가 일어날 때)</span> 명중되지 않는다.<br />
+          <br />
+          <a href="fb" onfocus="this.blur()">파이어 볼</a> 보다 데미지가 높은데다가 레드 드래곤/Synn에게 크리티컬 데미지를 입힐 수 있어서 훨씬 유용하다.<br />
+          <br />
+          시전자의 레벨이 21레벨이 되면 번개 줄기가 평소보다 굻어진다.</div>
+      </div>
+      <img src="img/ms03.png" width="680" height="169" />
+      <div align="left" class="style15 style32 text3">데미지를 증가시키는 장비(예를 들면 이어링같은)를 하나 이상 착용했을 경우 한번 시전으로 둘 이상 명중했다면 나중에 맞는 적일수록 더 많은 데미지를 입는다. <span class="style28">(물론 데미지 버그는 여전히 적용된다.)</span> 최종 목표물을 일직선상에서 맞추는 것보다 먼저 다른 적들을 맞추고 방향 전환을 하면서 가장 나중에 목표물을 맞추는게 데미지를 증가시키기에 좀 더 쉽다.
+        <div align="center" class="style18 style33" style="margin:20px;"><img src="img/mlb1.png" width="384" height="174" /><br />
+          처음에 워저드리 스태프 + 이어링 + 라이트닝 로드를 착용하고 에저호든을 혼자 맞추면 이정도지만<br />
+          <br />
+          <img src="img/mlb2.png" width="384" height="174" /><br />
+          먼저 스켈레톤 둘을 맞추고<br />
+          <br />
+          <img src="img/mlb3.png" width="384" height="174" /><br />
+          마지막에 에저호든을 맞추면 이정도로 데미지가 증가한다.</div>
+        아래표는 가장 나중에 맞는 적의 레벨별 평균 데미지 증가율이다. 실제 데미지에 곱하면 된다.<br />
+        숫자가 두개로 나뉘어 있는 경우는 앞의 숫자는 15~19레벨, 뒤의 숫자는 20~21레벨의 경우다.<br />
+        <br />
+        <table width="100%" border="1" cellspacing="1" bordercolor="#666666">
+          <tr align="center" bgcolor="#200001">
+            <td bgcolor="#000000">적의 숫자</td>
+            <td width="60">0</td>
+            <td width="60">1</td>
+            <td width="60">2</td>
+            <td width="62">3</td>
+            <td width="62">4</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#001A09"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofl" onfocus="this.blur()">라이트닝 로드</a></td>
+            <td>x1.12</td>
+            <td>x1.25</td>
+            <td>x1.37</td>
+            <td>x1.50</td>
+            <td>x1.87</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#001A09"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.25</td>
+            <td>x1.57</td>
+            <td>x1.92</td>
+            <td>x2.40</td>
+            <td>x3.00</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#001A09"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofl" onfocus="this.blur()">라이트닝 로드</a></td>
+            <td>x1.37</td>
+            <td>x1.82</td>
+            <td>x2.42</td>
+            <td>x3.15</td>
+            <td>x4.02</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a></td>
+            <td>x1.25</td>
+            <td>x1.57</td>
+            <td>x1.92</td>
+            <td>x2.40</td>
+            <td>x3.00</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofl" onfocus="this.blur()">라이트닝 로드</a></td>
+            <td>x1.37</td>
+            <td>x1.82</td>
+            <td>x2.42</td>
+            <td>x3.15</td>
+            <td>x4.02</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.50</td>
+            <td>x2.15</td>
+            <td>x3.37</td>
+            <td>x4.95</td>
+            <td class="style13">x0.35/x1.20</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofl" onfocus="this.blur()">라이트닝 로드</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.62</td>
+            <td>x2.55</td>
+            <td>x3.92</td>
+            <td>x5.97</td>
+            <td class="style13">x2.08/x2.72</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a></td>
+            <td>x1.50</td>
+            <td>x2.15</td>
+            <td>x3.37</td>
+            <td>x4.95</td>
+            <td class="style13">x0.44/x1.17</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofl" onfocus="this.blur()">라이트닝 로드</a></td>
+            <td>x1.62</td>
+            <td>x2.55</td>
+            <td>x3.92</td>
+            <td>x5.97</td>
+            <td class="style13">x2.25/x2.72</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.75</td>
+            <td>x3.05</td>
+            <td>x5.30</td>
+            <td class="style13">x2.14/x2.87</td>
+            <td><span class="style13">x3.70</span>/x5.07</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofl" onfocus="this.blur()">라이트닝 로드</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.86</td>
+            <td>x3.37</td>
+            <td>x6.00</td>
+            <td class="style13">x3.81/x4.25</td>
+            <td>x6.78/<span class="style13">x1.10</span></td>
+          </tr>
+        </table>
+      </div>
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="is"></a><img src="img/m_is.gif" width="32" height="16" border="0" /><span class="style8"> 아이스 스톰 (Ice Storm) - 4레벨 주문</span>
+        <div class="text2">
+          <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+            <tr>
+              <td height="30" class="style5" colspan="4">데미지</td>
+            </tr>
+            <tr align="center">
+              <td width="80" height="30" class="style14">레벨</td>
+              <td width="50" height="30" class="style23">14</td>
+              <td width="60" height="30" class="style15">15~19</td>
+              <td width="60" height="30" class="style13">20~21</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style12">일반 몬스터</td>
+              <td height="30" class="style23">30</td>
+              <td height="30" class="style15">36</td>
+              <td height="30" class="style13">44</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style13">보스</td>
+              <td height="30" class="style23">30</td>
+              <td height="30" class="style15">36</td>
+              <td height="30" class="style13">40</td>
+            </tr>
+          </table>
+          강렬한 얼음 폭풍을 만들어 타격 데미지와 냉기 데미지를 주는 주문으로 여기서는 화면상의 모든 적들에게 데미지를 준다. 원래 룰에서는 적들의 듣기 능력과 이동 속도를 떨어뜨리는 효과도 가지고 있다.<br />
+          <br />
+          화면상의 모든 적들에게 그 어느 때라도 바로 데미지를 입힐 수 있기 때문에 공중에 뜬 적을 떨어뜨리거나 고블린들을 정리한다거나 적을 쓰러뜨리는 용도로 사용한다거나 다용도로 사용할 수 있다.<br />
+          <br />
+          또한 아이스 스톰을 맞은 적들이 완전히 쓰러지기 전에 다른 공격을 넣어줄 수 있어서 콤보에 활용할 수도 있다.<br />
+          <br />
+          냉기의 속성에 대해 면역성이 있는 프로스트 샐러맨더에게는 데미지를 줄 수 없다.<br />
+          반면 <span class="style13">플레임 샐러맨더에게는 50% 증가된 데미지를 입힌다.</span><br />
+        </div>
+      </div>
+      <img src="img/ms04.png" width="482" height="176" />
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="wf" id="wf"></a><img src="img/m_wf.gif" width="32" height="16" border="0" /><span class="style5"> 월 오브 파이어 (Wall of Fire) - 4레벨 주문</span>
+        <div class="text2">
+          <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+            <tr>
+              <td height="30" class="style5" colspan="4">데미지 (약간 랜덤성이 있다)</td>
+            </tr>
+            <tr align="center">
+              <td width="80" height="30" class="style14">레벨</td>
+              <td width="50" height="30" class="style23">14</td>
+              <td width="60" height="30" class="style15">15~19</td>
+              <td width="60" height="30" class="style13">20~21</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style12">일반 몬스터</td>
+              <td height="30" class="style23">30</td>
+              <td height="30" class="style15">40</td>
+              <td height="30" class="style13">49</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style13">보스</td>
+              <td height="30" class="style23">30</td>
+              <td height="30" class="style15">38</td>
+              <td height="30" class="style13">45</td>
+            </tr>
+          </table>
+          원래는 원하는 지역에 불의 장벽을 만들고 한쪽 면으로 불꽃 파동을 날릴 수 있는 방어적인 성격의 주문이지만 여기에서는 한방향으로 불길을 날리는 공격적인 주문으로 나온다. 발사전에 오른쪽을 보고 있다면 방향키/레버를 시계반대 방향으로, 왼쪽을 보고 있다면 시계방향으로 돌리면 불길도 그에 따라 한바퀴돈다.<br />
+          <br />
+          어떤 상황에서도 화면안의 모든 적에게 데미지를 줄 수 있는 <a href="is" onfocus="this.blur()">아이스 스톰</a>과 비교하면 판정면에서 불리해서 상대적으로 덜 쓰이는 편이지만 쓰기에 따라서 상당히 유용할 수도 있다. <a href="http://crassus.ivyro.net/manual/items/item_equip.html#roff" class="style11" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">콜드 로드(rod of cold)</a>보다는 <a href="http://crassus.ivyro.net/manual/items/item_equip.html#roff" class="style11" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">파이어 로드(rod of fire ball)</a>가 훨씬 많이 쓰이고 <a href="lb" onfocus="this.blur()">라이트닝 볼트</a>처럼 적들을 연속해서 맞추면 데미지가 올라가기 때문에 데미지 면에서 더 유용하기 때문이다.<br />
+          <br />
+          또한 <a href="is" onfocus="this.blur()">아이스 스톰</a>처럼 적들이 완전히 쓰러지기 전에 다른 공격을 넣어줄 수 있어서 콤보에 활용할 수도 있다.<br />
+          <br />
+          리치와 불의 속성에 대해 면역성이 있는 헬 하운드/플레임 샐러맨더에게는 데미지를 줄 수 없다. 공중에 떠 있어서 고도가 높은 적들 또한 맞출 수 없다.<br />
+        </div>
+      </div>
+      <img src="img/ms05.png" width="670" height="171" />
+      <div align="left" class="style15 style32 text3">데미지를 증가시키는 장비(예를 들면 이어링같은)를 하나 이상 착용했을 경우 한번 시전으로 둘 이상 명중했다면 나중에 맞는 적일수록 더 많은 데미지를 입는다. <span class="style28">(물론 데미지 버그는 여전히 적용된다.)</span> 레베를 돌려서 불꽃이 회전하는 도중에 맞은 적은 여기에 포함이 되지 않는다.
+        <div align="center" class="style18 style33" style="margin:20px;"><img src="img/mwf1.png" width="384" height="174" /><br />
+          처음에 워저드리 스태프 + 이어링 + 파이어 로드를 착용하고 에저호든을 혼자 맞추면 이정도지만<br />
+          <br />
+          <img src="img/mwf2.png" width="384" height="174" /><br />
+          먼저 스켈레톤 둘을 맞추고 마지막에 에저호든을 맞추면 이정도로 데미지가 증가한다.</div>
+        아래표는 가장 나중에 맞는 적의 레벨별 평균 데미지 증가율이다. 실제 데미지에 곱하면 된다.<br />
+        숫자가 두개로 나뉘어 있는 경우는 앞의 숫자는 15~19레벨, 뒤의 숫자는 20~21레벨의 경우다.<br />
+        <br />
+        <table width="100%" border="1" cellspacing="1" bordercolor="#666666">
+          <tr align="center" bgcolor="#200001">
+            <td bgcolor="#000000">적의 숫자</td>
+            <td width="60">0</td>
+            <td width="60">1</td>
+            <td width="60">2</td>
+            <td width="62">3</td>
+            <td width="62">4</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#001A09"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#roffb" onfocus="this.blur()">파이어 로드</a></td>
+            <td>x1.12</td>
+            <td>x1.25</td>
+            <td>x1.37</td>
+            <td>x1.50</td>
+            <td>x1.87</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#001A09"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.25</td>
+            <td>x1.57</td>
+            <td>x1.92</td>
+            <td>x2.40</td>
+            <td>x3.00</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#001A09"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#roffb" onfocus="this.blur()">파이어 로드</a></td>
+            <td>x1.37</td>
+            <td>x1.82</td>
+            <td>x2.42</td>
+            <td>x3.15</td>
+            <td>x4.02</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a></td>
+            <td>x1.25</td>
+            <td>x1.57</td>
+            <td>x1.92</td>
+            <td>x2.40</td>
+            <td>x3.00</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#roffb" onfocus="this.blur()">파이어 로드</a></td>
+            <td>x1.37</td>
+            <td>x1.82</td>
+            <td>x2.42</td>
+            <td>x3.15</td>
+            <td>x4.02</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.50</td>
+            <td>x2.15</td>
+            <td>x3.37</td>
+            <td>x4.95</td>
+            <td class="style13">x0.35/x1.20</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#roffb" onfocus="this.blur()">파이어 로드</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.62</td>
+            <td>x2.55</td>
+            <td>x3.92</td>
+            <td>x5.97</td>
+            <td class="style13">x2.08/x2.72</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a></td>
+            <td>x1.50</td>
+            <td>x2.15</td>
+            <td>x3.37</td>
+            <td>x4.95</td>
+            <td class="style13">x0.44/x1.17</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#roffb" onfocus="this.blur()">파이어 로드</a></td>
+            <td>x1.62</td>
+            <td>x2.55</td>
+            <td>x3.92</td>
+            <td>x5.97</td>
+            <td class="style13">x2.25/x2.72</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.75</td>
+            <td>x3.05</td>
+            <td>x5.30</td>
+            <td class="style13">x2.14/x2.87</td>
+            <td><span class="style13">x3.70</span>/x5.07</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#roffb" onfocus="this.blur()">파이어 로드</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.86</td>
+            <td>x3.37</td>
+            <td>x6.00</td>
+            <td class="style13">x3.81/x4.25</td>
+            <td>x6.78/<span class="style13">x1.10</span></td>
+          </tr>
+        </table>
+      </div>
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="ck" id="ck"></a><img src="img/m_ck.gif" width="32" height="16" border="0" /> <b class="style4">클라우드 킬 (Cloud Kill) - 5레벨 주문</b>
+        <div class="text2">
+          <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+            <tr>
+              <td height="30" class="style5" colspan="4">데미지</td>
+            </tr>
+            <tr align="center">
+              <td width="80" height="30" class="style14">레벨</td>
+              <td width="50" height="30" class="style23">14</td>
+              <td width="60" height="30" class="style15">15~19</td>
+              <td width="60" height="30" class="style13">20~21</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style12">일반 몬스터</td>
+              <td height="30" class="style23">즉사</td>
+              <td height="30" class="style15">즉사</td>
+              <td height="30" class="style13">즉사</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style13">보스</td>
+              <td height="30" class="style23">28</td>
+              <td height="30" class="style15">38</td>
+              <td height="30" class="style13">48</td>
+            </tr>
+          </table>
+          <span class="style14">2p 매직 유저의 전용 주문</span>으로 생명체를 죽음에 이르게 하는 공기보다 무거운 맹독성 안개를 화면 전체에 생성한다.<br />
+          스켈레톤/구울/가고일을 제외한 모든 일반 몬스터는 말 그대로 즉사하며 가고일과 보스 몬스터의 경우 즉사하지 않고 일정량의 데미지를 입는다. 보스 몬스터중에서 워 머신/그린드래곤/리치/샐러맨더/에저호든에게는 데미지를 입힐 수 없다.<br />
+          <br />
+          화면상의 모든 적들에게 그 어느 때라도 바로 효과를 주며 일반 몬스터를 즉사시키는 성능 때문에 스피드 런에서 효과가 탁월하다. <a href="ce" onFocus="this.blur()">컨주어 엘리멘탈</a>보다 활용도가 높다고 할 수 있다.<br />
+          <br />
+          <a href="is" onFocus="this.blur()">아이스 스톰</a>처럼 적들이 쓰러지기 전에 다른 공격을 넣을 수 있다 (죽지 않은 적들에 한해서).<br />
+          <br />
+          다른 주문과 달리 시전 즉시 화면 정중앙으로 이동해서 안개를 분출하는데 그 특유의 모션과 효과 때문에 '방구'라고 불리기도 하고 2p 매직 유저는 '방구법사'라 불리기도 한다.</div>
+      </div>
+      <img src="img/ms06.png" width="660" height="169" />
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="ce"></a><img src="img/m_ce.gif" width="32" height="16" border="0" /> <b class="style15">컨주어 엘리멘탈 (Conjure Elemental) - 5레벨 주문</b>
+        <div class="text2">
+          <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+            <tr>
+              <td height="30" class="style5" colspan="4">데미지</td>
+            </tr>
+            <tr align="center">
+              <td width="80" height="30" class="style14">레벨</td>
+              <td width="50" height="30" class="style23">14</td>
+              <td width="60" height="30" class="style15">15~19</td>
+              <td width="60" height="30" class="style13">20~21</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style12">일반 몬스터</td>
+              <td height="30" class="style23">32</td>
+              <td height="30" class="style15">38</td>
+              <td height="30" class="style13">46</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style13">보스</td>
+              <td height="30" class="style23">32</td>
+              <td height="30" class="style15">36</td>
+              <td height="30" class="style13">44</td>
+            </tr>
+          </table>
+          <span class="class-magicuser">1p 매직 유저의 전용 주문</span>으로 정령을 불러내서 공격을 한다. 원래는 정령에게 여러가지 일을 시키는 주문이다.<br />
+          매직 유저가 바라보고 있는 방향에 따라 다른 정령을 불러내는데 왼쪽을 보고 시전할 경우 불의 정령을 소환하며 오른쪽으로 보고 시전할 경우 물의 정령을 소환한다.<br />
+          <br />
+          아이스 스톰과 마찬가지로 화면상의 모든 적들에게 그 어느 때라도 바로 데미지를 입힐 수 있어서 <a href="is" onfocus="this.blur()">아이스 스톰</a>과 비슷한 용도로 쓸 수 있다. 다만 <a href="is" onfocus="this.blur()">아이스 스톰</a>처럼 적이 쓰러지기 전에 다른 공격을 넣을 수는 없다.<br />
+          <br />
+          불의 정령은 불에 면역성이 있는 헬하운드/플레임 샐러맨더에게 데미지를 줄 수 없지만 대신 <span class="style13">프로스트 샐러맨더에게 50% 증가된 데미지를 입힌다</span>. 물의 정령은 냉기에 면역성이 있는 프로스트 샐러맨더에게 데미지를 줄 수 없다.<br />
+        </div>
+      </div>
+      <img src="img/ms07a.png" width="582" height="170" /><br />
+      <br />
+      <img src="img/ms07b.png" width="582" height="176" />
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="fs" id="fs"></a><img src="img/m_fs.gif" width="32" height="16" border="0" /><b class="style28"> 플레쉬 투 스톤 (Flesh to Stone) - 6레벨 주문</b>
+        <div class="text2">
+          <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+            <tr>
+              <td height="30" class="style5" colspan="4">데미지</td>
+            </tr>
+            <tr align="center">
+              <td width="80" height="30" class="style14">레벨</td>
+              <td width="50" height="30" class="style23">14</td>
+              <td width="60" height="30" class="style15">15~19</td>
+              <td width="60" height="30" class="style13">20~21</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style12">일반 몬스터</td>
+              <td height="30" class="style23">즉사</td>
+              <td height="30" class="style15">즉사</td>
+              <td height="30" class="style13">즉사</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style13">보스</td>
+              <td height="30" class="style23">28</td>
+              <td height="30" class="style15">32</td>
+              <td height="30" class="style13">38</td>
+            </tr>
+          </table>
+          석화 광선을 발사해서 적들을 돌로 만들어 버리는 주문이다. 돌이 된 적들은 바로 사라진다. 가고일의 경우 돌이 되지는 않지만 바로 즉사한다. 보스 몬스터의 경우 다른 공격주문 처럼 데미지를 입는다.<br />
+          <br />
+          적들을 바로 없앨 수 있고 시전 시간도 빨라서 게임을 빠르게 진행 할 때 많은 도움이 되지만 대신 이렇게 돌이 된 적들은 아이템을 전혀 떨어뜨리지 않는다는 단점이 있다. 가고일의 경우 예외로 아이템을 떨어뜨린다. 시전자의 손 바로 앞에서부터 판정이 생기는게 아니라 직선의 빔이 시작되는 부분부터 판정이 생기니 너무 가까이서 시전해서 빗나가는 일이 없도록 하자.<br />
+          <br />
+          적이 무적판정인 상태일 때는<span class="style28">(예를 들면 쓰러졌다가 일어날 때)</span> 명중되지 않는다. 또한 나그파를 제외하면 쓰러진 적에게도 맞출 수 없다.<br />
+          <br />
+          워 머신/리치/에저호든 에게는 데미지를 입힐 수 없다. 보통은 보스 몬스터에게 데미지를 입히면 바로 쓰러지지만 나그파의 경우 예외로 쓰러지기 전에 다른 공격을 넣을 수 있다.</div>
+      </div>
+      <img src="img/ms08.png" width="495" height="90" />
+      <div align="left" class="style15 style32 text3">데미지를 증가시키는 장비(예를 들면 이어링같은)를 하나 이상 착용했을 경우 한번 시전으로 둘 이상 명중했다면 나중에 맞는 적일수록 더 많은 데미지를 입는다. <span class="style28">(물론 데미지 버그는 여전히 적용된다.)</span>
+        <div align="center" class="style18 style33" style="margin:20px;"><img src="img/mfs1.png" width="384" height="174" /><br />
+          워저드리 스태프 + 이어링을 착용하고<br />
+          <br />
+          <img src="img/mfs2.png" width="384" height="174" /><br />
+          다크 워리어2를 혼자 맞추면 이정도의 데미지가 나오지만<br />
+          <br />
+          <img src="img/mfs3.png" width="384" height="174" /><br />
+          스켈레톤 둘을 먼저 맞추고 다크 워리어2를 맞추면<br />
+          <br />
+          <img src="img/mfs4.png" width="384" height="174" /><br />
+          이정도의 데미지가 나온다.</div>
+        아래표는 가장 나중에 맞는 적의 레벨별 평균 데미지 증가율이다. 실제 데미지에 곱하면 된다.<br />
+        숫자가 두개로 나뉘어 있는 경우는 앞의 숫자는 15~19레벨, 뒤의 숫자는 20~21레벨의 경우다.<br />
+        <br />
+        <table width="100%" border="1" cellspacing="1" bordercolor="#666666">
+          <tr align="center" bgcolor="#200001">
+            <td bgcolor="#000000">적의 숫자</td>
+            <td width="60">0</td>
+            <td width="60">1</td>
+            <td width="60">2</td>
+            <td width="62">3</td>
+            <td width="62">4</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#001A09"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.25</td>
+            <td>x1.57</td>
+            <td>x1.92</td>
+            <td>x2.40</td>
+            <td>x3.00</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a></td>
+            <td>x1.25</td>
+            <td>x1.57</td>
+            <td>x1.92</td>
+            <td>x2.40</td>
+            <td>x3.00</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#000020"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp">마력의 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.50</td>
+            <td>x2.15</td>
+            <td>x3.37</td>
+            <td>x4.95</td>
+            <td class="style13">x0.44/x1.17</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a></td>
+            <td>x1.50</td>
+            <td>x2.15</td>
+            <td>x3.37</td>
+            <td>x4.95</td>
+            <td class="style13">x0.44/x1.17</td>
+          </tr>
+          <tr align="center">
+            <td bgcolor="#200001"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" onfocus="this.blur()">위저드리 스태프</a> + <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring">이어링</a></td>
+            <td>x1.75</td>
+            <td>x3.05</td>
+            <td>x5.30</td>
+            <td class="style13">x2.14/x2.87</td>
+            <td><span class="style13">x3.70</span>/x5.07</td>
+          </tr>
+        </table>
+      </div>
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="pi" id="rg2"></a><img src="img/m_pi.gif" width="32" height="16" border="0" /> <b class="style19">프로젝티드 이미지 (Projected image) - 6레벨 주문</b>
+        <div class="text2">
+          <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+            <tr align="center">
+              <td width="80" height="30" class="style14">레벨</td>
+              <td width="50" height="30" class="style23">14</td>
+              <td width="60" height="30" class="style15">15~19</td>
+              <td width="60" height="30" class="style13">20~21</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style14">지속시간</td>
+              <td height="30" class="style23">8초</td>
+              <td height="30" class="style15">9초</td>
+              <td height="30" class="style13">10초</td>
+            </tr>
+          </table>
+          원래는 시전자와 똑같은 모습의 허상의 이미지를 만들어내며 그 이미지는 시전자의 행동과 말을 똑같이 따라하는 주문이지만 여기서는 시전자를 일정시간동안 무적으로 만들어 준다.<br />
+          <br />
+          지속시간 동안은 레드 드래곤이나 synn의 브레스를 제외한 모든 공격으로 부터 피해를 입지 않는다.<br />
+          <br />
+        또한 주문이 시전된후 공격을 하면, 공격타수 만큼 시간을 보상받는다, 즉 때리는 찰나는 지속시간이 포함되지 않아 쌓이고 쌓이면 수초를 더 쓸수 있게 된다. </div>
+      </div>
+      <img src="img/ms09.png" />
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="rg" id="rg"></a><img src="img/m_rg.gif" width="32" height="16" border="0" /> <b class="style26">리버스 그래비티 (Reverse Gravity) - 7레벨 주문</b>
+        <div class="text2">
+          <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+            <tr>
+              <td height="30" colspan="3" class="style5">데미지</td>
+            </tr>
+            <tr align="center">
+              <td width="80" height="30" class="style14">레벨</td>
+              <td width="60" height="30" class="style15">15~19</td>
+              <td width="60" height="30" class="style13">20~21</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style12">일반 몬스터</td>
+              <td height="30" class="style15">40</td>
+              <td height="30" class="style13">50</td>
+            </tr>
+            <tr align="center">
+              <td height="30" class="style13">보스</td>
+              <td height="30" class="style15">36</td>
+              <td height="30" class="style13">46</td>
+            </tr>
+          </table>
+          15레벨이 되면 사용가능해 지는 주문이다.<br />
+          <br />
+          중력을 반대로 뒤집어서 범위안의 모든 물체를 공중으로 떨어뜨리는 주문인데 여기서는 범위안의 적들을 띄웠다가 바닥으로 떨어뜨리면서 데미지를 입힌다. 원래는 날 수 있는 적들에게는 데미지를 입히지 못하지만 여기서는 딱히 그런 제한은 없다.<br />
+          <br />
+          적이 무적판정인 상태일 때는 <span class="style28">(예를 들면 쓰러졌다가 일어날 때)</span> 명중되지 않는다.<br />
+          <br />
+          리치/그린 드래곤/블랙 드래곤/레드 드래곤/에저호든 에게는 데미지를 입힐 수 없다.<br />
+          <br />
+          <span class="style15"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring" class="style11" onfocus="this.blur()">이어링(earring)</a>, <a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofw" class="style11" onfocus="this.blur()">위저드리 스태프(staff of wizardry)</a> 착용시 유난히 데미지 증가율이 높다.<br />
+          이어링 착용시 50%증가 (원래는 25%), 이어링과 워저드리 스태프 동시 착용시 124%증가 (원래는 75%).<br />
+          위저드리 스태프만 착용했을 경우는 차이가 없다</span>.</div>
+      </div>
+      <img src="img/ms10.png" width="490" height="180" />
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="ms" id="ms"></a><img src="img/m_ms.gif" width="32" height="16" border="0" /> <b class="style29">메테오 스웜 (Meteor Swarm) - 9레벨 주문</b>
+        <div class="text2"> <span class="style5">데미지 -</span> <span class="style13">일반 몬스터, 보스 몬스터에 상관없이 160</span><br />
+          <br />
+          20레벨이 되면 사용가능해 지는 <span class="class-magicuser">1p 매직 유저의 전용 주문</span>이다.<br />
+          <br />
+          총 12개의 유성 무리를 소환하는 주문으로 유성 무리는 낙하해서 폭발을 한다.<br />
+          9레벨 주문답게 데미지가 상당히 강력하며 불의 속성을 지닌 것 처럼 보이지만 헬 하운드에게도 데미지를 입힌다.<br />
+          <br />
+          범위는 넓어 보이지만 생각보다 잘 명중이 되지 않는 경우가 꽤 많다. 또한 
+          적이 무적판정인 상태일 때는 <span class="style28">(예를 들면 쓰러졌다가 일어날 때)</span> 명중되지 않는다.<br />
+          <br />
+          <a href="fb" onFocus="this.blur()">파이어 볼</a> 처럼 폭발범위안에 여러명의 적이 있을 수록 많은 데미지를 입으며 폭발범위의 가장자리에 있을 수록 그 증가폭이 커진다. 하지만 기본 데미지가 워낙 커서 그에 비하면 증가량이 그리 크지는 않다.<br />
+          <br />
+          <span class="style15">기본 데미지가 워낙에 커서 </span><span class="style15">데미지를 올려주는 장비들을 동시에 착용하면 오히려 기본 데미지보다 더 낮은 데미지가 나오는 데미지 증가 버그 현상을 쉽게 볼 수 있다.<br />
+          <br />
+          위저드리 스태프 착용시 → 241 (51%증가)<br/>
+          위저드리 스태프 + 파이어 로드 착용시 → 245 (53%증가)<br/>
+          </span><span class="class-fighter">위저드리 스태프 + 이어링 착용시 → 25 (84.4%감소)<br/>
+          위저드리 스태프 + 이어링 + 파이어 로드 착용시 → 56 (65%감소)</span><span class="style15"><br/>
+          마력의 스태프 + 이어링 + 파이어 로드 → 244 (53%증가)</span><br />
+          <br />
+          따라서 메테오 스웜을 제대로 쓰려면 붉은색으로 표시한 장비 조합은 피해야 한다.</div>
+      </div>
+      <img src="img/ms11.png" width="660" height="176" />
+      <div align="left" class="style15 style32 text3">미티어 스웜 역시 마법장비를 장착했을때, 한발당 동시에 맞는, 또는 떨어지는 선상에 순차적으로라도 맞는 적이 여럿있다면 데미지가 증가하게 된다. 그러나 기본데미지(160)가 워낙 높기때문에 이어링 하나만 있더라도 3번째 적부터는 데미지가 역류하게 된다. 가장 이상적인것은 파이어로드만 끼고 있는것인데, 레벨20이상에서 매직유저가 파이어로드만 들고 있기는 어렵다.</div>
+      <p style="margin:50px;">&nbsp;</p>
+      <div align="left" class="style32 text"><a name="pk" id="pk"></a><img src="img/m_pk.gif" width="32" height="16" border="0" /> <b class="style23">파워 워드 킬 (Power ward Kill) - 9레벨 주문</b>
+        <div class="text2"> <span class="style5">데미지 -</span> <span class="style13">일반 몬스터, 보스 몬스터에 상관없이 70</span><br />
+          <br />
+          20레벨이 되면 사용가능해 지는 <span class="style14">2p 매직 유저의 전용 주문</span>이다.<br />
+          <br />
+          원래는 원래는 지정한 하나의 상대를 바로 죽일 수 있는 힘을 가진 말을 내밷는 주문인데 여기서는 화면상의 모든 적에게 바로 큰 데미지를 입힌다. 시전시간이 <a href="ms" onFocus="this.blur()">메테오 스웜</a>과 비교하면 무척 짧다.<br />
+          <br />
+          데미지는 <a href="ms" onfocus="this.blur()">메테오 스웜</a>보다 많이 약하지만 대신 무조건 명중시킬 수 있다는 장점이 있으며 장비 조합에 따른 데미지버그도 없다.<br />
+          <br />
+          <span class="style26">다른 공격으로 보스 몬스터들 잡는 순간에 이 주문을 시전하면 아이템이 두배로 나오는 버그가 있다.</span></div>
+      </div>
+      <img src="img/ms12.png" width="410" height="168" /> </td>
+  </tr>
+  <tr>
+    <td height="50">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="100" align="center"><a href="#top" onFocus="this.blur()"><b>go to Top</b></a></td>
+  </tr>
+  <tr>
+    <td align="center"><table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="muser_basic.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 정보</a></td>
+          <td width="20" class="style2">|</td>
+          <td><a href="muser_con.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 조작</a></td>
+          <td width="20" class="style2">|</td>
+          <td><a href="muser_advcon.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">고급 조작</a></td>
+          <td width="20" class="style2">|</td>
+          <td><a href="muser_spell.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">주문</a></td>
+          <td width="20" class="style2">|</td>
+          <td><a href="../combo/combo.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">콤보의 법칙</a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="20"><hr color="#614012" size="1" width="500" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr align="center">
+          <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

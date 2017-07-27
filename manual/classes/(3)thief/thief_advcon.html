@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>시프 고급조작</title>
+<script language="javascript" src="../../../script/iezn_embed_patch.js" type="text/javascript"></script>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(3)thief/thief_advcon.html">http://crassus.ivyro.net/manual/classes/(3)thief/thief_advcon.html</a><br>
+<b>Title:</b> 시프 고급조작 &nbsp;&bull;&nbsp; <b>Size:</b> 23764<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td><table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="20"><hr color="#614012" size="1" width="500" /></td>
+      </tr>
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td><a href="thief_basic.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 사항</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td><a href="thief_con.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 조작</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td><a href="thief_advcon.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">고급 조작</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td><a href="thief_pick.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">픽 포켓 목록</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td><a href="../combo/combo.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">콤보의 법칙</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td><a href="../autofire-12/auto12.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">12연사</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="center"><pre><font color="#CC99CC" class="style1">                                                                 THIEF</font></pre></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="../t2.png" width="492" height="38" /></td>
+      </tr>
+	  <tr>
+        <td height="30">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style6">여기서의 데미지는 상대적인 데미지를 뜻합니다.<br/>
+			    <br/>			
+			이곳에 적은 콤보가 전부는 아니므로 자신만의 콤보를 개발하는 것도 좋습니다.</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style5">시프의 일반 A공격중 2~3타째 공격은 콤보로 연결하기에 좋지 않습니다.<br/>
+			<br/>
+			그렇기 때문에 2히트하며 연속으로 넣어 줄 수 있는 슬래쉬가 콤보의 핵심이 됩니다.<br/>
+			<br/>
+			초반의 무기 데미지가 파이터에 비해 약하고 또 무기레벨이 늦게 올라서 처음엔 좀 약할 수 있으나<br/>
+			<br/>
+			후반으로 갈 수록 파이터를 능가하는 공격력을 보여줍니다.</span><br/>
+			<br/>
+			<br/>
+			<span class="style14">강공격:→A &nbsp;&nbsp; 슬래쉬:↓↘→A &nbsp;&nbsp; 대공기:↓↑A</span></td>
+          </tr>
+          <tr>
+			<td height="60">&nbsp;</td>
+          </tr>
+		  <tr>
+			<td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left">일반 공격을 할 경우 화면이 번쩍이면서 우측 그림과 같은 효과가 나올 때가 있습니다.<br/>
+				<br/>
+				'크리티컬 데미지' 혹은 '맥시멈 데미지(줄여서 맥뎀)'가 나오는 상황인데<br/>
+				<br/>
+				이경우 적이 바로 쓰러지니 콤보시도시 이점을 유의하시기 바랍니다.</td>
+                <td align="left" width="180"><img src="img/tc.png" width="160" height="112" /></td>
+              </tr>
+            </table></td>
+          </tr>
+		  <tr>
+			<td height="50">&nbsp;</td>
+          </tr>
+		  <tr align="left">
+			<td><span class="style3">A → 강공격 → 슬래쉬 → 대공기 → 다운공격으로 A+B(선택사항)</span><br/>
+			<br/>
+			<span class="style13">(데미지 : 6.5+@ / 성공률 : 높음)</span><br/>
+			<br/>
+			<br/>
+			가장 쉽고 보편적인 콤보로 마땅히 콤보를 넣을만한게 없는 텔아린에게 유용합니다.<br/>
+			<br/>
+			파이어 로드를 착용하고 있다면 콤보후 A+B를 다운공격으로 넣어주면 더욱 큰 데미지를 줄 수 있습니다.<br/>
+			<br/>
+			오우거나 D.비스트의 경우는 대공기의 오일공격을 맞으면 A+B를 다운공격으로 넣을 수가 없으므로<br/>
+			<br/>
+			A+B를 쓰고 싶다면 슬래쉬 2히트 후 대공기를 약간 늦게 넣어서 오일에 닿지 않게 해야 합니다.<br/>
+			<br/>
+			일반 몬스터, 하피의 경우 대공기의 오일공격이 맞았다면 추가 콤보를 이어서 넣을 수 있습니다.<br/>
+			<br/>
+			<span class="style14"><br/>
+			가용 보스 : 다크 워리어, 하피, 텔아린, 오우거, 만티코어, D.비스트</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thief_combo1.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thumbs/thief_combo1.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">슬래쉬 → 슬래쉬 → 강공격 → 슬래쉬 → 대공기</span><br/>
+			<br/>
+			<span class="style13">(데미지 : 최대 10+@ / 성공률 : 보통)</span><br/>
+			<br/>
+			<br/>
+			다크 워리어에게 사용 가능한 콤보이며 투척무기를 사용해서 가드를 무산시키고 사용하는 것이 좋습니다.<br/>
+			<br/>
+			구석이거나 광분한 상태가 되면 두번째 슬래쉬까지만 넣는게 좋습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 스테이지 중앙에서의 다크 워리어</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thief_combo2.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thumbs/thief_combo2.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">슬래쉬 → 슬래쉬 → 슬래쉬 → 슬래쉬</span><br/>
+			<br/>
+			<span class="style13">(데미지 : 12 / 성공률 : 보통)</span><br/>
+			<br/>
+			<br/>
+			첫번째 슬래쉬를 맞으면 구석으로 튕기니 스테이지 구석이 아니라면 슬래쉬 후<br/>
+			<br/>
+			바로 슬라이딩을 해서 거리를 맞추는게 좋습니다.<br/>
+			<br/>
+			나그파의 경우 HP가 꽉 차있다 하더라도 콤보 한번으로 끝낼 수 있습니다(1인 플레이 기준).<br/>
+			<br/>
+			일반 몬스터에게도 유용하게 사용할 수 있는 콤보 입니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 하피, 나그파<br/>
+			</span><br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thief_combo3.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thumbs/thief_combo3.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">점프 혹은 2단 점프 후 슬링 → 슬래쉬 → 슬래쉬 → 슬래쉬(1히트) → 대공기(혹은 슬링 연사)</span><br/>
+			<br/>
+			<span class="style13">(데미지 : 10.5+@ / 성공률 : 보통)</span><br/>
+			<br/>
+			<br/>
+			아이템 사용에 제한을 걸어두는 일명 '노시리즈'같은 게임에서 주로 쓰며 보통 게임이라도 아이템이 다 떨어졌을 때<br/>
+			<br/>			
+			쓸 만 합니다. 슬링 투척 후 그냥 슬래쉬 3번을 넣어줘도 무방합니다.<br/>
+			<br/>
+			역시 구석이거나 광분한 상태가 되면 두번째 슬래쉬까지만 넣는게 좋습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 다크 워리어</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thief_combo4.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thumbs/thief_combo4.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">※ 다운공격으로써의 A+B의 활용</span><br/>
+			<br/>
+			<br/>
+			시프의 A+B는 전 클래스 중 최악이라 불릴 정도로 성능이 안좋은 기술로 평가 받았었습니다.<br/>
+			<br/>			
+			그러나 LB오일을 이용한 기술이라는 점 때문에 다운공격으로 활용 할 경우 기대 이상의 효과를 볼 수 있습니다.<br/>
+			<br/>
+			당연히 파이어 로드가 있는 것이 효과가 훨씬 좋으며 최대한 LB오일을 많이 맞추는것이 중요합니다.<br/>
+			<br/>
+			그리고 덩치가 큰 보스 일수록 효과가 좋습니다.<br/>
+			<br/>
+			<br/>
+			가용 보스 : 나그파와 사라만다를 제외한 다운이 되는 보스 전부<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thief_combo5.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thumbs/thief_combo5.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style6">※ 대 하피 전용 무한 콤보 (데미지 : ∞ / 성공률 : 다른 적들이 없다면 높음, 그외엔 낮음)<br/>
+			<br/>
+			<br/>
+			A+B가 히트수를 초기화 시킨다는 점을 이용한 무한 콤보입니다.<br/>
+			<br/>
+			<br/>
+			1set → 2set → 3set → 4set → (이하 34set → 4set 반복)</span><br/>
+			<br/>
+			<br/>
+			<span class="style3">1set : 4히트이내의 공격(예를 들면 A / A → A / A → 슬래쉬 / A → 강공격 → 슬래쉬)</span><br/>
+			<br/>
+			히트수가 많을 수록 아래의 2set에서 대공기를 넣었을 때 적이 높게 뜰 확률이 높습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style3">2set : 대공기 → 대쉬 점프 공격</span><br/>
+			<br/>
+			대공기의 LB오일에 맞아서 스테이지 가장 상단으로 튕겨져야 합니다. 튕겨진 하피를 대쉬 점프 공격으로<br/>
+			<br/>
+			정확히 맞추면 하피는 구석으로 몰리며 이후 콤보를 진행하는데 훨씬 수월 해 집니다.<br/>
+			<br/>
+			<br/>			
+			<span class="style3">3set : 슬래쉬 2~3번 반복</span><br/>
+			<br/>
+			이쯤 되면 뒤쪽에서 셰도우 엘프의 견제가 시작되며 때에 따라 셰도우 엘프가 전멸해서 파이어 볼의 공격이 날아 올<br/>
+			<br/>
+			수도 있습니다. 따라서 슬래쉬 반복횟수를 조절하거나 4set으로 넘어가거나 하는 적절한 상황대처가 요구됩니다.<br/>
+			<br/>
+			<br/>
+			<span class="style3">4set : A+B</span><br/>
+			<br/>
+			하피가 스테이지 가장 상단에 있는 상황이라면 슬래쉬2~3방을 맞고 공중에 떠 있는 상태에서 A+B의 오일에 맞으면<br/>
+			<br/>
+			다시 튕겨 오르며 이때 타이밍을 맞춰 3set의 슬래쉬 콤보를 넣어 줄 수 있습니다.<br/>
+			<br/>
+			<br/>
+			<br/>
+			다만 A+B가 HP를 소모하는 공격이므로 콤보를 사용하다보면 HP가 계속 줄어들며 이는 곧 조금이라도 실수시 사망으로<br/>
+			<br/>
+			이어지기 쉽다는 뜻이므로 여러모로 쉽지 않은 콤보입니다. 실전에서 쓰려면 상당한 연습이 필요합니다.<br/>
+			<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thief_combo6.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thumbs/thief_combo6.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">그 외에 일반 몬스터를 상대로 쓸만 한 콤보</span><br/>
+			<br/>
+			<br/>
+			<span class="style14">백스텝(back stab) → (슬링 5연사 / 슬래쉬)</span><br/>
+			<br/>
+			&nbsp;&nbsp;백스텝 후 거리가 멀어지면 슬링으로 추가타를 넣고 가깝다면 슬래쉬를 넣습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;되도록이면 1 대 1 상황에서 쓰는 것이 좋습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">대공기의 LB오일 공격이 히트 후 → 슬래쉬 x 4</span><br/>
+			<br/>
+			&nbsp;&nbsp;상하이동으로 적들을 최대한 모은 후 LB오일을 맞추면 적들이 공중에 뜨는데 이 때<br/>
+			<br/>
+			&nbsp;&nbsp;재빠르게 접근해서 콤보를 넣습니다. 슬래쉬 x 4 이외에 다른 콤보를 넣어도 무방하며<br/>
+			<br/>
+			&nbsp;&nbsp;8히트를 넘기기 전에 다시 대공기의 LB오일을 맞춘다면 무한 콤보도 가능합니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">(픽포켓 → 슬래쉬) x 4</span><br/>
+			<br/>
+			&nbsp;&nbsp;슬래쉬 사이에 픽포켓을 시도 함으로써 상대를 쓰러뜨리지 않고 좀 더 빨리 스틸 할 수 있습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;후반의 HP가 많은 적들에게 (특히 헬하운드) 쓸만 한데 되도록이면 1 대 1 상황에서 쓰는게 좋습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style6">※ '날다람쥐' (고속 이동 2단 점프) </span><br/>
+			<br/>
+			<br/>
+			점프 이동시의 모습이 마치 날다람쥐와 비슷하다 하여(비슷한가?) '날다람쥐'라 불리는 고속 이동 기술입니다.<br/>
+			<br/>
+			화면 끝에서 반대편 끝까지 아주 빠르게 이동할 수 있으며 점프하는 높이 또한 꽤나 높아서 레드 드래곤의<br/>
+			<br/>
+			정면 브레스마저 피할 수 있습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style3">1. 가고자 하는 방향의 반대편을 바라본다.<br/>
+			<br/>
+			2. 점프를 한다</span>(점프만으론 타이밍을 잡기 쉽지 않으므로 A버튼이나 D버튼(슬링)으로 타이밍을 잡습니다.)<br/>
+			<br/>
+			<span class="style3">3. 2단 점프를 실행하면서 거의 동시에 방향키 혹은 레버를 반대편으로 향하면서<br/>
+			<br/>
+			&nbsp;&nbsp;&nbsp;A버튼 혹은 D버튼(슬링)을 누른다.</span><br/>
+			<br/>
+			<br/>
+			말로는 설명이 쉽지 않은 기술이므로 영상을 보고 타이밍을 많이 연구 해 보는게 좋습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thief_special_move1.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thumbs/thief_special_move1.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style6">※ '반 날다람쥐'</span><br/>
+			<br/>
+			<br/>
+			시프에게만 국한된 기술은 아니며 드워프를 제외한 다른 클래스도 가능하지만 시프만큼의 이동거리가 나오지 않습니다.<br/>
+			<br/>
+			<span class="style28">(이동거리 : 시프 > 매직유저 > 파이터 = 클레릭 = 엘프 // 드워프는 점프특성상 불가능)</span><br/>
+			<br/>
+			<br/>
+			날다람쥐와 기본적인 것은 같지만 이 경우는 점프후 2단점프를 생략하고 방향전환과 함께 바로 A키나 D키를 누릅니다.<br/>
+			<br/>
+			다른 클래스의 경우 방향전환 전에 바라보고 있던 방향으로 방향키나 레버를 넣어주면<span class="style28">(왼쪽을 보고 있었다면 왼쪽으로)<br/>
+			</span><br/>
+			반동으로 더 멀리 이동이 가능합니다.<br/>
+			<br/>
+			시프의 경우 숙련만 잘되면 이 기술만으로 에저홀덴을 잡을 수도 있습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thief_special_move2.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thumbs/thief_special_move2.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style6">※ '하하' (대쉬 캔슬 이동)</span><br/>
+			<br/>
+			<br/>
+			대쉬공격을 백스텝을 통해 거의 딜레이 없이 캔슬하고 다시 대쉬를 하는 기술로 역시 시프에게만 국한된 기술은<br/>
+			<br/>
+			아니며 시프가 이 기술을 시전시 '하하'라고 들리는 듯한 음성을 내기에 이렇게 불립니다. <br/>
+			<br/>
+			사용자의 센스에 따라 성공률이 아주 크게 좌우되며 실용성 자체를 놓고 보면 날다람쥐보다는 떨어지지만<br/>
+			<br/>
+			사용 해 보면 재미있고 멋있어 보이기도 해서 종종 쓰게 되는 약간 퍼포먼스적인 성격이 있는 기술입니다.<br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style3">커맨드 : 대쉬 A</span> → <span class="style3">(거의 동시에 누르듯 →+B)</span> → <span class="style3">(→를 유지하면서 + B)</span><br/>
+			<br/>
+			<span class="style3">(오른쪽을 바라보고 있을 때 기준이며 왼쪽이라면 방향키/레버를 반대로 입력)</span><br/>
+			<br/>
+			<br/>
+			공격중에 B를 누르면 공격이 캔슬이 되면서 백스텝이 나가는 원리를 이용하고 그 백스텝마저도 캔슬을 하는 것인데<br/>
+			<br/>
+			(→+B)와 (→유지+B)의 입력간격이 빨라야 됩니다.<br/>
+			<br/>		
+			백스텝의 성격상 시프와 드워프, 매직유저는 입력간격이 좀 늦더라도 어쨌든 되긴 하지만<br/>
+			<br/>
+			아예 점프를 해버리는 파이터, 클레릭, 엘프는 타이밍이 좀 더 정확해야 하므로 상대적으로 조금 더 어렵습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <!--<tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://gscdn63.mncast.com/2007/1126/10019339720071126184043.flv&image=http://farm3.static.flickr.com/2233/2064785189_117774b864.jpg%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>-->
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/special_move_all.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(3)thief/thumbs/special_move_all.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"><br/>
+        <br/>
+        <span class="style18">타 클래스의 '하하'</span></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+      </tr>
+	  <tr>
+        <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,163 @@
+body,td,th {
+	font-size: 12px;
+	color: #CCCCCC;
+	font-family: "±¼¸²";
+}
+body {
+	background-color: #000000;
+	margin-top: 0px;
+	scrollbar-face-color: #000000;
+	scrollbar-highlight-color: #000000;
+	scrollbar-3dlight-color: #666666;
+	scrollbar-shadow-color: #666666;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #000000;
+	scrollbar-arrow-color: #666666;
+}
+a:link {
+	color: #CCC271;
+	text-decoration: none;
+}
+a:visited {
+	color: #CCC271;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.png24 {tmp:expression(setPng24(this));}
+
+.title {
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "Times New Roman", "Times", "serif";
+}
+
+.boss-simple {
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	border:thin;
+	border-style:ridge;
+	border-color:#666666;
+}
+
+.stage-brief {
+	margin-top:30px;
+	margin-left:20px;
+	margin-right:20px;
+	padding:30px;
+	border:thin;
+	border-style:ridge;
+	border-color:#CC6600;
+}
+
+.shop {
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "±¼¸²";
+}
+
+.class-fighter {color: #FF3333}
+.class-cleric {color: #0099FF}
+.class-thief {color: #BB99DD}
+.class-magicuser {color: #5294AD}
+.class-dwarf {color: #FFCC00}
+.class-elf {color: #66FF66}
+
+.bold {font-weight: bold;}
+
+.style1 {
+	font-size: 28px;
+	font-weight: normal;
+	font-family: "Arial Black";
+	text-decoration: underline;
+}
+.style2 {
+	color: #BDB566;
+	font-weight: bold;
+}
+.style3 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style4 {
+	color: #13DD92;
+	font-weight: bold;
+}
+.style5 {
+	color: #FF999B;
+	font-weight: bold;
+}
+.style6 {
+	color: #F1EFC2;
+	font-weight: bold;
+}
+.style7 {
+	color: #9f9515;
+	font-weight: bold;
+}
+.style8 {
+	color: #9999ff;
+	font-weight: bold;
+}
+
+.styleBACK {
+	font-size: 14px;
+	font-weight: bolder;
+	color: #BDB566;
+}
+
+.style11 {color: #CCC271}
+.style12 {color: #FFFFCC}
+.style13 {color: #FF999B}
+.style14 {color: #97FFA9}
+.style15 {color: #FBB37D}
+.style16 {color: #CDFF97}
+.style17 {color: #E7C8FF}
+.style18 {color: #FFFFFF}
+.style19 {color: #6993FE}
+
+.style21 {color: #FECFCF}
+.style22 {color: #BBDDFF}
+.style23 {color: #fff899}
+.style24 {color: #C7FF99}
+.style25 {color: #E0D2FF}
+.style26 {color: #C8ABFE}
+.style27 {color: #8A9FB9}
+.style28 {color: #7D7D7D}
+.style29 {color: #FF9900}
+
+.white {
+	font-family: "±¼¸²";
+	line-height: 12px;
+	color: #FFFFFF;
+}
+.white2 {
+	font-family: "µ¸¿ò";
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.style31 {
+	font-weight: bold;
+	font-family: "batang";
+	line-height: 18px;
+	color: #FFCC00;
+}
+.style32 {line-height: 18px;}
+.style33 {line-height: 24px;}
+
+.fontsize_small {font-size: 10px;}
+.fontsize_11 {font-size: 11px;}
+.annotation {font-size: 11px; color:#009999; margin-top:7px;}
+.blank {font-size:8px;}
+
+.color_1p {color: #FF8899}
+.color_2p {color: #4499FF}
+.color_3p {color: #FFCC22}
+.color_4p {color: #55DD99}

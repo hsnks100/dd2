@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>드워프 기본조작</title>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(5)dwarf/dwarf_con.html">http://crassus.ivyro.net/manual/classes/(5)dwarf/dwarf_con.html</a><br>
+<b>Title:</b> 드워프 기본조작 &nbsp;&bull;&nbsp; <b>Size:</b> 18293<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td><table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="20"><hr color="#614012" size="1" width="500" /></td>
+      </tr>
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="dwarf_basic.html" class="style2">기본 사항</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="dwarf_con.html" class="style2">기본 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="dwarf_advcon.html" class="style2">고급 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../combo/combo.html" class="style2">콤보의 법칙</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../autofire-12/auto12.html" class="style2">12연사</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="center"><pre><font color="#FFCC00" class="style1">                                                               DWARF</font></pre></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="../t1.png" width="368" height="38" /></td>
+      </tr>
+	  <tr>
+        <td height="30">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">A공격</span><br/>
+			<br/>
+			다른 클래스와는 달리 1타 2히트의 형태의 공격을 하며 최대 4타 8히트긴 하지만 4히트가 넘어가면<br/>
+			<br/>
+			99.9%는 적이 쓰러집니다. 따라서 2타 4히트로 없앨수 없는 적이라면 1타후 다른 콤보를 넣어주는게 좋습니다.<br/>
+			<br/>
+			공격속도가 타 클래스보다 느린 편 인데 그렇다고 빠르게 버튼을 누르면 백열배기가 나갈 수 있으니 주의.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d01.png" width="680" height="127" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><b class="style23">배틀 액스 장비시의 A공격</b><br/>
+			<br/>
+			2타 3히트(2히트-1히트)의 공격으로 바뀌며 모션이 동일 해 집니다.<br/>
+			<br/>
+			여전히 느린 편이고 손이 느리면 D키 공격이 나갈 가능성이 더 높아서 1타후 다른 콤보를 넣는게 좋습니다. <br/>
+			<br/>
+			그리고 다운 공격을 할 수 가 없습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d02.png" width="357" height="109" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">강공격</span><br/>
+			<br/>
+			<br/>
+			최대3히트까지 나오는데 발동속도가 느려서 특정 상황에서의 콤보를 제외하면 많이 쓰는 공격은 아닙니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d03.png" width="450" height="77" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><b class="style23">배틀 액스 장비시의 강공격</b><br/>
+			<br/>
+			<br/>
+			오히려 발동 속도가 빨라지며 2히트의 공격으로 바뀝니다. 다만 콤보로의 연결성은 좋지 못한 편입니다. <br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d04.png" width="335" height="109" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">뒤 돌아보기 공격</span><br/>
+			<br/>
+			<br/>
+			3히트의 공격으로 강공격보다 발동속도가 더 빠른데다가 적과 근접했을 때 거의 빈틈이 없이 돌면서 공격이<br/>
+			<br/>
+			가능하기 때문에 효율적으로 쓸 수 있습니다. 또한 3히트후 대공기나 슬래쉬로도 연결이 자연스럽게 됩니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d05.png" width="448" height="85" /></td>
+      </tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬 공격</span><br/>
+			<br/>
+			<br/>
+			2히트 공격으로 타 클래스의 대쉬공격보다 빠르면서 사정거리도 길어 많이 쓰는 공격입니다.<br/>
+			<br/> 
+			그러나 공격후 빈틈이 많은 단점은 같으며 슬래쉬로 콤보를 이을 때 주로 씁니다(일반 몹은 거의 가드를 못함).<br/>
+			<br/>
+			2히트가 이루어질 경우 후속 콤보가 잘 안들어갈 가능성이 크므로 1히트째에 캔슬하는 것이 대체로 좋습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d06.png" width="402" height="85" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">슬래쉬</span><br/>
+			<br/>
+			<br/>
+			최대 3히트까지 나오며 타점이 늦게 형성이 됩니다. 따라서 구석이 아니면 일정한 거리를 확보한 다음 써야 적에게<br/>
+			<br/>
+			 맞출 수 있는데 대신 그만큼 사정거리가 길며 데미지가 좋고 이것을 연속해서 쓰는 것 만으로 콤보가 성립합니다.<br/>
+			<br/>
+			다만 적이 가드를 한다면 뒤로 튕기기 때문에 헛점이 생기며 단독으로 쓰면 위험부담이 있습니다.<br/>
+			<br/>
+			장점과 단점이 확실한 공격.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d07.png" width="550" height="68" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대공기</span><br/>
+			<br/>
+			<br/>
+			살짝 앞으로 구른 후 뛰어오르며 회전하는 기술로 최대 5히트까지 나옵니다.<br/>
+			<br/>
+			구르는 동안 드워프의 타점이 아주 낮아져서 그 동안은 거의 무적에 가까우며 무엇보다 위력이 엄청납니다.<br/>
+			<br/>
+			최고점에 도달한 후에는 반대방향을 보며 착지합니다. 드워프의 상징적인 기술이라 볼 수 있습니다.<br/>
+			<br/>
+			다만 구르는 동안에 A버튼을 계속 누르면 상자를 열거나 들거나 혹은 쓰러진 적을 공격하는 경우가 있으니 주의.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d08.png" width="650" height="200" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">A키 연타(일명 백열배기)</span><br/>
+			<br/>
+			<br/>
+			A연타로 나가는 기술로 최대 6타까지 나오며 시전시 앞으로 약간 전진합니다.<br/>
+			<br/>
+			일단 한번 발동하면 캔슬이 안되기 때문에 빈틈이 꽤 많은 관계로 별로 쓰진 않습니다.<br/>
+			<br/>
+			에뮬레이터의 연사기능을 사용한다면 의도치 않게 발동할 수도 있습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d09.png" width="656" height="80" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">A+B</span> <span class="style13">(HP 12 소모)</span><br/>
+			<br/>
+			<br/>
+			점프하며 도끼를 휘두르는데 발동이 빨라서 무적 회피기로 쓰기에 적당합니다.<br/>
+			<br/>
+			휘두른 다음에는 반대편으로 착지하며 맞은 적들 또한 반대편으로 튕겨집니다.<br/>
+			<br/>
+			많은 적들에게 둘러 쌓였을 때 이 기술을 시전 후 슬래쉬를 콤보로 넣어주는것도 좋습니다.<br/>
+			<br/>
+			<br/>			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d10.png" width="680" height="110" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">점프</span><br/>
+			<br/>
+			<br/>
+			드워프의 점프는 좀 독특해서 체공시간이 짧고 이동거리가 조금 더 깁니다. 대쉬 점프는 체공시간이 더 짧습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d11.png" width="297" height="175" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">점프 공격</span><br/>
+			<br/>
+			<br/>
+			드워프의 점프 공격도 클레릭처럼 판정이 좋고 유지시간이 깁니다. 점프 특성상 제자리 점프 공격을 많이 쓰이는 편.<br/>
+			<br/>
+			보통 2히트가 들어가며 레드 드래곤과 synn에겐 3히트까지 들어갑니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d12.png" width="280" height="91" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬 점프 공격</span><br/>
+			<br/>
+			<br/>
+			역시 2히트 하며 드워프의 대쉬 점프 특성상 공격이 짧은 순간에 이루어집니다.<br/>
+			<br/>
+			공중에 뜬 적을 구석으로 몰 때 주로 쓰고 하피의 경우 최대 3히트까지 넣을 수 있습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d13.png" width="400" height="112" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">앉아서 공격 </span><br/>
+			<br/>
+			<br/>
+			그 자체로는 쓸 곳이 거의 없지만 클레릭 처럼 타점이 상당히 낮게 형성되기 때문에<br/>
+			<br/>
+			보스전에서 에뮬레이터의 연사기능(일명 12연사)를 이용했을 때 상당히 유용합니다.<br/>
+			<br/>
+			공격속도가 느린 편이라 연사를 1로 맞추고 쓴다는 점에선 조금 더 편합니다.<br/>
+			<br/>
+			<br/>
+			<a href="../autofire-12/auto12.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">12연사에 대한 자세한 내용 보기(Click)</a><br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d14.png" width="330" height="64" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">점프 찍기 공격</span><br/>
+			<br/>
+			<br/>
+			판정이 우수하고 또 오래 유지됩니다.<br/>
+			<br/>
+			대쉬 점프를 하면서 사용시 많은 적에게 피해를 줄 수 있습니다(머리를 긁고 지나가는 느낌).<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d15.png" width="67" height="111" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">슬라이딩</span><br/>
+			<br/>
+			<br/>
+			돈과 포션을 습득할 때, 빠르게 이동할 때, 그리고 슬래쉬 거리를 맞출 때 주로 씁니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d16.png" width="261" height="63" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">백스텝</span><br/>
+			<br/>
+			<br/>
+			화살표만큼 뒤로 살짝 구릅니다. 슬래쉬를 사용할 거리를 만든다거나 할 때 씁니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d17.png" width="186" height="109" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">제자리 점프/대 점프 후 ↙ 혹은 ↓ 혹은 ↘ + B (일명 롤링어택)</span><br/>
+			<br/>
+			<br/>
+			몸을 둥글게 회전시키며 내려찍고 그 후 살짝 튕겨 오릅니다. 데미지는 별로 기대할 것이 못되지만<br/>
+			<br/>
+			회전하는 동안은 완전 무적이라 익혀두면 요소요소 유용하게 사용할 수 있습니다. 예를 들면 불기둥이나 얼음기둥을<br/>
+			<br/>
+			통과하거나 셰도우 엘프의 파이어 볼을 피하거나 레드 드래곤의 파이어 월을 피하고자 할 때 쓸 수 있습니다.<br/>
+			<br/>
+			참고로 착용하고 있는 무기의 단발 데미지와 같으며 속성도 이어 받습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d18.png" width="515" height="141" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">D키(아이템)</span><br/>
+			<br/>
+			<br/>
+			아이템의 빈창을 맞춘 후 D키를 누르거나 A공격후 버튼을 꾹 누르고 있으면 나가는 공격입니다.<br/>
+			<br/>
+			앞으로 몸을 내밀어 살짝 전진하면서 투구의 뿔로 들이받습니다. 데미지는 1도트 수준이지만<br/>
+			<br/>
+			판정이 좋아서 적들을 구석으로 몰아 넣을 수 있으며 기본무기 만으로 사라만다를 잡을 때도 쓰곤 합니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d19.png" width="226" height="85" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><img src="../../items/img/z-guard.gif" width="32" height="16" /> &nbsp; <span class="style3">가드</span><br/>
+			<br/>
+			<br/>
+			가드 커맨드<span class="style28">(서있는 방향의 반대편 방향키 + A를 누른채로 유지)</span>나 아이템 칸의 방패로 가드를 할 수 있습니다.<br/>
+			<br/>
+			연사기능을 이용할 경우 A를 누른채로 유지할 수 없으므로 가드 커맨드로 가드가 불가능하고<br/>
+			<br/>
+			아이템 칸의 방패의 경우 D키를 이용할 수 없는 상황에서는 가드 발동이 안되니 주의하시기 바랍니다.<br/>
+			<br/>
+			<span class="style28">(리치, 텔'아린 등의 주문 시전시, 레드 드래곤/synn의 브레스 방출시.)</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/d20.png" width="72" height="87" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+      </tr>
+	  <tr>
+        <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

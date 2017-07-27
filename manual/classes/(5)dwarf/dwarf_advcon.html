@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>드워프 고급조작</title>
+<script language="javascript" src="../../../script/iezn_embed_patch.js" type="text/javascript"></script>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(5)dwarf/dwarf_advcon.html">http://crassus.ivyro.net/manual/classes/(5)dwarf/dwarf_advcon.html</a><br>
+<b>Title:</b> 드워프 고급조작 &nbsp;&bull;&nbsp; <b>Size:</b> 20838<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td><table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="20"><hr color="#614012" size="1" width="500" /></td>
+      </tr>
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="dwarf_basic.html" class="style2">기본 사항</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="dwarf_con.html" class="style2">기본 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="dwarf_advcon.html" class="style2">고급 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../combo/combo.html" class="style2">콤보의 법칙</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../autofire-12/auto12.html" class="style2">12연사</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="center"><pre><font color="#FFCC00" class="style1">                                                               DWARF</font></pre></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="../t2.png" width="492" height="38" /></td>
+      </tr>
+	  <tr>
+        <td height="30">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style6">여기서의 데미지는 상대적인 데미지를 뜻합니다.<br/>
+			    <br/>
+			이곳에 적은 콤보가 전부는 아니므로 자신만의 콤보를 개발하는 것도 좋습니다.</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style5">드워프의 일반 A공격은 2타 4히트째에 적이 거의 무조건 쓰러지는 데다가 무기의 단발 데미지 또한<br/>
+			<br/>
+			파이터의 3/4수준이기 때문에 후반으로 갈 수록 A공격만으로 적을 공격하면 한없이 약합니다.<br/>
+			<br/>
+			따라서 슬래쉬와 대공기가 조합된 단순하고 직선적인 콤보가 많지만 전부 다단 히트 기술들이기 때문에<br/>
+			<br/>
+			적에게 강제로 히트수를 넣을 수 있으며 콤보의 연결 또한 타 클래스에 비해 매끄럽게 연결 됩니다.<br/>
+			</span><br/>
+			<br/>
+			<span class="style14">강공격:→A &nbsp;&nbsp; 슬래쉬:↓↘→A &nbsp;&nbsp; 대공기:↓↑A</span> </td>
+          </tr>
+          <tr>
+			<td height="60">&nbsp;</td>
+          </tr>
+		  <tr>
+			<td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left">일반 공격을 할 경우 화면이 번쩍이면서 우측 그림과 같은 효과가 나올 때가 있습니다.<br/>
+				<br/>
+				'크리티컬 데미지' 혹은 '맥시멈 데미지(줄여서 맥뎀)'가 나오는 상황인데<br/>
+				<br/>
+				이경우 적이 바로 쓰러지니 콤보시도시 이점을 유의하시기 바랍니다.</td>
+                <td align="left" width="180"><img src="img/dc.png" width="162" height="112" /></td>
+              </tr>
+            </table></td>
+          </tr>
+		  <tr>
+			<td height="50">&nbsp;</td>
+          </tr>
+		  <tr>
+			<td align="left"><span class="style3">슬래쉬 → 대공기</span> <span class="style13">(데미지 : 최대 12 / 성공률 : 높음)</span><br/>
+			<br/>
+			<br/>
+			가장 기본적인 형태의 콤보로 가드를 잘 하는 보스의 경우 정면에서 바로 슬래쉬를 쓰면 위험하니<br/>
+			<br/>
+			단검류나 해머, 화살류를 이용해 가드를 푼 후 사용하거나 후면을 노리는게 좋습니다.<br/>
+			<br/>
+			슬래쉬가 3히트한 후 대공기 5히트까지 다 들어가면 맞은 적은 공중으로 높이 뜨게 되는데 이것이 싫다면<br/>
+			<br/>
+			슬래쉬 2히트 째에 대공기로 캔슬하면 됩니다.<br/>
+			<br/>
+			사라만다의 경우 파이어 레지스트 링을 착용하고 D키나 라이트닝 볼트 반지 등을 이용해 띄운 후 사용하는게 좋습니다.<br/>
+			<br/>
+			에저홀덴의 경우는 콤보를 성공시켜도 다운되지 않으므로 대공기 후 카운터에 주의해야 합니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 다크 워리어, 텔아린, 오우거, 맨티코어, D.비스트, 구석에 몰아 넣은 플레임 사라만다, 에저홀덴</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo1.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo1.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">슬래쉬 → 슬래쉬 → 슬래쉬</span> <span class="style13">(데미지 : 최대 12 / 성공률 : 보통)</span><br/>
+			<br/>
+			<br/>
+			적을 빠르게 제압해야 할 경우 쓰는 콤보입니다. 마지막 슬래쉬는 최대 2히트만 먹힙니다.<br/>
+			<br/>
+			단, 하피의 경우 두번째 슬래쉬 후에 쓰러지는 척하다가 공중으로 날아오르는 경우가 있으니<br/>
+			<br/>
+			무작정 세번째 슬래쉬를 넣기 보다는 상황을 지켜보고 대처하는게 좋습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 하피, D.비스트. 나그파</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo2.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo2.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">A(1히트) → 슬래쉬 → 슬래쉬</span> <span class="style13">(데미지 : 최대 10 / 성공률 : 높음)</span><br/>
+			<br/>
+			<br/>
+			기초 콤보중 하나로 만티코어의 경우 A공격을 가드하면 바로 카운터가 날아오기 때문에 투척무기로 가드를 풀고 쓰는게<br/>
+			<br/>
+			좋습니다. 맨 스콜피온은 두번째 슬래쉬가 먹히질 않으므로 'A(1히트) → 슬래쉬'의 형태로 쓰는 것이 좋습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 맨 스콜피온, 하피, 만티코어, 나그파</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo3.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo3.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬공격(1히트) → 슬래쉬 → 슬래쉬</span> <span class="style13">(데미지 : 최대 10 / 성공률 : 낮음(일반몹은 높음))</span><br/>
+			<br/>
+			<br/>
+			비홀더는 4히트를 넘기면 사방으로 데미지를 입히는 광선을 뿌리므로 첫번째 슬래쉬 까지만 넣는게 좋습니다.<br/>
+			<br/>
+			보스보다는 일반 몬스터에게 주로 쓰며 성공률도 더 높습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 비홀더</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo4.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo4.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬공격 → 대공기</span> <span class="style13">(데미지 : 최대 8.5 / 성공률 : 높음)</span><br/>
+			<br/>
+			<br/>
+			슬래쉬를 쓰기에 애매한 거리이고 적들이 많을 때 쓸만한 콤보입니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 다크 워리어, 하피, 텔아린, 오우거, 만티코어</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo5.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo5.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+	  </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">강공격 → 대공기</span> <span class="style13">(데미지 : 최대 10.5 / 성공률 : 보통)</span><br/>
+			<br/>
+			<br/>
+			슬래쉬를 쓸 공간이 없을 경우 쓰는 콤보입니다. 텔아린의 경우 너무 가까이 붙으면 중단베기에 맞을 수 있습니다.<br/>
+			<br/>
+			하피의 경우 강공격 3히트후 스턴상태가 되지 않으면 대공기를 맞다가 빠져나가 버리는 경우가 있습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 다크 워리어, 하피, 텔아린, 오우거, 만티코어</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo6.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo6.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">해머 투척  → 슬래쉬 → 원래 위치로 이동 → 이하반복 (성공률은 보통이나 많은 연습 필요)</span><br/>
+			<br/>
+			<br/>
+			적당한 거리를 벌린후 해머를 던지고 난 직후 슬래쉬를 넣으면 슬래쉬 3히트 째에 해머가 맞으면서 쓰러지지 않고<br/>
+			<br/>
+			스턴상태가 됩니다. 이것을 이용하여 해머횟수만큼 반복해서 콤보를 넣어주는 것입니다.<br/>
+			<br/>
+			일반 몬스터가 섞여 나오지 않는 보스에게 쓰기 좋은데 다크 워리어의 경우 일정 HP이하로 내려가서 행동이 빨라지면<br/>
+			<br/>
+			플레이어의 공격을 무시하고 광분하니 조심하는게 좋습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 다크워리어, 맨스콜피온, 하피, 텔아린, 오우거, 만티코어, D.비스트</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo7.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo7.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">롤링어택 → 슬래쉬 → (슬래쉬 / 대공기)</span> <span class="style13">(데미지 : 최대 11.5 / 성공률 : 낮음)</span><br/>
+			<br/>
+			<br/>
+			타 클래스의 방향 전환 점프 찍기와 비슷한 용도로 롤링어택을 넣은 콤보로<span class="style28">(일종의 역가드 개념)<br/>
+			</span><br/>
+			롤링어택으로 적의 가드를 무산시키고 캔슬 후 후속 콤보를 넣습니다.<br/>
+			<br/>
+			다만 캔슬의 타이밍을 잡기가 상당히 어려우므로 많은 연습을 필요로 합니다. 퍼포먼스용으로는 최고의 콤보.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 만티코어, D.비스트</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<b class="style26">롤링 캔슬에 대한 부연 설명</b><br/>
+			<br/>
+			<br/>
+			몸체가 땅에 닿음과 동시에 커맨드를 정확히 넣으면 롤링어택이 캔슬이 되고 입력한 커맨드가 발동합니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">입력 가능한 커맨드 : 백열베기, 강타, 구르기, 슬래쉬, 슬라이딩, 대공기, D키버튼을 이용한 투척 또는 헤딩</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo8.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo8.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">A+B → 슬래쉬 → (슬래쉬 / 대공기)</span> <span class="style13">(데미지 : 최대 12 / 성공률 : 보통)</span><br/>
+			<br/>
+			<br/>
+			A+B를 맞은 반동으로 튀어 오르는 적에게 콤보를 넣는 형식입니다.<br/>
+			<br/>
+			일반 몬스터에게는 슬래쉬를 계속 넣어주면 됩니다. 적과의 거리에 따라 슬래쉬와 대공기를 적절히 섞어줍시다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">가용 보스 : 하피, 나그파</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo9.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo9.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">은화살을 이용한 응용 콤보</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			거리에 따라 A+B후에 슬래쉬를 쓸 것인지 대공기를 쓸 것인지 적절한 판단을 하는 것이 필요합니다.</td>
+          </tr>
+         </table></td>
+      </tr>
+	  <tr>
+        <td height="50" class="style18">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo10.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo10.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"><br/>
+        <br/>
+        A+B → 대공기 → 은화살 x 2~3 → 슬래쉬(혹은 대공기)</td>
+      </tr>
+	  <tr>
+        <td height="50" class="style18">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><embed pluginspage="http://www.macromedia.com/go/getflashplayer"
+src="../../../mediaplayer.swf" width="384" height="244" quality="high" type="application/x-shockwave-flash"
+flashvars="file=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/dwarf_combo11.flv&image=http://myhome.qook.co.kr/~leciel34/combo/(5)dwarf/thumbs/dwarf_combo11.gif%3Fv%3D0&backcolor=0x888888&frontcolor=0x000000&lightcolor=0x00FFFF&volume=100"><br/>
+        <br/>
+        A+B → 슬래쉬 → 은화살 x 2 → 슬래쉬 → 대공기</td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">그 외에 일반 몬스터를 상대로 쓸만 한 콤보</span><br/>
+			<br/>
+			<br/>
+			<span class="style14">강공격 x 2~3</span><br/>
+			<br/>
+			&nbsp;&nbsp;고블린, 코볼트 같은 소형 몬스터와 거의 겹쳐 있을 때 쓸만 합니다. 일반 A공격은 이렇게 붙어 있는<br/>
+			<br/>
+			&nbsp;&nbsp;몬스터를 공격하기 무척 힘들지만 강공격의 경우 플레이어 캐릭터의 뒤에서 부터 판정이 형성되기 때문에<br/>
+			<br/>
+			&nbsp;&nbsp;붙어 있다 하더라도 충분히 공격이 성공합니다. 그러나 놀, 혈거인, 구울에게는 좀 위험한 콤보입니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">슬래쉬 → 강공격(1~2히트) → 슬래쉬</span><br/>
+			<br/>
+			&nbsp;&nbsp;강공격을 슬래쉬 거리를 만드는 용도로 사용합니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">A(1히트) → 강공격(1~2히트) → 슬래쉬</span><br/>
+			<br/>
+			&nbsp;&nbsp;반격을 받지 않고 공격하기 위한 콤보입니다. 그러나 혈거인의 경우 여전히 반격의 위험이 있습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style14">D키 공격(헤딩) → 슬래쉬 x 3</span><br/>
+			<br/>
+			&nbsp;&nbsp;고블린, 액스놀 같은 적들이 한쪽으로 뭉쳐있을 때 쓸만한 콤보로 D키로 가드를 무산시킬 확률이 높아서<br/>
+			<br/>
+			&nbsp;&nbsp;슬래쉬를 좀 더 안전하게 넣을 수 있습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+      </tr>
+	  <tr>
+        <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

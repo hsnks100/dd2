@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>시프 기본조작</title>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(3)thief/thief_con.html">http://crassus.ivyro.net/manual/classes/(3)thief/thief_con.html</a><br>
+<b>Title:</b> 시프 기본조작 &nbsp;&bull;&nbsp; <b>Size:</b> 18827<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td><table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+            <td width="20" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">|</td>
+            <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="20"><hr color="#614012" size="1" width="500" /></td>
+      </tr>
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="thief_basic.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 사항</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td align="center"><a href="thief_con.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 조작</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td align="center"><a href="thief_advcon.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">고급 조작</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td align="center"><a href="thief_pick.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">픽 포켓 목록</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td align="center"><a href="../combo/combo.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">콤보의 법칙</a></td>
+			<td width="20" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">|</td>
+            <td align="center"><a href="../autofire-12/auto12.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">12연사</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="center"><pre><font color="#CC99CC" class="style1">                                                                 THIEF</font></pre></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="../t1.png" width="368" height="38" /></td>
+      </tr>
+	  <tr>
+        <td height="30">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">A공격</span><br/>
+			<br/>
+			일반 A 공격으로 3개의 동작으로 이루어집니다.<br/>
+			<br/>
+			몸을 앞으로 쭉 내뻗는 포즈 때문에 그냥 서 있을 때 보다 판정이 앞쪽으로 약간 쏠리는데 리치에게 공격을 할 때<br/>
+			<br/>
+			리치의 몸에 닿는 다거나 혹은 트랩에 닿는 다거나 할 수 있으니 이런 경우 적절한 거리 유지가 중요합니다. <br/> 
+			<br/>
+			1타 공격은 속도도 적당하고 판정도 좋지만 그 이후의 공격은 콤보로의 연결성이 좋지 않아서<br/>
+			<br/>
+			1타 이후 강공격이나 슬래쉬로 연결하는 것을 권장합니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t01.png" width="625" height="120" /><br/>
+		<br/>
+		<br/>
+		<img src="img/t01a.png" width="168" height="90" /><br/>
+		<br/>
+		판정이 꽤 앞으로 쏠리기 때문에 리치와 싸울 때 특히 조심해야 함.</td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">강공격</span><br/>
+			<br/>
+			<br/>
+			발동속도는 보통 이지만 판정이 괜찮아서 콤보 시작시에 평타보다는 주로 이 공격을 사용합니다.<br/>
+			<br/>
+			공격시 평타공격처럼 판정이 앞쪽으로 약간 쏠립니다.<br/>
+			<br/>
+			<br/>
+			<span class="style12">※ 뒤돌아보기 공격도 강공격과 모션이 같으나 별로 쓰이진 않습니다.</span><br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t02.png" width="416" height="73" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬 공격</span><br/>
+			<br/>
+			<br/>
+			숏소드가 없다는 점을 빼면 슬래쉬와 모션이 같으며 판정이 좀 약합니다. 상대와의 거리를 좁히면서 콤보를 넣을 때<br/>
+			<br/>
+			주로 쓰는데 발동속도가 느려서 보스에게 쓰면 가드당할 우려가 크니 일반 몬스터에게만 쓰는게 좋습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t03.png" width="398" height="95" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">슬래쉬</span><br/>
+			<br/>
+			<br/>
+			한손엔 사용중인 무기, 다른 손엔 숏소드를 들고 앞으로 돌진하는 형태의 공격으로 2히트가 들어갑니다.<br/>
+			<br/>
+			시프의 공격에 있어서 핵심인 기술이며 일반 몬스터에게는 이것을 연속해서 넣기만 해도 콤보가 성립합니다.<br/>
+			<br/>
+			다만 발동속도가 느리고 판정이 일찍 사라지는 편이라 사정거리가 조금 짧으며 연속으로 넣을 때 구석이<br/>
+			<br/>
+			아니라면 슬라이딩으로 거리조절을 적절히 해야 합니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t04.png" width="620" height="94" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대공기</span><br/>
+			<br/>
+			<br/>
+			적을 공중으로 띄우는 공격을 한 후 LB오일을 한발 뿌리는 형태의 공격입니다.<br/>
+			<br/>
+			대공능력은 좋지 않으며 LB오일의 위력도 그리 강하지 않지만 LB오일은 적이 가드를 못하며 맞은 적은 공중으로<br/>
+			<br/>
+			뜨고 추가 콤보가 가능하기 때문에 여러 용도로 사용할 수 있는 공격입니다.<br/>
+			<br/>
+			불타오른 적들은 약간 위쪽으로 떨어집니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t05.png" width="617" height="166" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">A+B</span> <span class="style13">(HP 12 소모)</span><br/>
+			<br/>
+			<br/>
+			뒤로 살짝 점프를 하면서 LB오일 6발을 주위로 뿌립니다.<br/>
+			<br/>
+			점프하는 순간에만 무적이며 LB오일의 발동도 빠르지 않기 때문에 무적회피기로 쓰기에는 별로 좋지 않은 기술이며<br/>
+			<br/>
+			오히려 쓰러진 상대를 공격하는 용도로 활용했을 때 효과를 볼 수 있습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style5">쓰러진 상대에게 명중 시켰을 때의 데미지 (일반/파이어 로드 착용시) &nbsp;&nbsp; 12 / 17</span></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t06.png" width="360" height="189" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">백 스탭(back stab)</span><br/>
+			<br/>
+			<br/>
+			적이 오른쪽을 보고 있다면 뒤에서 ←→A, 왼쪽이라면 반대로 입력하면 됩니다.<br/>
+			<br/>
+			성공하면 적에게 올라타서 숏소드로 목을 세번 찌르고 반대편으로 차서 날려버리며 데미지가 꽤나 강력합니다.<br/>
+			<br/>
+			일종의 커맨드 잡기라고 볼 수 있으며 일반 공격을 하기 애매한 위치에서도 잡을 수 있고,<br/>
+			<br/>
+			적의 가드를 무시하고 잡을 수 있다는 장점이 있지만 반면에 원하지 않은 상황에서 발동이 될 수도 있습니다.<br/>
+			<br/>
+			또한 보스에게는 사용 할 수 없습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style5">데미지(단위:픽셀/괄호안의 숫자는 기본무기-노멀소드-의 레벨)</span> - 마지막의 킥 데미지는 제외<br/>
+			<br/>
+			<span class="style16">20 x 3 (1)</span> - <span class="style23">28 x 3 (2)</span> - <span class="style15">36 x 3 (3)</span> - <span class="style13">44 x 3 (4)</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t07.png" width="609" height="134" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">2단 점프</span><br/>
+			<br/>
+			<br/>
+			점프중에 B버튼을 다시 누르면 2단점프를 하며 특정 보스전이나 일명 '날다람쥐'라는 특수기술에 주로 응용합니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t08.png" width="354" height="148" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">점프 공격</span><br/>
+			<br/>
+			<br/>
+			몸을 앞으로 쭉 내뻗으면서 공격을 하는데 보기와는 달리 칼을 내뻗는 순간만 판정이 있습니다.<br/>
+			<br/>
+			대쉬 점프 공격도 모션은 같고 공중에서 맞은 적은 구석으로 튕긴다는 점만 다릅니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t09.png" width="400" height="112" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">앉아서 공격</span><br/>
+			<br/>
+			<br/>
+			타점이 높게 형성되기 때문에 12연사가 통하는 보스도 좀 제한적이고<br/>
+			<br/>
+			오우거나 리치와 싸울 때를 제외하면 거의 안쓰입니다.<br/>
+			<br/>
+			<br/>
+			<a href="../autofire-12/auto12.html" class="style2" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">12연사에 대한 자세한 내용 보기(Click)</a><br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t10.png" width="228" height="54" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">점프 찍기 공격</span><br/>
+			<br/>
+			<br/>
+			점프 공격과는 달리 판정이 넓고 오래 유지 됩니다.<br/>
+			<br/>			
+			점프중 방향을 전환하면서 사용하면 미끄러지듯이 활강을 하면서 공격이 됩니다.<br/> 
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t11.png" width="62" height="90" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">슬라이딩</span><br/>
+			<br/>
+			<br/>
+			돈과 포션을 습득할 때, 빠르게 이동할 때, 그리고 슬래쉬 거리를 맞출 때 주로 씁니다.<br/>
+			<br/>
+			다른 클래스에 비해 아이템을 줍는 범위가 조금 좁습니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t12.png" width="288" height="41" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">백스텝</span><br/>
+			<br/>
+			<br/>
+			화살표만큼 뒤로 덤블링을 합니다. 그동안은 완전히 무적이라서 A+B보단 오히려 이쪽이 회피기로 쓰기에 좋습니다.<br/>
+			<br/>
+			또한 이동거리가 전 클래스중 가장 깁니다.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t13.png" width="358" height="94" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">픽 포켓</span><br/>
+			<br/>
+			<br/>
+			대쉬중에 적과 부딛히면 됩니다. 일정한 확률로 적이 아이템을 떨어 뜨립니다.<br/>
+			<br/>
+			시프를 스코어 어택의 강자로 만들어 줄 수 있는 기술.<br/>
+			<br/>
+			<br/>
+			</td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t14.png" width="126" height="67" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">D키(아이템)</span><br/>
+			<br/>
+			<br/>
+			아이템의 빈창을 맞춘 후 D키를 누르거나 A공격후 버튼을 꾹 누르고 있으면 나가는 공격으로<br/>
+			<br/>
+			마땅히 쓸만한 곳은 없습니다. 역시 데미지는 1도트.<br/>
+			<br/>
+			무기를 이용한 공격이 아님에도 불구하고 무기의 속성을 따라갑니다.<br/>
+			<br/>
+			<span class="style28">(속성검을 들었다면 발차기 만으로 가고일을 잡을 수 있슴.)</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t15.png" width="337" height="84" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+            <td align="left"><img src="../../items/img/z-sling.gif" width="32" height="16" /><span class="style3"> 슬링의 특성과 용도</span><br/>
+			<br/>
+			<br/>
+			상점에서 팔거나 몬스터가 떨구질 않기 때문에 이 게임에서는 시프만이 보유하고 있는 아이템입니다.<br/>
+			<br/>
+			한발의 데미지는 약한 편이며 보스에게는 거기서 또 절반으로 반감되지만 자세가 낮아서 고블린도 맞출 수 있으며<br/>
+			<br/>
+			판정이 위아래로 넓고 점프중에도 사용가능하기 때문에 견제를 하거나 가드를 푸는 용도로 주로 사용합니다.<br/>
+			<br/>
+			일반 투척속도는 느리며 버튼 연사시 최대 5발까지 연사가 되는데 공격중에 누르면 캔슬이 되며 바로 연사가 됩니다.<br/>
+			<br/>
+			<span class="style28">(대공기, A+B, 점프공격은 제외)</span><br/>
+			<br/>
+			에뮬레이터의 자동연사를 사용한다면 아이템창을 열어서 슬링을 맞추고 D키로 닫을 때도 바로 연사가 됩니다.<br/>
+			<br/>
+			사용시 평타나 강공격처럼 몸이 앞으로 쏠리므로 트랩근처에서 쓰거나 할 때는 주의하는게 좋습니다.<br/>
+			<br/>
+			일반 투척은 <a href="http://crassus.ivyro.net/manual/classes/(6)elf/elf_spell.html#h" class="style11" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true" onFocus="this.blur()">헤이스트</a>의 영향을 받지 않지만 5연사시 영향을 받습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/t16.png" width="657" height="86" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+      </tr>
+	  <tr>
+        <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

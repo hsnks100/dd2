@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>드워프 기본사항</title>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(5)dwarf/dwarf_basic.html">http://crassus.ivyro.net/manual/classes/(5)dwarf/dwarf_basic.html</a><br>
+<b>Title:</b> 드워프 기본사항 &nbsp;&bull;&nbsp; <b>Size:</b> 14734<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td><table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="20"><hr color="#614012" size="1" width="500" /></td>
+      </tr>
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="dwarf_basic.html" class="style2">기본 사항</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="dwarf_con.html" class="style2">기본 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="dwarf_advcon.html" class="style2">고급 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../combo/combo.html" class="style2">콤보의 법칙</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../autofire-12/auto12.html" class="style2">12연사</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="center"><pre><font color="#FFCC00" class="style1">                                                               DWARF</font></pre></td>
+      </tr>
+	  <tr>
+        <td>&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="340" valign="top"><img src="img/dwarf.png" width="340" height="469" vspace="60" /></td>
+            <td><b class="style23">드워프(Dwarf) - Stout and Tough, front-line Warrior</b><br/>
+			<br/>
+			<span class="style32">드워프는 강력한 전투기술, 대지의 비밀에 대한 지식,
+			물리/마법적인 고통에 대한 강인한 저항력, 그리고 엄청난 주량으로 유명하다.
+			좀 무뚝뚝한 면이 있으며 황금, 보석, 장신구, 귀금속 공예품을
+			소중히 여기는 까닭에 탐욕스러운 걸로 알려지기도 한다.<br/>
+			</span><br/>
+			<span class="style32">그리고 그들의 왕국은 잘 알려진대로 산속 깊숙한 지하의 암반을 기반으로
+			펼쳐져 있으며 근처엔 항상 황금과 보석, 귀금속 광산이 존재한다.</span><br/>
+			<br/>
+			<span class="style32">드워프들은 전부 수염을 길게 기르고 있는걸 볼 수 있는데
+			드워프 남성에게 있어 수염은 아주 소중한 것 이기 때문이다.<br/>
+			그렇기 때문에 아주 소중히 조심스레 관리한다.<br/>
+			</span><br/>
+			나이 40세가 되면 성인으로 여기며 보통 수명은 400세 이상이다.<br/>
+			<br/>
+			<br/>
+			<span class="style32">드워프는 놈(Gnome)들과 가깝게 지내며 인간이나 하플링과는
+			적당히 관계를 유지한다. 드워프들이 말하길 "그냥 알고 지내는것과 친구의
+			사이엔 100년의 차이가 있다"고 한다.<br/>
+			인간은 수명이 짧아서 드워프와 어울리긴 좀 힘들지만 조부모나 부모때
+			부터 알고 지내는 경우 그들의 후손과 드워프가 친하게 지내기도 한다.</span><br/>
+			<br/>
+			<span class="style32">엘프들을 예측불가에, 변덕스럽고, 경솔하다고 여기며
+			탐탁찮게 생각하는 편인데 오크나 놀, 고블린과의(드워프나 엘프나 적으로 여기는 공공의 적)
+			전투시엔 서로 연합하는 경우가 제법 많다.<br/>
+			그럴 땐 마지못해 엘프들을 존중 해 주기도 한다.</span><br/>
+			<br/>
+			<span class="style32">하프오크와는 서로 신용하지 않는 편인데 서로 활약을 통해서<br/>
+			인정받고 인정해주는 경우도 가끔씩은 있다.</span><br/>
+			<br/>
+
+			<br/>
+			<span class="style32">타지에서의 드워프는 보통 대장장이, 보석상, 용병으로 주로 활동하며
+			드워프 경호원은 용감하고 충성심 강하기로 유명하며 많은 보수를 받는다.</span><br/>
+			<br/>
+			<span class="style32">드워프의 모험의 동기는 여러가지가 있지만 그 업적이
+			자신의 부족에게 명예가 된다면 존경과 지위를 받는다. 드워프들에게 존경을
+			받는 가장 확실한 방법은 자이언트를 물리치고 강력한 마법무기를 입수 하는 것이다.</span><br/>
+			<br/>
+			<br/>
+			<span class="style3">스탯</span> (스탯만 놓고 보면 저주 받은 클래스. 전 클래스중 최악.)<br/>
+			<table width="350" border="0" cellspacing="0" cellpadding="0">
+              <tr align="center">
+                <td height="30">&nbsp;</td>
+                <td class="style15">1p</td>
+                <td class="style25">2p</td>
+              </tr>
+              <tr align="center">
+                <td height="30">영문판 이름</td>
+                <td class="style15">Dimsdale</td>
+                <td class="style25">Hendel</td>
+              </tr>
+              <tr align="center">
+                <td height="30">일본판 이름 </td>
+                <td class="style15">ディムズディル(딤스데일)</td>
+                <td class="style25">ヘンデル (헨델)</td>
+              </tr>
+			</table>
+			<br/>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="80" height="30">초기레벨</td>
+                <td width="80" height="30" class="style23">10</td>
+                <td width="80" height="30">나이</td>
+                <td height="30" class="style23">60</td>
+              </tr>
+              <tr>
+                <td height="30">Strength</td>
+                <td height="30" class="style23">11</td>
+                <td height="30">Dexterity</td>
+                <td height="30" class="style23">&nbsp;9</td>
+              </tr>
+              <tr>
+                <td height="30">Constitution</td>
+                <td height="30" class="style23">12</td>
+                <td height="30">Intelligence</td>
+                <td height="30" class="style23">&nbsp;8</td>
+              </tr>
+              <tr>
+                <td height="30">Wizdom</td>
+                <td height="30" class="style23">10</td>
+                <td height="30">Charisma</td>
+                <td height="30" class="style23">10</td>
+              </tr>
+			</table></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="650" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">게임에서의 특징</span><br/>
+			<br/>
+			&nbsp;공격속도와 무기 투척 속도가 비교적 느리고 공격 스타일이 타 클래스와 꽤 다르기 때문에 <br/>
+			<br/>
+			&nbsp;초보자가 다루기엔 조금 난해한 면이 있습니다.<br/>
+			<br/>
+			&nbsp;그러나 콤보가 단순하면서도 상당히 강력하기 때문에 적들을 빠르게 제압할 수 있습니다.<br/>
+			<br/>
+			<br/>
+			&nbsp;&nbsp;<span class="style12">- 투핸디드 소드, 스태프류, 완드류를 제외한 모든 무기의 사용이 가능합니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 최대 12레벨까지 오릅니다. 따라서 라이트닝 볼트 반지 같은 마법 아이템의 위력이 타 클래스 보다 약한 편 입니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 상자를 직접 열고 잠시 남아 있는 상자를 부수면 돈이 나옵니다. 가끔 다른 아이템이 나오는 상자도 있습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 괴물들의 문자를 읽을 수 있습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 아이템 창의 가드 커맨드를 이용해 가드 할 수 있습니다.</span><br/>
+			<br/>
+			&nbsp;&nbsp;<span class="style15">- 초반 부터 전 클래스 중 가장 높은 HP를 자랑합니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 화살을 제외한 모든 투척무기의 투척 속도가 전 클래스중 가장 느립니다(화살은 가장 빠릅니다).<br/>
+			<br/>
+			&nbsp;&nbsp;- 키가 작다는 점 때문에 서 있다 하더라도 적의 화살공격이 안맞으며 단검/화살로 고블린을 맞출 수 있습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 	대부분의 공격이 2히트를 하는데 그로 인해 1히트당 데미지는 타 클래스의 같은 무기 데미지보다 약간 낮습니다.</span><br/>
+			<br/>
+			&nbsp;&nbsp;<span class="style17">- 공격속도와 무기 투척 속도가 비교적 느리고 공격 스타일이 타 클래스와 꽤 다르기 때문에<br/>
+			<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;초보자가 다루기엔 조금 난해한 면이 있습니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 상자를 열고 나오는 클래스별 아이템중 돈이 나오는 경우가 많고 상자를 부수고 또 돈을 얻을 수 있기 때문에<br/>
+			<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;돈을 모으는게 목적인 일명 '머니어택'에 있어서 타 클래스를 압도합니다.<br/>
+			</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style3">이름과 타입</span><br/>
+			<br/>
+			&nbsp;&nbsp;보통 대부분은 <span class="style11">타입 I <a href="http://crassus.ivyro.net/manual/items/item_equip.html#bracelet" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">(브레슬릿)</a></span>을 많이 선택합니다.<br/>
+			<br/>
+			&nbsp;&nbsp;그러나 초반에 건틀릿을 얻지 못하는 경우도 있기 때문에 <span class="style11">타입 G <a href="http://crassus.ivyro.net/manual/items/item_equip.html#gofp" class="style11" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">(건틀릿)</a></span>도 선택 해 볼만 합니다.<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style3">기본 무기와 초기 레벨/HP, 보유 아이템</span><br/>
+			<br/>
+			&nbsp;&nbsp;- 기본 무기 : <span class="style14"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#axe"><img src="../../items/img/c1-hand_ax.png" width="69" height="34" border="0" /></a> 핸드 액스(hand axe)</span> * 처음부터 무기 레벨이 3입니다.<br/>
+			<br/>
+			&nbsp;&nbsp;- 초기 레벨/HP(단위:픽셀) : <span class="style14">10/128</span><br/>
+			<br/>
+			&nbsp;&nbsp;- 초기 보유 아이템 : <img src="../../items/img/z-guard.gif" alt="guard (shield)" width="32" height="16" border="0" /> &nbsp; <a href="http://crassus.ivyro.net/manual/items/item_tools.html#sd" onFocus="this.blur()"><img src="../../items/img/k5-silver-d.gif" alt="silver dagger" width="32" height="16" border="0" /></a> x 2 &nbsp;<a href="http://crassus.ivyro.net/manual/items/item_tools.html#d" onFocus="this.blur()"><img src="../../items/img/k4-dagger.gif" alt="dagger" width="32" height="16" border="0" /></a> x 4 &nbsp;<a href="http://crassus.ivyro.net/manual/items/item_tools.html#bo" onFocus="this.blur()"><img src="../../items/img/k2-b-oil.gif" alt="burning oil" width="32" height="16" border="0" /></a> x 4 &nbsp;<a href="http://crassus.ivyro.net/manual/items/item_tools.html#th" onFocus="this.blur()"><img src="../../items/img/k1-hammer.gif" alt="throwing hammer" width="32" height="16" border="0" /></a> x 4 &nbsp;<a href="http://crassus.ivyro.net/manual/items/item_tools.html#a" onFocus="this.blur()"><img src="../../items/img/j4-arrow.gif" alt="arrow" width="32" height="16" border="0" /></a> x 4<br/>
+			<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="style28">(가드(방패)는 팔거나 없앨 수 있는게 아니므로 실질적으로 활용 가능한 아이템 칸은 5칸입니다.)
+			</span><br/>
+			<br/>
+			<br/>
+			<br/>
+			<span class="style3">레벨과 HP, 기본 무기의 레벨</span><br/>
+			<br/>
+			<br/>
+			<table border="0" cellpadding="0" cellspacing="1">
+              <tr align="center" bgcolor="31180F">
+                <td width="100" height="40" bgcolor="#333333">레벨업 시점<br/>(클리어 후)</td>
+                <td width="100">다크 워리어<br/>맨 스콜피온</td>
+                <td width="80">텔아린</td>
+              </tr>
+              <tr align="center" bgcolor="#003300">
+                <td height="30" bgcolor="#333333">레벨</td>
+                <td>11</td>
+                <td>12</td>
+              </tr>
+              <tr align="center" bgcolor="#31180F">
+                <td height="30" bgcolor="#333333">HP</td>
+                <td>144</td>
+                <td>160</td>
+              </tr>
+              <tr align="center" bgcolor="#003300">
+                <td height="30" bgcolor="#333333">무기 레벨</td>
+                <td>-</td>
+                <td>4</td>
+              </tr>
+            </table></td>          
+          </tr>
+          <tr>
+			<td height="50">&nbsp;</td>
+          </tr>
+          <tr>
+			<td align="left"><span class="style3">*추가 정보 - 새로 컨티뉴 했을 때의 기본 보유 아이템 (가드커맨드를 제외한 나머지)</span><br/>
+			<br/>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+              <td height="30" class="style14">&nbsp;스테이지4(하피)</td>
+              <td> : <span class="style13">은화살 x 2</span>, 은단검 <span class="style13">x 3</span>, <span class="style13">LB 오일 x 2</span>, 쓰로잉 해머 <span class="style13">x 4</span></td>
+              </tr>
+              <tr>
+              <td height="30" class="style14">&nbsp;스테이지5(오거)</td>
+              <td>: 은화살 <span class="style13">x 3</span>, 은단검 <span class="style13">x 4</span>, LB 오일 <span class="style13">x 4</span>, 쓰로잉 해머 <span class="style13">x 5</span></td>
+              </tr>
+			</table></td>
+          </tr>
+        </table></td>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+      </tr>
+	  <tr>
+        <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

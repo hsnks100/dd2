@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>매직유저 기본사항</title>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.textA {
+	margin-top:20px;
+	margin-left:10px;
+	margin-bottom:20px;
+}
+.textB {
+	margin:20px;
+}
+-->
+</style>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(2)muser/muser_basic.html">http://crassus.ivyro.net/manual/classes/(2)muser/muser_basic.html</a><br>
+<b>Title:</b> 매직유저 기본사항 &nbsp;&bull;&nbsp; <b>Size:</b> 21811<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr align="center">
+          <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="20"><hr color="#614012" size="1" width="500" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="muser_basic.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 정보</a></td>
+          <td width="20" align="center" class="style2">|</td>
+          <td><a href="muser_con.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 조작</a></td>
+          <td width="20" align="center" class="style2">|</td>
+          <td><a href="muser_advcon.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">고급 조작</a></td>
+          <td width="20" align="center" class="style2">|</td>
+          <td><a href="muser_spell.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">주문</a></td>
+          <td width="20" align="center" class="style2">|</td>
+          <td><a href="../combo/combo.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">콤보의 법칙</a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="center"><pre><font color="#5C6785" class="style1">                                                     MAGIC USER</font></pre></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="340" align="center"><img src="img/magician_1.png" width="262" height="469" /></td>
+          <td class="style32"><b class="style27">매직 유저(Magic User) - Mysterious Spellcaster</b><br/>
+            <br/>
+            매직 유저는 육체적인 훈련은 거의 하지 않는 탓에 근력이 약해서 다른 어떤 파티원보다 약해 보일 수 있다. 그러나 그들의 마법은 물리력의 한계를 넘어 강력한 파괴력을 보여주며 공간을 왜곡시키고 시간을 지배하는 창과 칼로는 보여줄 수 없는 힘을 보여준다.<br/>
+            <br/>
+            그들은 마치 학자들처럼 마법에 대해 공부를 하고 탐구를 한다. 또한 다양한 시험과 경험을 통해 항상 새로운 주문을 배우며 주문의 힘과 성능을 향상시키고 보다 능숙하게 다루기 위해 많은 시간을 투자한다. 
+            동료들과 마법 이론에 대해 토론을 하기도 한다. 그들에게 있어서 마법이란 재능이 아닌 노력의 산물 인 것이다.<br/>
+            <br/>
+            지식을 탐구하는 자들 답게 명예와 재물을 위한 모험이 아닌, 지식과 진리를 위한 모험을 주로 한다. 주문은 준비시간을 필요로 하는 것 이기에 그들의 모험은 주문을 준비 할 수 있는 시간을 벌 수 있도록 하기 위해 신중하면서도 조심스럽다.<br/>
+            <br/>
+            (이 게임에선 밸런스를 위해 시전 중엔 다른 시간이 멈춤.)<br/>
+            <br/>
+            육체적인 훈련은 거의 하지 않는 탓에 육탄전에 약할 수 밖에 없으며 그렇기 때문에 동료들의 보호를 받으며 마법으로 지원하는 역할을 맡는 경우가 많다.</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="650" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left"><p>&nbsp;</p>
+            <span class="style3">Status</span>
+            <div style="margin:20px;">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td width="80" height="30">&nbsp;</td>
+                  <td class="class-fighter">1p</td>
+                  <td class="style29">2p</td>
+                </tr>
+                <tr align="center">
+                  <td height="30" align="left">영문판 이름</td>
+                  <td align="center" class="class-fighter">Syous</td>
+                  <td align="center" class="style29">D'raven</td>
+                </tr>
+                <tr align="center">
+                  <td height="30" align="left">일본판 이름 </td>
+                  <td class="class-fighter">&nbsp;サイアス(사이어스)&nbsp;</td>
+                  <td class="style29">&nbsp;ドレイヴン(드레이븐)</td>
+                </tr>
+              </table>
+            </div>
+            <div style="margin:20px;">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="80" height="30">초기레벨</td>
+                  <td width="40" height="30" align="center" class="class-fighter">14</td>
+                  <td width="20">&nbsp;</td>
+                  <td width="80" height="30">나이</td>
+                  <td width="40" height="30" align="center" class="class-fighter">26</td>
+                </tr>
+                <tr>
+                  <td height="30">Strength</td>
+                  <td align="center" class="class-fighter">5</td>
+                  <td>&nbsp;</td>
+                  <td>Dexterity</td>
+                  <td align="center" class="class-fighter">12</td>
+                </tr>
+                <tr>
+                  <td height="30">Constitution</td>
+                  <td align="center" class="class-fighter">7</td>
+                  <td>&nbsp;</td>
+                  <td>Intelligence</td>
+                  <td align="center" class="class-fighter">17</td>
+                </tr>
+                <tr>
+                  <td height="30">Wizdom</td>
+                  <td align="center" class="class-fighter">14</td>
+                  <td>&nbsp;</td>
+                  <td>Charisma</td>
+                  <td align="center" class="class-fighter">14</td>
+                </tr>
+              </table>
+            </div>
+            <p>&nbsp;</p>
+            <span class="style3">게임에서의 특징</span>
+            <div class="style32 textA">공격기술이 타 클래스보다 적고 HP와 방어력 또한 낮아서 육탄전에 약하다.<br/>
+              대신 후반으로 갈 수록 레벨이 오르고 장비가 좋아지면서 주문의 위력이 상당히 강해진다.<br/>
+              현란한 컨트롤 보다는 주문과 아이템을 적재적소에 쓰는 전략적인 플레이가 요구된다.</div>
+            <div class="textB"><span class="style12">- 무기는 스태프 오브 스네이크를 제외한 스태프류와 완드류, 단검류, 오일류만 사용이 가능.<br/>
+              <br/>
+              - 슬래쉬, 대공기, A+B공격이 존재하지 않는다.<br/>
+              <br/>
+              - 힘이 약해서 상자를 들거나 장애물을 밀 수 없다.</span><br/>
+              <br/>
+              <span class="style15">- 단검류와 오일류의 투척속도가 드워프를 제외하면 전 클래스중 가장 느리다.<br/>
+              <br/>
+              - 방패가 없고 방어력이 상당히 약하기 때문에 적이나 트랩으로 부터 가장 많은 데미지를 입는다.<br/>
+              <br/>
+              - 다른 클래스와 달리 강공격을 통해 낮은 확률로 엄청난 데미지를 줄 수 있다(일명 '크리티컬').<br/>
+              <br/>
+              &nbsp;&nbsp;그러나 그 확률이 낮아서 원하는 때에 나오는게 아니라서 변수가 무척 많다.</span><br/>
+              <br/>
+              <span class="style17">- 쓰로잉 해머/화살류를 사용 못하고 방패(가드)나 슬링같은 고정 아이템이 없어서 아이템 칸이 여유가 있는 편. <br/>
+              <br/>
+              - 육탄전에 취약하는 점에 대한 보상으로 백스텝과 D키를 통해 무적상태를 만들 수 있다.</span></div>
+            <p>&nbsp;</p>
+            <span class="style4">이름과 타입</span>
+            <div class="style32 textA">매직 유저는 어떤 전략을 세우냐에 따라 타입 선택이 달라진다.<br />
+              <br />
+              평범하게 게임을 하고자 한다면 초반에 라이트닝 로드를 얻는다는 전제하에 <span class="style11">타입 C <a href="http://crassus.ivyro.net/manual/items/item_equip.html#mhat" class="style11" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">(머리방어구)</a></span>를 선택 하거나<br/>
+              컨트롤에 자신이 있다면 라이트닝 로드는 상자에서 얻고 <span class="style11">타입 G <a href="http://crassus.ivyro.net/manual/items/item_equip.html#gofp" class="style11" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">(건틀릿)</a></span>을 선택해서 데미지를 강화시킬 수 있다.<br />
+              <br/>
+              아니면 초반에 로드를 못 얻을 경우를 대비해서 타입 J를 선택해서 <a href="http://crassus.ivyro.net/manual/items/item_equip.html#rofl" class="style11" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">라이트닝 로드</a>를 얻거나, <a href="http://crassus.ivyro.net/manual/items/item_equip.html#roffb" class="style11" onfocus="this.blur()" onmouseover="window.status=' ';return true" onmouseout="window.status=' ';return true">파이어 로드</a>를 얻기 위해<br/>
+              타입 H를 선택할 수도 있다.</div>
+            <p>&nbsp;</p>
+            <span class="style3">기본 무기와 초기 레벨/HP, 보유 아이템, 주문량</span>
+            <div class="textA">- 기본 무기 : <span class="style14"><a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofs" onfocus="this.blur()"><img src="../../items/img/d4-staff_of_st.gif" width="32" height="16" border="0" /></a> 스트라이킹 스태프(staff of striking)</span><br/>
+              <br/>
+              - 초기 레벨/HP(단위:픽셀) : <span class="style14">14/92</span><br/>
+              <br/>
+              - 초기 보유 아이템 : <a href="http://crassus.ivyro.net/manual/items/item_tools.html#bo" onfocus="this.blur()"><img src="../../items/img/k2-b-oil.gif" alt="burning oil" width="32" height="16" border="0" /></a> x 3 &nbsp;<a href="http://crassus.ivyro.net/manual/items/item_weapons.html#woff" onfocus="this.blur()"><img src="../../items/img/d1-w_of_fire_b.gif" alt="wand of fire balls" width="32" height="16" border="0" /></a> &nbsp; <a href="http://crassus.ivyro.net/manual/items/item_weapons.html#wofc" onfocus="this.blur()"><img src="../../items/img/c6-w_of_cold.gif" alt="wand of cold" width="32" height="16" border="0" /></a> &nbsp; <a href="http://crassus.ivyro.net/manual/items/item_tools.html#d" onfocus="this.blur()"><img src="../../items/img/k4-dagger.gif" alt="dagger" width="32" height="16" border="0" /></a> x 4<br/>
+              <br/>
+              - 초기 주문량 : <font color="#77ffff">1레벨 x 5</font> , <font color="#55dd99">3레벨 x 4</font> , <font color="#66eebb">4레벨 x 4</font> , <font color="#ffff66">5레벨 x 3</font> , <font color="#ffcc22">6레벨 x 2</font></div>
+            <p>&nbsp;</p>
+            <span class="style3">레벨과 HP, 습득주문, 주문의 양 </span><br/>
+            <br/>
+            <br/>
+            <table width="100%" border="0" cellpadding="0" cellspacing="1">
+              <tr align="center" bgcolor="31180F">
+                <td height="60" bgcolor="#333333">레벨업 시점<br/>
+                  (클리어 후)</td>
+                <td>다크 워리어1<br/>
+                  맨 스콜피온</td>
+                <td>오우거<br/>
+                  비홀더<br/>
+                  그린 드래곤</td>
+                <td width="60">리치</td>
+                <td>블랙 드래곤<br/>
+                  키메라</td>
+                <td>레드 드래곤</td>
+                <td width="100">에저홀덴</td>
+                <td>나그파</td>
+              </tr>
+              <tr align="center" bgcolor="#003300">
+                <td height="30" bgcolor="#333333">레벨</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+              </tr>
+              <tr align="center" bgcolor="#31180F">
+                <td height="30" bgcolor="#333333">HP</td>
+                <td>96</td>
+                <td>100</td>
+                <td>104</td>
+                <td>108</td>
+                <td>112</td>
+                <td>116</td>
+                <td>120</td>
+              </tr>
+              <tr align="center" bgcolor="#003300">
+                <td height="40" bgcolor="#333333">습득 주문</td>
+                <td>Reverse<br/>
+                  Gravity</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Meteor Swarm/<br/>
+                  Power Ward Kill</td>
+                <td>-</td>
+              </tr>
+              <tr align="center" bgcolor="#31180F">
+                <td height="110" bgcolor="#333333">주문의 양<br/>
+                  (레벨/양)</td>
+                <td>1 / 5<br/>
+                  3 / 4<br/>
+                  4 / 4<br/>
+                  5 / 3<br/>
+                  6 / 2<br/>
+                  7 / 1<br/>
+                  9 / 0</td>
+                <td>1 / 5<br/>
+                  3 / 5<br/>
+                  4 / 4<br/>
+                  5 / 4<br/>
+                  6 / 2<br/>
+                  7 / 2<br/>
+                  9 / 0</td>
+                <td>1 / 6<br/>
+                  3 / 5<br/>
+                  4 / 4<br/>
+                  5 / 4<br/>
+                  6 / 3<br/>
+                  7 / 2<br/>
+                  9 / 0</td>
+                <td>1 / 6<br/>
+                  3 / 5<br/>
+                  4 / 5<br/>
+                  5 / 4<br/>
+                  6 / 3<br/>
+                  7 / 2<br/>
+                  9 / 0</td>
+                <td>1 / 6<br/>
+                  3 / 5<br/>
+                  4 / 5<br/>
+                  5 / 4<br/>
+                  6 / 3<br/>
+                  7 / 2<br/>
+                  9 / 0</td>
+                <td>1 / 6<br/>
+                  3 / 5<br/>
+                  4 / 5<br/>
+                  5 / 4<br/>
+                  6 / 4<br/>
+                  7 / 3<br/>
+                  9 / 1</td>
+                <td>1 / 6<br/>
+                  3 / 5<br/>
+                  4 / 5<br/>
+                  5 / 4<br/>
+                  6 / 4<br/>
+                  7 / 3<br/>
+                  9 / 1</td>
+              </tr>
+            </table>
+            <br/>
+            <br/>
+            - 원작의 메모라이징 대신 레벨이 올라감과 동시에 주문횟수가 회복된다.<br/>
+            <br/>
+            - 레드 드래곤을 지나칠 경우, 드워프 지하  동굴로 진행을 해서 텔 엘레론을 살려뒀을 경우 각각 <span class="style13">1레벨씩 덜 오른다</span>.<br />
+            <br />
+            - 놈(Gnome)마을에서 컨티뉴 했을 경우 레벨이 <span class="style13">17</span>이 아닌 <span class="style13">16</span>으로 나온다.<br/>
+            <br/>
+            - 따라서 synn을 물리친 후의 가능한 최하 레벨은 <span class="style13">18</span>이다.<br/>
+            <br/>
+            - 레드 드래곤 이후의 스테이지에서 컨티뉴 했을 경우 레드 드래곤을 지나친 것으로 간주되서<br/>
+            <br/>
+            &nbsp;&nbsp;레벨이 한단계 낮게 나온다.
+            <p>&nbsp;</p>
+            <span class="style3">*추가 정보 - 새로 컨티뉴 했을 때의 기본 보유 아이템</span><br/>
+            <br/>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" class="style14">&nbsp;스테이지4(하피)</td>
+                <td> : 버닝 오일 <span class="style13">x 4</span>, <span class="style13">라이트닝 완드</span>, 파이어 볼 완드, 콜드 완드, 단검 <span class="style13">x 5 </span></td>
+              </tr>
+              <tr>
+                <td height="30" class="style14">&nbsp;스테이지7(D.비스트)</td>
+                <td>: <span class="style13">LB 오일 x 2</span>, <span class="style13">마비 완드</span>, 라이트닝 완드, 파이어 볼 완드, 콜드 완드, <span class="style13">은단검 x 3</span></td>
+              </tr>
+              <tr>
+                <td height="30" class="style14">&nbsp;라파엘의 동굴</td>
+                <td>: LB 오일 x 2, 마비 완드, 라이트닝 완드, 파이어 볼 완드, 콜드 완드, 은단검 <span class="style13">x 4 </span></td>
+              </tr>
+              <tr>
+                <td height="30" class="style14">&nbsp;스테이지10-4(베틀로얄)</td>
+                <td>: LB 오일 <span class="style13">x 3</span>, 마비 완드, 라이트닝 완드, 파이어 볼 완드, 콜드 완드, 은단검 x 4</td>
+              </tr>
+              <tr>
+                <td height="30" class="style14">&nbsp;스테이지10-6(synn)</td>
+                <td>: LB 오일 x 3, 마비 완드, 라이트닝 완드, 파이어 볼 완드, 콜드 완드, 은단검 <span class="style13">x 5 </span></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  <tr>
+    <td height="50">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+  </tr>
+  <tr>
+    <td align="center"><table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="muser_basic.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 정보</a></td>
+          <td width="20" class="style2">|</td>
+          <td><a href="muser_con.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 조작</a></td>
+          <td width="20" class="style2">|</td>
+          <td><a href="muser_advcon.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">고급 조작</a></td>
+          <td width="20" class="style2">|</td>
+          <td><a href="muser_spell.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">주문</a></td>
+          <td width="20" class="style2">|</td>
+          <td><a href="../combo/combo.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">콤보의 법칙</a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="20"><hr color="#614012" size="1" width="500" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr align="center">
+          <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+          <td width="20" class="style2">|</td>
+          <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

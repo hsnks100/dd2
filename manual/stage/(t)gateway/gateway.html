@@ -1,0 +1,953 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/stage.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from crassus.ivyro.net/manual/stage/(t)gateway/gateway.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Jul 2017 03:33:29 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>스테이지 10-1 - Gateway</title>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+body,td,th {line-height: 20px;}
+body {
+	scrollbar-face-color: #000000;
+	scrollbar-highlight-color: #000000;
+	scrollbar-3dlight-color: #666666;
+	scrollbar-shadow-color  : #666666;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #000000;
+	scrollbar-arrow-color: #666666;
+}
+-->
+</style>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="../../../script/iezn_embed_patch.js" type="text/javascript"></script>
+<script src="../../../script/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function setPng24(obj) { 
+  obj.width=obj.height=1; 
+  obj.className=obj.className.replace(/\bpng24\b/i,''); 
+  obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');" 
+  obj.src='';  
+  return '';
+}
+-->
+</script>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" >
+<table width="837" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><div style="margin:10px;"></div>
+      <!-- InstanceBeginEditable name="menu" -->
+      <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','175','height','1396','title','submenu','src','../stagemenu','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','../stagemenu' ); //end AC code
+      </script>
+      <noscript>
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="175" height="1396" title="submenu">
+        <param name="movie" value="../stagemenu.swf" />
+        <param name="quality" value="high" />
+        <embed src="http://crassus.ivyro.net/manual/stage/stagemenu.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="175" height="1396"></embed>
+      </object>
+      </noscript>
+      <!-- InstanceEndEditable --></td>
+    <td width="30">&nbsp;</td>
+	<td width="630" valign="top" class="style32"><a name="top"></a><div align="center"><!-- InstanceBeginEditable name="link" -->
+        <table>
+          <tr>
+            <td height="5" colspan="4"></td>
+          </tr>
+          <tr>
+            <td align="center"><a href="#intro" onfocus="this.blur()"><img src="thumb1.gif" width="98" height="46" hspace="10" border="0" /><br />
+              인트로</a></td>
+            <td align="center"><a href="#outer" onfocus="this.blur()"><img src="thumb2.gif" width="98" height="46" hspace="10" border="0" /><br />
+              외곽 구역</a></td>
+            <td align="center"><a href="#outer-left" onfocus="this.blur()"><img src="thumb3.gif" width="98" height="46" hspace="10" border="0" /><br />
+              왼쪽 숨겨진 방</a></td>
+            <td align="center"><a href="#outer-right" onfocus="this.blur()"><img src="thumb4.gif" width="98" height="46" hspace="10" border="0" /><br />
+              오른쪽 숨겨진 방</a></td>
+          </tr>
+          <tr>
+            <td align="center"><a href="#inner" onfocus="this.blur()"><img src="thumb5.gif" width="98" height="46" hspace="10" border="0" /><br />
+              내곽 구역</a></td>
+            <td align="center"><a href="#inner-left" onfocus="this.blur()"><img src="thumb6.gif" width="98" height="46" hspace="10" border="0" /><br />
+              왼쪽 숨겨진 방</a></td>
+            <td align="center"><a href="#inner-center" onfocus="this.blur()"><img src="thumb7.gif" width="98" height="46" hspace="10" border="0" /><br />
+              중앙 숨겨진 방</a></td>
+            <td align="center"><a href="#inner-right" onfocus="this.blur()"><img src="thumb8.gif" width="98" height="46" hspace="10" border="0" /><br />
+              오른쪽 숨겨진 방</a></td>
+          </tr>
+        </table>
+        <!-- InstanceEndEditable --></div>
+	<p style="margin-top:10px"></p>
+	<!-- InstanceBeginEditable name="title" -->
+      <table align="center">
+        <tr>
+          <td height="30" align="center" class="title"><font color="47CCFE">STAGE 10-1</font> &nbsp;&nbsp;</font> <font color="#FFFFFF">Gateway</font></td>
+        </tr>
+        <tr>
+          <td align="center" class="style23">출입구</td>
+        </tr>
+        <tr>
+          <td height="20" align="center">(일어판 - 浮遊城-侵入- : 부유성 -침입-)</td>
+        </tr>
+      </table>
+      <!-- InstanceEndEditable -->
+	<div align="center" class="style6" style="margin-top:20px;"><!-- InstanceBeginEditable name="brief" -->절망의 숲만큼이나 꽤나 특이한 구조를 가지고 있으며<br />
+        빨리 끝낼 수도, 오랫동안 돌아다닐 수도 있는 스테이지다.<!-- InstanceEndEditable --></div>
+    <div align="center" style="margin-top:20px;">
+      <table>
+        <tr>
+          <td><!-- InstanceBeginEditable name="previous" --><a href="../(q)fire/fire.html" onfocus="this.blur()">◀ 스테이지 9-A로</a><a href="../(r)lost/lost.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-B로</a><a href="../(s)underworld/underworld.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-C로</a><!-- InstanceEndEditable --></td>
+          <td width="70">&nbsp;</td>
+          <td><!-- InstanceBeginEditable name="next" --><a href="../(u)overtures/overtures-b.html" onfocus="this.blur()">스테이지 10-2로 ▶</a><!-- InstanceEndEditable --></td>
+        </tr>
+      </table>
+    </div>
+	<!-- InstanceBeginEditable name="EditRegion" -->
+      <div style="margin-top:20px;"><a name="intro">&nbsp;</a></div>
+      <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+        <tr>
+          <td width="254" height="47" background="../cell.gif"><div align="center" class="style18 bold" style="margin-top:5px;font-size:14px;letter-spacing:3px;">인트로</div></td>
+        </tr>
+      </table>
+      <div align="center" style="margin-top:50px;margin-left:30px;margin-right:30px;"><span class="style4">♪ BGM재생 ♪</span><br/>
+        <br/>
+      <object type="application/x-shockwave-flash" data="http://crassus.ivyro.net/script/dewplayer.swf?son=enter.mp3&amp;autostart=0&amp;autoreplay=0&amp;bgcolor=666666" width="200" height="20">
+          <param name="movie" value="http://crassus.ivyro.net/script/dewplayer.swf?son=enter.mp3&amp;autostart=0&amp;autoreplay=0&amp;bgcolor=666666"/>
+        </object>
+        <br />
+        <br />
+        <br />
+        일행의 눈앞에 부유성이 모습을 드러낸다.<br/>
+        <br/>
+        <img src="intro01.gif" width="384" height="176" /><br/>
+        <br/>
+        <span class="style31">하늘의 성</span><br/>
+        <br/>
+        (일어판)<br/>
+        浮遊城<br/>
+        <span class="style19">부유성</span><br/>
+        <br/>
+        <br/>
+        <img src="intro02.gif" width="384" height="176" /><br/>
+        <br/>
+        <span class="style31">갑자기 거대한 하늘의 성이 당신 앞에 떠오른다.</span><br/>
+        <br/>
+        (일어판)<br/>
+        君達の目の前に突如現れた巨大な空に浮く城...。<br />
+        <span class="style19">당신들의 눈 앞에 돌연 나타난 공중에 뜨는 거대한 성......</span><br/>
+        <br/>
+        <br/>
+        <img src="intro03.gif" width="384" height="176" /><br/>
+        <br/>
+        <span class="style31">흑마법사 Synn의 요새다.</span><br/>
+        <br/>
+        (일어판)<br/>
+        その城こそ、女王シンの魔城。<br />
+        <span class="style19">그 성이야말로, 여왕 신의 마성.</span><br/>
+        <br/>
+        <br/>
+        <img src="intro04.gif" width="384" height="176" /><br/>
+        <br/>
+        <span class="style31">이 믿기 힘든 광경에 충격받아 있을 때 시프가 당신에게 말을 한다.</span><br/>
+        <br/>
+        (일어판)<br/>
+        ?愕している君達に、シ―フが語りかけた。<br />
+        <span class="style19">놀란 당신들에게, 시프가 말을 시작했다.</span><br/>
+        <br/>
+        <img src="intro05.gif" width="384" height="176" /><br/>
+        <span class="style31">&quot;성에 들어가려면 이걸 쓰자구.&quot;</span><br/>
+        <br/>
+        (일어판)<br/>
+        &quot;敵の城に侵入するにはこれを使いましすょう。&quot;<br />
+        <span class="style19">&quot;적의 성에 침입하려면 이걸 쓰도록 하죠.&quot;</span><br />
+        <br/>
+        <br/>
+        <img src="intro06.gif" width="384" height="176" /><br/>
+        <br/>
+        <span class="style31">&quot;이건 데이모스의 탑에 있었던 워프 크리스탈 이잖아. 어떻게 가져왔지?!&quot;</span><br/>
+        <br/>
+        (일어판)<br/>
+        &quot;...これは、ワ―プクリスタル!!&quot;<br/>
+        <span class="style19">&quot;...이것은, 워프 크리스탈!!&quot;</span><br />
+        <br/>
+        <br/>
+        <img src="intro07.gif" width="384" height="176" /><br/>
+        <br/>
+        <span class="style31">&quot;당신들이 세이블 타워에서 도망친 후에 내가 집어온 물건이지.&quot;</span><br/>
+        <br/>
+        (일어판)<br/>
+        &quot;そう、セ―ブルタワ―から脫出した時のものよ。&quot;<br/>
+        <span class="style19">&quot;그래, 세이블타워에서 탈출할 때 갖고 나온거야.&quot;</span><br />
+        <br/>
+        <br/>
+        <img src="intro08.gif" width="384" height="176" /><br/>
+        <br/>
+        <span class="style31">&quot;......!? 과연 대단한 도둑이군. 크리스탈의 힘을 이용해서 성에 들어가자.&quot;</span><br/>
+        <br/>
+        (일어판)<br/>
+        &quot;...!? さすが、シ―フ。よし、このクリスタルの力をかりて、魔城に侵入しよう!!&quot;<br/>
+        <span class="style19">&quot;......!? 역시, 시프, 좋아. 이 크리스탈의 힘을 빌려 마성에 침입하도록 하자!!&quot;</span>
+        <hr width="550" size="1" noshade="noshade" color="#666666" style="margin-top:40px;margin-bottom:40px;" />
+        <img src="intro09.gif" width="384" height="118" /><br />
+        <br />
+        만약 파티에 시프 2p가 있다면 시프 2p의 얼굴이 나온다.<br />
+        시프 둘 다 있다면 상위 슈트의 시프 얼굴이 나온다.<br />
+        <br />
+        <br />
+        <img src="intro10.gif" width="384" height="176" /><br />
+        <br />
+        또한 Thief대신 상위 슈트 시프 플레이어의 이름이 나온다. </div>
+      <div align="center" style="margin-top:60px;"><a href="../(d)juggernaut/juggernaut.html" onfocus="this.blur()">◀ 스테이지 3-A로</a><a href="../(e)vesuvia/vesuvia.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 3-B로</a> &nbsp;&nbsp; <a href="#top" onfocus="this.blur()">맨위로 ▲</a> &nbsp;&nbsp; <a href="../(u)overtures/overtures-b.html" onfocus="this.blur()">스테이지 10-2로 ▶</a></div>
+      <div style="margin-top:70px;"><a name="outer" id="outer">&nbsp;</a></div>
+      <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+        <tr>
+          <td width="254" height="47" background="../cell.gif"><div align="center" class="style18 bold" style="margin-top:5px;font-size:14px;letter-spacing:3px;">외곽 구역</div></td>
+        </tr>
+      </table>
+      <div style="margin-top:30px;">
+        <center>
+          <img src="1-1.jpg" width="629" height="157" />
+        </center>
+        <p style="margin-top:30px;margin-left:60px;margin-right:60px;">이번 스테이지의 외곽 전경이다. 왼쪽 끝이 입구, 오른쪽 끝이 출구다.<br />
+          <br />
+          왼쪽문부터 각각 외각 왼쪽 숨겨진 방, 내곽 구역, 오른쪽 숨겨진 방으로 연결된다.<br />
+          아래쪽에 발판이 있는데 이곳에 플레이어 캐릭터/적/갑옷상 중 하나가 올라가 있으면 열린다.<br />
+          <br />
+          중간에 가로막고 있는 장애물이 있다거나 물리쳐야 진행할 수 있는 적이 있다거나 하는게 아니기 때문에 귀찮으면 그냥 무작정 오른쪽 끝까지 달려가서 이번 스테이지를 끝낼 수 있다.<br />
+        </p>
+      </div>
+      <div style="margin-top:30px;margin-left:30px;margin-right:30px;">
+        <center>
+          <img src="1-2.gif" width="384" height="176" /><br />
+          <br />
+          시작하자마자 상자가 하나 있다.
+        </center>
+        <p>&nbsp;</p>
+        <span class="style4">상자 A</span> - <span class="style15">화살/트랩 없음</span> 중 하나가 발동한다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#gofp" onfocus="this.blur()"><img src="../item/(b)armor/b15-gauntlet_of_power.gif" alt="gauntlet of power" width="32" height="16" hspace="10" border="0" /></a><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="10" /></td>
+            <td><a href="http://crassus.ivyro.net/manual/items/item_etc.html#key" onfocus="this.blur()"><img src="../item/(h)etc/b6-key.gif" alt="key" width="32" height="16" border="0" /></a></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="5"><span class="class-fighter">파이터</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="7" /></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<img src="../item/(h)etc/c04-scroll_lv4.gif" alt="scroll lv4" width="46" height="25" border="0" /><span class="class-thief" style="margin-left:5px;">시프</span> :<a href="http://crassus.ivyro.net/manual/items/item_etc.html#perfume" onfocus="this.blur()"><img src="../item/(g)xp/b08-emerald.gif" alt="emerald" width="32" height="16" hspace="7" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td height="10"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span class="class-magicuser">매직 유저</span> :<img src="../item/(h)etc/c05-scroll_lv5.gif" alt="scroll lv5" width="46" height="25" border="0" /></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="7" /><span class="class-elf" style="margin-left:5px;">엘프</span> :<img src="../item/(h)etc/c04-scroll_lv4.gif" alt="scroll lv4" width="46" height="25" border="0" /></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c12-50sp.gif" alt="50sp" width="33" height="11" vspace="3" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <hr width="550" size="1" noshade="noshade" color="#666666" />
+        <p>&nbsp;</p>
+        <center>
+          <img src="1-3.gif" width="384" height="176" /><br />
+          <br />
+          오른쪽 끝까지 오면 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a>와 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a>가 등장한다.<br />
+          구석에는 100sp와 <a href="http://crassus.ivyro.net/manual/items/item_tools.html#th" onfocus="this.blur()">망치</a>가 있다.
+        </center>
+        <p>&nbsp;</p>
+        <span class="style5">등장하는 적</span> - 이들은 스테이지 진행과 아무 상관이 없다. 약 40초가 되면 도망간다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;">
+          <tr>
+            <td width="30" align="center" class="color_1p">1인</td>
+            <td><span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x4</span> <span class="style28">→</span> 2마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> <span class="style28">→</span> 총 1마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x4</span> <span class="style28">→</span> 총 2마리만 남으면 <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x2</span> <span class="style28">→</span> 총 1마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> <span class="style28">→</span> 2마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> <span class="style28">→</span> 총 1마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> </td>
+          </tr>
+          <tr>
+            <td align="center" class="color_2p">2인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_3p">3인</td>
+            <td><span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x4</span> <span class="style28">→</span> 2마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="class-fighter">x2</span> <span class="style28">→</span> 총 1마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x4</span> <span class="style28">→</span> 총 2마리만 남으면 <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="class-fighter">x3</span> <span class="style28">→</span> 총 1마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> <span class="style28">→</span> 2마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="class-fighter">x2</span> <span class="style28">→</span> 총 1마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span></td>
+          </tr>
+          <tr>
+            <td align="center" class="color_4p">4인</td>
+            <td><span class="color_3p">3인 플레이</span>와 똑같다.</td>
+          </tr>
+        </table>
+      </div>
+      <div align="center" style="margin-top:60px;"><a href="../(q)fire/fire.html" onfocus="this.blur()">◀ 스테이지 9-A로</a><a href="../(r)lost/lost.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-B로</a><a href="../(s)underworld/underworld.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-C로</a> &nbsp;&nbsp; <a href="#top" onfocus="this.blur()">맨위로 ▲</a> &nbsp;&nbsp; <a href="../(u)overtures/overtures-b.html" onfocus="this.blur()">스테이지 10-2로 ▶</a></div>
+      <div style="margin-top:70px;"><a name="outer-left" id="outer-left">&nbsp;</a></div>
+      <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+        <tr>
+          <td width="254" height="47" background="../cell.gif"><div align="center" class="style18 bold" style="margin-top:5px;font-size:14px;letter-spacing:3px;">좌측 숨겨진 방 (외곽)</div></td>
+        </tr>
+      </table>
+      <div align="center" style="margin-top:30px;"><img src="2-1.gif" width="384" height="176" /><br />
+        <br />
+        발판을 밟으면 문을 열 수 있다.<br />
+        <br />
+        <br />
+        <img src="2-2.gif" width="576" height="215" /><br />
+        <br />
+        방의 중간쯤을 넘어가다 보면 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a>이 나오며 상자에 접근하면 <a href="http://crassus.ivyro.net/manual/monsters/(e)skeleton/skeleton.html" onfocus="this.blur()">스켈레톤</a>이 나온다.</div>
+      <p>&nbsp;</p>
+      <div style="margin-left:30px;margin-right:30px;"><span class="style4">상자 1-1</span> - <span class="style15">낙석/석화 트랩</span> 중 하나가 발동 한다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" /></td>
+            <td><img src="../item/(h)etc/c11-10sp.gif" alt="10sp" width="33" height="11" /></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="5"><span class="class-fighter">파이터</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /><span class="class-thief" style="margin-left:5px;">시프</span> :<a href="http://crassus.ivyro.net/manual/items/item_etc.html#hp" onfocus="this.blur()"><img src="../item/(h)etc/b1-healing_potion.gif" alt="healing potion" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><span class="class-magicuser">매직 유저</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<img src="../item/(h)etc/c11-10sp.gif" alt="10sp" width="33" height="11" hspace="5" /><span class="class-elf" style="margin-left:5px;">엘프</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c12-50sp.gif" alt="50sp" width="33" height="11" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style4">상자 1-2</span> - 잠겨있다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><a href="http://crassus.ivyro.net/manual/items/item_tools.html#lbo" onfocus="this.blur()"><img src="../item/(f)tools/b14-large_buring_oil.gif" alt="large burning oil" width="32" height="16" hspace="10" vspace="10" border="0" /></a><a href="http://crassus.ivyro.net/manual/items/item_etc.html#emerald" onfocus="this.blur()"><img src="../item/(g)xp/b05-diamond.gif" alt="diamond" width="32" height="16" hspace="10" vspace="10" border="0" /></a><br />
+              <img src="../item/(h)etc/c14-500sp.gif" width="50" height="26" vspace="5" /><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" vspace="5" /></td>
+            <td><a href="http://crassus.ivyro.net/manual/items/item_tools.html#orb" onfocus="this.blur()"><img src="../item/(c)accessaries/b09_orb.gif" alt="orb" width="32" height="16" border="0" /></a></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="5"><span class="class-fighter">파이터</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#roflb" onfocus="this.blur()"><img src="../item/(f)tools/b03-ring_of_lighting_bolts.gif" alt="ring of lightning bolt" width="32" height="16" hspace="5" border="0" /></a></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#roffb" onfocus="this.blur()"><img src="../item/(f)tools/b02-ring_of_fire_ball.gif" alt="ring of fire ball" width="32" height="16" hspace="5" border="0" /></a><span class="class-thief" style="margin-left:5px;">시프</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#rofcsw" onfocus="this.blur()"><img src="../item/(f)tools/b06-ring_of_csw.gif" alt="ring of CSW" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><span class="class-magicuser">매직 유저</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#sd" onfocus="this.blur()"><img src="../item/(f)tools/b16-silver_dagger.gif" alt="silver dagger" width="32" height="16" hspace="5" border="0" /></a></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#rofmm" onfocus="this.blur()"><img src="../item/(f)tools/b01-ring_of_magic_missle.gif" alt="ring of magic missile" width="32" height="16" hspace="5" border="0" /></a><span class="class-elf" style="margin-left:5px;">엘프</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#sa" onfocus="this.blur()"><img src="../item/(f)tools/b10-silver_arrow.gif" alt="silver arrow" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c12-50sp.gif" alt="50sp" width="33" height="11" vspace="3" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style5">등장하는 적 (구울)</span> - 약 42초가 지나면 도망간다.<br/>
+        <br/>
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;">
+          <tr>
+            <td width="30" align="center" class="color_1p">1인</td>
+            <td><span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x4</span> <span class="style28">→</span> 한마리만 남으면 <span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 처음부터 한번 더 반복</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_2p">2인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_3p">3인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_4p">4인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style5">등장하는 적 (스켈레톤)</span> - 약 30초가 지나면 도망간다.<br/>
+        <br/>
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;">
+          <tr>
+            <td width="30" align="center" class="color_1p">1인</td>
+            <td><span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(e)skeleton/skeleton.html" onfocus="this.blur()">스켈레톤</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(e)skeleton/skeleton.html" onfocus="this.blur()">스켈레톤</a> <span class="style15">x2</span> (이 패턴으로 12마리 등장)</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_2p">2인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_3p">3인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_4p">4인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+        </table>
+      </div>
+      <div align="center" style="margin-top:60px;"><a href="../(q)fire/fire.html" onfocus="this.blur()">◀ 스테이지 9-A로</a><a href="../(r)lost/lost.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-B로</a><a href="../(s)underworld/underworld.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-C로</a> &nbsp;&nbsp; <a href="#top" onfocus="this.blur()">맨위로 ▲</a> &nbsp;&nbsp; <a href="../(u)overtures/overtures-b.html" onfocus="this.blur()">스테이지 10-2로 ▶</a></div>
+      <div style="margin-top:70px;"><a name="outer-right" id="outer-right">&nbsp;</a></div>
+      <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+        <tr>
+          <td width="254" height="47" background="../cell.gif"><div align="center" class="style18 bold" style="margin-top:5px;font-size:14px;letter-spacing:3px;">우측 숨겨진 방 (외곽)</div></td>
+        </tr>
+      </table>
+      <div align="center" style="margin-top:30px;"><img src="3-1.gif" width="384" height="176" /><br />
+        <br />
+        마찬가지로 발판을 밟으면 문을 열 수 있다.<br />
+        <br />
+        <br />
+        <img src="3-2.gif" width="576" height="215" /><br />
+        <br />
+        <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a>가 서성이고 있으며 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a>도 등장한다.<br />
+        상자 2-2에서 <a href="http://crassus.ivyro.net/manual/items/item_equip.html#earring" onfocus="this.blur()">이어링</a>이 나오니 필요하다면 이방을 들르는게 좋다.</div>
+      <p>&nbsp;</p>
+      <div style="margin-left:30px;margin-right:30px;"><span class="style4">상자 2-1</span> - <span class="style15">불/낙석/석화 트랩</span> 중 하나가 발동 한다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" /></td>
+            <td><a href="http://crassus.ivyro.net/manual/items/item_tools.html#bracelet" onfocus="this.blur()"><img src="../item/(c)accessaries/b10_bracelet.gif" alt="bracelet" width="32" height="16" border="0" /></a></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="5"><span class="class-fighter">파이터</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /><span class="class-thief" style="margin-left:5px;">시프</span> :<a href="http://crassus.ivyro.net/manual/items/item_etc.html#hp" onfocus="this.blur()"><img src="../item/(h)etc/b1-healing_potion.gif" alt="healing potion" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><span class="class-magicuser">매직 유저</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /><span class="class-elf" style="margin-left:5px;">엘프</span> :<a href="http://crassus.ivyro.net/manual/items/item_etc.html#hp" onfocus="this.blur()"><img src="../item/(h)etc/b1-healing_potion.gif" alt="healing potion" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c12-50sp.gif" alt="50sp" width="33" height="11" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style4">상자 2-2</span> - <span class="style15">불/낙석/화살/석화 트랩</span> 중 하나가 발동 한다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><a href="http://crassus.ivyro.net/manual/items/item_etc.html#key" onfocus="this.blur()"><img src="../item/(h)etc/b6-key.gif" alt="key" width="32" height="16" hspace="3" border="0" /></a><a href="http://crassus.ivyro.net/manual/items/item_etc.html#opal" onfocus="this.blur()"><img src="../item/(g)xp/b07-opal.gif" alt="opal" width="32" height="16" hspace="3" border="0" /></a><br />
+              <a href="http://crassus.ivyro.net/manual/items/item_etc.html#emerald" onfocus="this.blur()"><img src="../item/(g)xp/b02-ruby.gif" alt="ruby" width="32" height="16" hspace="3" vspace="10" border="0" /><img src="../item/(g)xp/b08-emerald.gif" alt="emerald" width="32" height="16" hspace="3" vspace="10" border="0" /><img src="../item/(g)xp/b05-diamond.gif" alt="diamond" width="32" height="16" hspace="3" vspace="10" border="0" /></a><br />
+              <img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" /></td>
+            <td><a href="http://crassus.ivyro.net/manual/items/item_tools.html#earring" onfocus="this.blur()"><img src="../item/(c)accessaries/b12_earring.gif" alt="earring" width="32" height="16" border="0" /></a></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="5"><span class="class-fighter">파이터</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#sd" onfocus="this.blur()"><img src="../item/(f)tools/b16-silver_dagger.gif" alt="silver dagger" width="32" height="16" hspace="7" border="0" /></a></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#bo" onfocus="this.blur()"><img src="../item/(f)tools/b12-throwing_hammer.gif" alt="throwing hammer" width="32" height="16" hspace="5" border="0" /></a><span class="class-thief" style="margin-left:5px;">시프</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#sd" onfocus="this.blur()"><img src="../item/(f)tools/b16-silver_dagger.gif" alt="silver dagger" width="32" height="16" hspace="7" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td height="13"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span class="class-magicuser">매직 유저</span> :<img src="../item/(h)etc/c04-scroll_lv4.gif" alt="scroll lv4" width="46" height="25" border="0" /></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#lbo" onfocus="this.blur()"><img src="../item/(f)tools/b14-large_buring_oil.gif" alt="large burning oil" width="32" height="16" hspace="5" border="0" /></a><span class="class-elf" style="margin-left:5px;">엘프</span> :<img src="../item/(h)etc/c03-scroll_lv3.gif" alt="scroll lv3" width="46" height="25" border="0" /></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c14-500sp.gif" alt="500sp" width="50" height="26" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style5">등장하는 적</span> - 약 40초가 지나면 도망간다.<br/>
+        <br/>
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;">
+          <tr>
+            <td width="30" align="center" class="color_1p">1인</td>
+            <td><a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x3</span> <span class="style28">→</span> 한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> <span class="style28">→</span> 한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> <span class="style28">→</span> 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> <span class="style28">→</span>한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span></td>
+          </tr>
+          <tr>
+            <td align="center" class="color_2p">2인</td>
+            <td><a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x3</span> <span class="style28">→</span> 한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="class-fighter">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> <span class="style28">→</span> 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="class-fighter">x2</span> <span class="style28">→</span>한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span></td>
+          </tr>
+          <tr>
+            <td align="center" class="color_3p">3인</td>
+            <td><a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x3</span> <span class="style28">→</span> 한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="class-fighter">x2</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> <span class="style28">→</span> 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="class-fighter">x2</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x2</span> <span class="style28">→</span>한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> <span class="style15">x1</span></td>
+          </tr>
+          <tr>
+            <td align="center" class="color_4p">4인</td>
+            <td><span class="color_3p">3인 플레이</span>와 똑같다.</td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <hr width="550" size="1" noshade="noshade" color="#666666" />
+        <p>&nbsp;</p>
+      </div>
+      <div align="center"><img src="3-3.gif" width="576" height="222" /><br />
+        <br />
+        오른쪽 아래로 내려가면 다른 곳이 나온다.<br />
+        상자가 있는 아래쪽으로 간다면 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a>가 나온다. (2인 이상일 경우 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a>도 추가.)</div>
+      <p>&nbsp;</p>
+      <div style="margin-left:30px;margin-right:30px;"><span class="style4">상자 2-3</span> - 잠겨있으며 <span class="style15">불/트랩 없음</span> 중 하나가 발동 한다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><a href="http://crassus.ivyro.net/manual/items/item_equip.html#bofs" onfocus="this.blur()"><img src="../item/(b)armor/b12-boots_of_speed.gif" alt="boots of speed" width="32" height="16" hspace="10" border="0" /></a><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="10" /></td>
+            <td><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" /></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><span class="class-fighter">파이터</span> :<a href="http://crassus.ivyro.net/manual/items/item_equip.html#helmet" onfocus="this.blur()"><img src="../item/(b)armor/b06-helmet.gif" alt="helmet" width="32" height="16" hspace="5" border="0" /></a></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<a href="http://crassus.ivyro.net/manual/items/item_equip.html#chat" onfocus="this.blur()"><img src="../item/(b)armor/b10-cleric%27s_hat.gif" alt="cleric's hat" width="32" height="16" hspace="5" border="0" /></a><span class="class-thief" style="margin-left:5px;">시프</span> :<a href="http://crassus.ivyro.net/manual/items/item_equip.html#hood" onfocus="this.blur()"><img src="../item/(b)armor/b08-hood.gif" alt="hood" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><span class="class-magicuser">매직 유저</span> :<a href="http://crassus.ivyro.net/manual/items/item_equip.html#mhat" onfocus="this.blur()"><img src="../item/(b)armor/b07-magical_hat.gif" alt="magical hat" width="32" height="16" hspace="5" border="0" /></a></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<a href="http://crassus.ivyro.net/manual/items/item_equip.html#helmet" onfocus="this.blur()"><img src="../item/(b)armor/b06-helmet.gif" alt="helmet" width="32" height="16" hspace="5" border="0" /></a><span class="class-elf" style="margin-left:5px;">엘프</span> :<a href="http://crassus.ivyro.net/manual/items/item_equip.html#tiara" onfocus="this.blur()"><img src="../item/(b)armor/b11-tiara.gif" alt="tiara" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c12-50sp.gif" alt="50sp" width="33" height="11" vspace="3" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style5">등장하는 적</span> - 약 33초가 지나면 도망간다.<br/>
+        <br/>
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;">
+          <tr>
+            <td width="30" align="center" class="color_1p">1인</td>
+            <td><span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x2</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x2</span> <span class="style28">→</span> 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> <span class="style28">→</span> 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> <span class="style28">→</span> 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span></td>
+          </tr>
+          <tr>
+            <td align="center" class="color_2p">2인</td>
+            <td><span class="class-fighter">왼쪽에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> x1 + 오른쪽에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> x1</span> <span class="style28">→</span> 총 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x2</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x2</span> <span class="style28">→</span> 총 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> <span class="style28">→</span> <span class="class-fighter">총 두마리만 남으면 왼쪽에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> x1 + 오른쪽에서 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> x1</span> <span class="style28">→</span> 총 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> <span class="style28">→</span> 총 두마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(i)troglodyte/troglodyte.html" onfocus="this.blur()">트로글로다이트</a> <span class="style15">x1</span></td>
+          </tr>
+          <tr>
+            <td align="center" class="color_3p">3인</td>
+            <td><span class="color_2p">2인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_4p">4인</td>
+            <td><span class="color_2p">2인 플레이</span>와 똑같다.</td>
+          </tr>
+        </table>
+      </div>
+      <div align="center" style="margin-top:60px;"><a href="../(q)fire/fire.html" onfocus="this.blur()">◀ 스테이지 9-A로</a><a href="../(r)lost/lost.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-B로</a><a href="../(s)underworld/underworld.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-C로</a> &nbsp;&nbsp; <a href="#top" onfocus="this.blur()">맨위로 ▲</a> &nbsp;&nbsp; <a href="../(u)overtures/overtures-b.html" onfocus="this.blur()">스테이지 10-2로 ▶</a></div>
+      <div style="margin-top:70px;"><a name="inner" id="inner">&nbsp;</a></div>
+      <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+        <tr>
+          <td width="254" height="47" background="../cell.gif"><div align="center" class="style18 bold" style="margin-top:5px;font-size:14px;letter-spacing:3px;">내곽 구역</div></td>
+        </tr>
+      </table>
+      <div style="margin-top:30px;">
+        <center>
+          <img src="4-1.gif" width="384" height="176" /><br />
+          <br />
+          <div align="left" style="margin-left:80px;margin-right:80px;">외곽 중앙의 문을 열면 안쪽으로 들어갈 수 있다.<br />
+            발판 두개를 밟아야 하는데 1인일 경우 오른쪽의 갑옷상을 밀어서 올려놓으면 된다.<br />
+            <br />
+            <span class="class-magicuser">매직 유저</span>는 갑옷상을 밀지 못하니 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a>나 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a>를 끌고와서 열기를 시도할 수 있지만 안쪽의 문들은 그런식으로 열기가 더 힘들다.</div>
+          <br />
+          <br />
+          <img src="4-2.jpg" width="629" height="157" /><br />
+          <br />
+          <div align="left" style="margin-left:80px;margin-right:80px;">내곽의 전경. 외곽과 거의 구조는 비슷하다.<br />
+            <br />
+            왼쪽엔 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> 두마리에 <a href="http://crassus.ivyro.net/manual/monsters/(j)hellhound/hellhound.html" onfocus="this.blur()">헬 하운드</a> 한마리, 오른쪽엔 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> 세마리가 있다. 먼저 오른쪽으로 갔다가 왼쪽으로 간다면 왼쪽의 트랩은 없다.<br />
+            <br />
+            왼쪽/오른쪽 어디로 나가든 외곽 중앙으로 나간다.</div>
+        </center>
+      </div>
+      <div align="center" style="margin-top:60px;"><a href="../(q)fire/fire.html" onfocus="this.blur()">◀ 스테이지 9-A로</a><a href="../(r)lost/lost.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-B로</a><a href="../(s)underworld/underworld.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-C로</a> &nbsp;&nbsp; <a href="#top" onfocus="this.blur()">맨위로 ▲</a> &nbsp;&nbsp; <a href="../(u)overtures/overtures-b.html" onfocus="this.blur()">스테이지 10-2로 ▶</a></div>
+      <div style="margin-top:70px;"><a name="inner-left" id="inner-left">&nbsp;</a></div>
+      <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+        <tr>
+          <td width="254" height="47" background="../cell.gif"><div align="center" class="style18 bold" style="margin-top:5px;font-size:14px;letter-spacing:3px;">좌측 숨겨진 방 (내곽)</div></td>
+        </tr>
+      </table>
+      <div style="margin-top:50px;">
+        <center>
+          <img src="5-1.gif" width="384" height="176" /><br />
+          <br />
+          발판 3개를 밟아야 한다. 중간에 갑옷상이 2개가 있으니 그걸 밀고 오면 된다.<br />
+          <span class="class-magicuser">매직 유저</span> 혼자서는 거의 방법이 없다고 봐야 할 것이다.<br />
+          <br />
+          <br />
+          <img src="5-2.gif" width="576" height="215" />
+        </center>
+        <br />
+        <div style="margin-left:80px;margin-right:80px;">양 옆에 <span class="style23">500sp</span>가 놓여있다.
+          그 근처로 가면 분쇄기가 내려온다. 당연히 맞으면 아프다.<br />
+          안전하게 줏으려면 분쇄기가 올라간 틈을 이용하거나 위쪽의 스위치를 당겨야 한다.<br />
+          왼쪽 스위치를 내리면 왼쪽 분쇄기가, 오른쪽 스위치를 내리면 오른쪽 분쇄기가 작동하지 않는다.<br />
+          <br />
+          방 중앙쯤을 지나가면 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a>이 나오며 오른쪽 500sp가 있는 곳까지 가면 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a>가 나온다.</div>
+      </div>
+      <p>&nbsp;</p>
+      <div style="margin-left:30px;margin-right:30px;"><span class="style5">등장하는 적(구울)</span> - 약 42초가 지나면 도망간다.<br/>
+        <br/>
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;">
+          <tr>
+            <td width="30" align="center" class="color_1p">1인</td>
+            <td><span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x4</span> <span class="style28">→</span> 한마리만 남으면 <span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 <span class="style14">바닥</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(f)ghoul/ghoul.html" onfocus="this.blur()">구울</a> <span class="style15">x2</span> <span class="style28">→</span> 한마리만 남으면 처음부터 한번 더 반복</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_2p">2인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_3p">3인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_4p">4인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style5">등장하는 적(셰도우 엘프)</span> - 약 30초가 지나면 도망간다.<br/>
+        <br/>
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;">
+          <tr>
+            <td width="30" align="center" class="color_1p">1인</td>
+            <td><span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> <span class="style28">→</span> 전부 제거하면 <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span> <span class="style28">→</span> 전부 제거하면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2 </span><span class="style28">→</span> 전부 제거하면 <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(k)shawdowelf/shadowelf.html" onfocus="this.blur()">셰도우 엘프</a> <span class="style15">x2</span></td>
+          </tr>
+          <tr>
+            <td align="center" class="color_2p">2인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_3p">3인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_4p">4인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+        </table>
+      </div>
+      <div align="center" style="margin-top:60px;"><a href="../(q)fire/fire.html" onfocus="this.blur()">◀ 스테이지 9-A로</a><a href="../(r)lost/lost.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-B로</a><a href="../(s)underworld/underworld.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-C로</a> &nbsp;&nbsp; <a href="#top" onfocus="this.blur()">맨위로 ▲</a> &nbsp;&nbsp; <a href="../(u)overtures/overtures-b.html" onfocus="this.blur()">스테이지 10-2로 ▶</a></div>
+      <div style="margin-top:70px;"><a name="inner-center" id="inner-center">&nbsp;</a></div>
+      <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+        <tr>
+          <td width="254" height="47" background="../cell.gif"><div align="center" class="style18 bold" style="margin-top:5px;font-size:14px;letter-spacing:3px;">중앙 숨겨진 방 (내곽)</div></td>
+        </tr>
+      </table>
+      <div style="margin-top:50px;">
+        <center>
+          <img src="6-1.gif" width="384" height="176" /><br />
+          <br />
+          <div align="left" style="margin-left:80px;margin-right:80px;">중앙의 숨겨진 방은 발판이 4개다. 따라서 1인 플레이시 열기가 좀 난감할 수 있는데<br />
+            위 스샷처럼 갑옷상을 양쪽 끝에 올려놓고 남은 발판 중 하나에
+            올라선 다음 반대편을 향해 <a href="http://crassus.ivyro.net/manual/items/item_tools.html#roflb" onfocus="this.blur()">라이트닝 볼트 반지</a> 혹은 <a href="http://crassus.ivyro.net/manual/classes/(2)muser/muser_spell.html#lb" onfocus="this.blur()">라이트닝 볼트</a>를 쓰면 문을 열 수 있다.<br />
+            <br />
+            물론 적을 끌고와서 시도해도 되지만 스트레스 받기 딱 좋을 것 이다.<br />
+          </div>
+          <br />
+          <br />
+          <img src="6-2.gif" width="512" height="231" /><br />
+          <br />
+          들어가 보면 불기둥이 있고 위쪽 구석에 열쇠가 하나 있다.<br />
+          오른쪽 아래쪽으로 내려가서 아래쪽 지역으로 가자.<br />
+          <br />
+          <br />
+          <img src="6-3.gif" width="384" height="176" /><br />
+          <br />
+          상자 주위에 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> 5마리와 오거가 있다.<br />
+          <span class="class-cleric">클레릭</span>, <span class="class-magicuser">매직 유저</span>, <span class="class-dwarf">드워프</span>가 상자 3-3을 열었을 경우 보기 약간 힘든 무기들이 나온다.
+        </center>
+      </div>
+      <p>&nbsp;</p>
+      <div style="margin-left:30px;margin-right:30px;"><span class="style4">상자 3-1</span> - 잠겨있으며 <span class="style15">가스/트랩 없음</span> 중 하나가  발동한다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" /></td>
+            <td><a href="http://crassus.ivyro.net/manual/items/item_tools.html#bofe" onfocus="this.blur()"><img src="../item/(f)tools/b18-bottle_of_efreet.gif" alt="bottle of efreet" width="32" height="16" border="0" /></a></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><span class="class-fighter">파이터</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /><span class="class-thief" style="margin-left:5px;">시프</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><span class="class-magicuser">매직 유저</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /><span class="class-elf" style="margin-left:5px;">엘프</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c12-50sp.gif" alt="50sp" width="33" height="11" vspace="3" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style4">상자 3-2</span> - <span class="style15">낙석/석화/화살 트랩</span> 중 하나가 발동한다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><img src="../item/(h)etc/c11-10sp.gif" alt="10sp" width="33" height="11" hspace="10" /><img src="../item/(h)etc/c12-50sp.gif" alt="50sp" width="33" height="11" hspace="10" /><br/>
+              <img src="../item/(h)etc/c13-100sp.gif" alt="100sp" width="50" height="26" hspace="3" vspace="10" /><img src="../item/(h)etc/c14-500sp.gif" alt="500sp" width="50" height="26" hspace="3" vspace="10" /><br />
+              <img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" vspace="5" /></td>
+            <td><img src="../item/(h)etc/c14-500sp.gif" alt="500sp" width="50" height="26" /></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><span class="class-fighter">파이터</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /><span class="class-thief" style="margin-left:5px;">시프</span> :<a href="http://crassus.ivyro.net/manual/items/item_etc.html#diamond" onfocus="this.blur()"><img src="../item/(g)xp/b05-diamond.gif" alt="diamond" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><span class="class-magicuser">매직 유저</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /><span class="class-elf" style="margin-left:5px;">엘프</span> :<img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="5" /></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c14-500sp.gif" alt="500sp" width="50" height="26" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style4">상자 3-3</span> - 잠겨있다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" /></td>
+            <td><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" /></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><span class="class-fighter">파이터</span> :<a href="http://crassus.ivyro.net/manual/items/item_weapons.html#bs" onfocus="this.blur()"><img src="../item/(a)weapons/b03-bastard_sword.gif" alt="bastard sword" width="32" height="16" hspace="5" border="0" /></a></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<a href="http://crassus.ivyro.net/manual/items/item_weapons.html#ms" onfocus="this.blur()"><img src="../item/(a)weapons/b17-morning_star.gif" alt="morning star" width="32" height="16" hspace="5" border="0" /></a><span class="class-thief" style="margin-left:5px;">시프</span> :<a href="http://crassus.ivyro.net/manual/items/item_weapons.html#bs" onfocus="this.blur()"><img src="../item/(a)weapons/b03-bastard_sword.gif" alt="bastard sword" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><span class="class-magicuser">매직 유저</span> :<a href="http://crassus.ivyro.net/manual/items/item_weapons.html#sofmp" onfocus="this.blur()"><img src="../item/(a)weapons/b25-staff_of_magical_power.gif" alt="staff of magical power" width="32" height="16" hspace="5" border="0" /></a></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<a href="http://crassus.ivyro.net/manual/items/item_weapons.html#ba" onfocus="this.blur()"><img src="../item/(a)weapons/b14-battle_axe.gif" alt="battle axe" width="32" height="16" hspace="5" border="0" /></a><span class="class-elf" style="margin-left:5px;">엘프</span> :<a href="http://crassus.ivyro.net/manual/items/item_weapons.html#bs" onfocus="this.blur()"><img src="../item/(a)weapons/b03-bastard_sword.gif" alt="bastard sword" width="32" height="16" hspace="5" border="0" /></a></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c14-500sp.gif" alt="500sp" width="50" height="26" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <span class="style5">등장하는 적</span> - 약 2분 6초 정도가 지나면 도망간다.<br/>
+        <br/>
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;">
+          <tr>
+            <td width="30" align="center" class="color_1p">1인</td>
+            <td>상자 주위에 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x5</span> + 오거 <span class="style28">→</span> <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> 2마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">액스 놀</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">액스 놀</a> <span class="style15">x1</span> <span class="style28">→</span> 총 2마리만 남으면 <span class="style19">왼쪽</span>에서 오일 던지는 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x4</span> + <span class="style18">오른쪽</span>에서 오일 던지는 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x4</span> <span class="style28">→</span> <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">보우 놀</a> <span class="style15">x5</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">보우 놀</a> <span class="style15">x5</span> <span class="style28">→</span> <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">액스 놀</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">액스 놀</a> <span class="style15">x1</span> <span class="style28">→</span> 총 2마리만 남으면 <span class="style19">왼쪽</span>에서 오일 던지는 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x4</span> + <span class="style18">오른쪽</span>에서 오일 던지는 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x4</span> <span class="style28">→</span> <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">보우 놀</a> <span class="style15">x5</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">보우 놀</a> <span class="style15">x5</span></td>
+          </tr>
+          <tr>
+            <td align="center" class="color_2p">2인</td>
+            <td><span class="color_1p">1인 플레이</span>와 똑같다.</td>
+          </tr>
+          <tr>
+            <td align="center" class="color_3p">3인</td>
+            <td>상자 주위에 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x5</span> + 오거 <span class="style28">→</span> <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> 2마리만 남으면 <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">액스 놀</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">액스 놀</a> <span class="class-fighter">x2</span> <span class="style28">→</span> 총 2마리만 남으면 <span class="style19">왼쪽</span>에서 오일 던지는 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x4</span> + <span class="style18">오른쪽</span>에서 오일 던지는 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x4</span> <span class="style28">→</span> <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">보우 놀</a> <span class="style15">x5</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">보우 놀</a> <span class="style15">x5</span> <span class="style28">→</span> <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">액스 놀</a> <span class="style15">x1</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">액스 놀</a> <span class="class-fighter">x2</span> <span class="style28">→</span> 총 2마리만 남으면 <span class="style19">왼쪽</span>에서 오일 던지는 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x4</span> + <span class="style18">오른쪽</span>에서 오일 던지는 <a href="http://crassus.ivyro.net/manual/monsters/(c)kobold/kobold.html" onfocus="this.blur()">코볼드</a> <span class="style15">x4</span> <span class="style28">→</span> <span class="style19">왼쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">보우 놀</a> <span class="style15">x5</span> + <span class="style18">오른쪽</span>에서 <a href="http://crassus.ivyro.net/manual/monsters/(b)gnoll/gnoll.html" onfocus="this.blur()">보우 놀</a> <span class="style15">x5</span></td>
+          </tr>
+          <tr>
+            <td align="center" class="color_4p">4인</td>
+            <td><span class="color_3p">3인 플레이</span>와 똑같다.</td>
+          </tr>
+        </table>
+      </div>
+      <div align="center" style="margin-top:60px;"><a href="../(q)fire/fire.html" onfocus="this.blur()">◀ 스테이지 9-A로</a><a href="../(r)lost/lost.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-B로</a><a href="../(s)underworld/underworld.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-C로</a> &nbsp;&nbsp; <a href="#top" onfocus="this.blur()">맨위로 ▲</a> &nbsp;&nbsp; <a href="../(u)overtures/overtures-b.html" onfocus="this.blur()">스테이지 10-2로 ▶</a></div>
+      <div style="margin-top:70px;"><a name="inner-right" id="inner-right">&nbsp;</a></div>
+      <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+        <tr>
+          <td width="254" height="47" background="../cell.gif"><div align="center" class="style18 bold" style="margin-top:5px;font-size:14px;letter-spacing:3px;">오른쪽 숨겨진 방 (내곽)</div></td>
+        </tr>
+      </table>
+      <div style="margin-top:50px;">
+        <center>
+          <img src="7-1.gif" width="384" height="176" /><br />
+          <br />
+          왼쪽과 마찬가지로 발판이 3개며 갑옷상을 밀고 오면 된다.<br />
+          <br />
+          <br />
+          <img src="7-2.gif" width="576" height="232" />
+        </center>
+        <br />
+        <div align="left" style="margin-left:80px;margin-right:80px;"><a href="http://crassus.ivyro.net/manual/monsters/(g)giantscorpion/giantscorpion.html" onfocus="this.blur()">자이언트 스콜피온</a>이 돌아다니고 있고 군데 군데 불 트랩이 있다.<br />
+          불 위아래 사이에 화살 트랩이 있다.  <a href="item_equip.html#dc" onfocus="this.blur()">디스플레이서 클록</a>이 있다면 상관없지만 
+          없다면 맨 아래나 맨 위의 불을 건너다니는게 좋을 것이다.<br />
+          <br />
+          이곳 상자에서 <a href="http://crassus.ivyro.net/manual/items/item_etc.html#shp" onfocus="this.blur()">슈퍼 힐링 포션</a>이 나오니 HP가 많이 떨어졌다면 들르도록 한다.<br />
+        상자 주변엔 <span class="style23">500sp x2, 100sp</span>가 있다.</div>
+      </div>
+      <p>&nbsp;</p>
+      <div style="margin-left:30px;margin-right:30px;"><span class="style4">상자 4</span> - 잠겨있으며 <span class="style15">불 트랩</span>이 무조건 발동한다.<br />
+        <br />
+        <table width="100%" border="1" cellpadding="5" cellspacing="1" bordercolor="#666666" style="margin-left:10px;margin-right:10px;">
+          <tr align="center">
+            <td width="125">랜덤 아이템</td>
+            <td width="90">고정 아이템</td>
+            <td>클래스별 아이템</td>
+          </tr>
+          <tr align="center">
+            <td rowspan="3"><a href="http://crassus.ivyro.net/manual/items/item_tools.html#rofcsw" onfocus="this.blur()"><img src="../item/(f)tools/b06-ring_of_csw.gif" alt="ring of CSW" width="32" height="16" hspace="10" vspace="10" border="0" /></a><img src="../item/(h)etc/c17-nothing.gif" width="32" height="16" hspace="10" vspace="10" /><a href="http://crassus.ivyro.net/manual/items/item_tools.html#ba" onfocus="this.blur()"><br />
+              <img src="../item/(f)tools/b11-burning_arrow.gif" alt="burning arrow" width="32" height="16" hspace="3" vspace="10" border="0" /></a><a href="http://crassus.ivyro.net/manual/items/item_tools.html#bo" onfocus="this.blur()"><img src="../item/(f)tools/b13-burning_oil.gif" alt="burning oil" width="32" height="16" hspace="3" vspace="10" border="0" /></a><a href="http://crassus.ivyro.net/manual/items/item_tools.html#lbo" onfocus="this.blur()"><img src="../item/(f)tools/b14-large_buring_oil.gif" alt="large burning oil" width="32" height="16" hspace="3" vspace="10" border="0" /></a></td>
+            <td><a href="http://crassus.ivyro.net/manual/items/item_etc.html#shp" onfocus="this.blur()"><img src="../item/(h)etc/b2-super_healing_potion.gif" alt="super healing potion" width="32" height="16" border="0" /></a></td>
+            <td rowspan="3"><table border="0" cellpadding="0" cellspacing="0">
+                <tr align="center">
+                  <td align="right"><table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><span class="class-fighter">파이터</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#roffb" onfocus="this.blur()"><img src="../item/(f)tools/b02-ring_of_fire_ball.gif" alt="ring of fire ball" width="32" height="16" hspace="5" border="0" /></a></td>
+                      </tr>
+                    </table></td>
+                  <td><span class="class-cleric" style="margin-left:5px;">클레릭</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#roffb" onfocus="this.blur()"><img src="../item/(f)tools/b02-ring_of_fire_ball.gif" alt="ring of fire ball" width="32" height="16" hspace="5" border="0" /></a><span class="class-thief" style="margin-left:5px;">시프</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#roffb" onfocus="this.blur()"><img src="../item/(f)tools/b02-ring_of_fire_ball.gif" alt="ring of fire ball" width="32" height="16" hspace="7" border="0" /></a></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td valign="bottom"><span class="class-magicuser">매직 유저</span> :<a href="http://crassus.ivyro.net/manual/items/item_weapons.html#woff" onfocus="this.blur()"><img src="../item/(a)weapons/b19-wand_of_fire_ball.gif" alt="wand of fire ball" width="32" height="16" hspace="5" border="0" /></a></td>
+                  <td><span class="class-dwarf" style="margin-left:5px;">드워프</span> :<a href="http://crassus.ivyro.net/manual/items/item_tools.html#roffb" onfocus="this.blur()"><img src="../item/(f)tools/b02-ring_of_fire_ball.gif" alt="ring of fire ball" width="32" height="16" hspace="5" border="0" /></a><span class="class-elf" style="margin-left:5px;">엘프</span> :<img src="../item/(h)etc/c02-scroll_lv2.gif" alt="scroll lv2" width="47" height="25" border="0" /></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr align="center">
+            <td><span class="class-dwarf">드워프</span>가 격파시</td>
+          </tr>
+          <tr align="center">
+            <td><img src="../item/(h)etc/c12-50sp.gif" alt="50sp" width="33" height="11" vspace="3" /></td>
+          </tr>
+        </table>
+      </div>
+      <!-- InstanceEndEditable -->
+	<p style="margin-top:40px"></p>
+	<div align="center" class="style2" style="margin-top:80px;"><!-- InstanceBeginEditable name="previous2" --><a href="../(q)fire/fire.html" onfocus="this.blur()">◀ 스테이지 9-A로</a><a href="../(r)lost/lost.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-B로</a><a href="../(s)underworld/underworld.html" onfocus="this.blur()" style="margin-left:20px;">◀ 스테이지 9-C로</a><!-- InstanceEndEditable --> &nbsp;&nbsp; <a href="#top" onfocus="this.blur()">맨위로 ▲</a> &nbsp;&nbsp; <!-- InstanceBeginEditable name="next2" --><a href="../(u)overtures/overtures-b.html" onfocus="this.blur()">스테이지 10-2로 ▶</a><!-- InstanceEndEditable --></div>
+    <div align="center" class="style18" style="margin-top:80px;margin-bottom:150px">Copyright ⓒ 2007-2008 <b>Crassus &amp; Legon</b>. All rights reserved.</div></td>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd -->
+<!-- Mirrored from crassus.ivyro.net/manual/stage/(t)gateway/gateway.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Jul 2017 03:33:29 GMT -->
+</html>

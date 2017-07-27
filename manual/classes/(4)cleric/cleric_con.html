@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>클레릭 기본조작</title>
+<link href="../../manual.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.2.1028</b></a>  on  04/09/17 오후 9:44:35.<br>
+<b>Address:</b> <a class="info" href="http://crassus.ivyro.net/manual/classes/(4)cleric/cleric_con.html">http://crassus.ivyro.net/manual/classes/(4)cleric/cleric_con.html</a><br>
+<b>Title:</b> 클레릭 기본조작 &nbsp;&bull;&nbsp; <b>Size:</b> 16629<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><a name="top">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td><table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr align="center">
+            <td align="center"><a href="../(1)fighter/fighter_basic.html" class="style13" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>파이터</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(2)muser/muser_basic.html" class="style27" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>매직 유저</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(3)thief/thief_basic.html" class="style26" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>시프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(4)cleric/cleric_basic.html" class="style19" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>클레릭</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(5)dwarf/dwarf_basic.html" class="style23" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>드워프</b></a></td>
+            <td width="20" class="style2">|</td>
+            <td align="center"><a href="../(6)elf/elf_basic.html" class="style24" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>엘프</b></a></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="20"><hr color="#614012" size="1" width="500" /></td>
+      </tr>
+      <tr>
+        <td align="center"><table border="0" cellspacing="0" cellpadding="0">
+          <tr align="center">
+            <td align="center"><a href="cleric_basic.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 사항</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="cleric_con.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">기본 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="cleric_advcon.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">고급 조작</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="cleric_spell.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">주문</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../combo/combo.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">콤보의 법칙</a></td>
+			<td width="20" class="style2">|</td>
+            <td align="center"><a href="../autofire-12/auto12.html" class="style2" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true">12연사</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="center"><pre><font color="#9BC4FF" class="style1">                                                              CLERIC</font></pre></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="../t1.png" width="368" height="38" /></td>
+      </tr>
+	  <tr>
+        <td height="30">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">A공격</span><br/>
+			<br/>
+			일반 A를 연타했을때의 공격으로 최대 5타까지 나옵니다.<br/>
+			<br/>
+			발동속도는 적당하지만 1타 공격의 대공능력이 좀 부족한 편 입니다. <br/>
+			<br/>
+			보스의 경우 1~2타에서 쓰러지는 경우가 제법 되고 마지막 5타는 빈틈이 있어서<br/>
+			<br/>
+			1~2타째에 다른 콤보로 연결하는 것이 대체로 좋습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c01.png" width="660" height="126" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">강공격</span><br/>
+			<a name="ms1"></a><br/>
+			<br/>
+			A공격의 마지막 공격과 모션이 같은 공격입니다. 발동속도가 빠르며 연속기에 끼워넣기에 좋습니다.<br/>
+			<br/>
+			<br/>
+			<span class="style12">※ 뒤돌아보기 공격도 강공격과 모션이 같으나 별로 쓰이진 않습니다.</span><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c02.png" width="409" height="107" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><b class="style23">모닝스타 장비 시의 강공격</b><br/>
+			<br/>
+			<br/>
+			일반 강공격과는 달리 모닝스타의 철구가 앞으로 쭉 뻗습니다.<br/>
+			<br/>
+			장거리 공격이 되기 때문에 견제가 가능하다는 점이 있지만 발동속도가 느립니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c03.png" width="609" height="114" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬 공격</span><br/>
+			<br/>
+			<br/>
+			공격 후 빈틈이 많기 때문에 단독으로 쓰기 보단 적과의 거리를 좁힌 후 콤보를 연결할 때 주로 씁니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c04.png" width="311" height="106" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">슬래쉬</span><br/>
+			<br/>
+			<br/>
+			발동속도가 전 클래스 중 가장 빨라서 많은 적들을 쉽게 구석으로 몰 수 있으며 발동후의 딜레이도 거의 없어서<br/>
+			<br/>
+			자주 쓰는 클레릭의 주력 공격입니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c05.png" width="352" height="124" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대공기</span><br/>
+			<br/>
+			<br/>
+			적을 띄운후 공중에서 내려찍는 2단 공격의 대공기입니다.<br/>
+			<br/>
+			대공기로 쓰기엔 약간 무리가 있으며 연속기의 마무리로 넣는게 좋습니다.<br/>
+			<br/>
+			내려찍을 때의 충격파로 주위의 적들이 같이 쓰러지는 경우도 종종 있습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><a name="ms2"><img src="img/c06.png" width="677" height="210" /></a></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><b class="style23">모닝스타 장비 시의 대공기</b><br/>
+			<br/>
+			<br/>
+			모닝스타를 들고 제자리 회전을 하는 완전 다른 형태의 공격으로 변합니다. 발동속도는 조금 느립니다. <br/>
+			<br/>
+			총 5번을 회전하며 누워있는 적에게도 연타가 들어가며 보기와는 달리 대공능력도 갖추고 있습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c07.png" width="677" height="117" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">A+B</span><br/>
+			<br/>
+			<br/>
+			무적 회피기 대신 턴 언데드가 발동합니다(사용시 다른 클래스처럼 데미지를 입지 않습니다).<br/>
+			<br/>
+			전작 TOD에 비해 발동속도는 빨라졌지만 대신 점수와 아이템은 얻지 못합니다.<br/>
+			<br/>
+			스켈레톤이나 구울에게는 통하지만 리치에게는 통하지 않습니다.<br/>
+			<br/>
+			원래의 턴 언데드 기능은 아니지만 리치의 메테오 스웜 시전시나 레드 드래곤/synn의 브레스 시전중에 사용시<br/>
+			<br/>
+			원래는 발동이 안되던 D키를 사용할 수 있습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c08.png" width="353" height="167" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">점프 공격</span><br/>
+			<br/>
+			<br/>
+			공격을 한 시점부터 착지 바로 전 까지 자세와 판정이 유지되며 겉보기와는 달리 판정이 상당히 우수합니다.<br/>
+			<br/>
+			공중에 떠 있는 상대에게 유용하게 쓸 수 있는 공격.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c09.png" width="400" height="129" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">대쉬 점프 공격</span><br/>
+			<br/>
+			<br/>
+			일반 점프 공격처럼 공격을 한 시점부터 착지 바로 전 까지 자세와 판정이 유지되며 판정도 더욱 우수합니다.<br/>
+			<br/>
+			맞은 적은 구석으로 튕겨 나가기 때문에 적들을 구석으로 몰아넣을 수도 있습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c10.png" width="400" height="99" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">앉아서 공격</span><br/>
+			<br/>
+			<br/>
+			그 자체로는 쓸 곳이 거의 없지만 타점이 상당히 낮게 형성되기 때문에<br/>
+			<br/>
+			보스전에서 에뮬레이터의 연사기능(일명 12연사)를 이용했을 때 상당히 유용합니다.<br/>
+			<br/>
+			<br/>
+			<a href="../autofire-12/auto12.html" class="style2">12연사에 대한 자세한 내용 보기(Click)</a><br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c11.png" width="277" height="80" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">점프 찍기 공격</span><br/>
+			<br/>
+			<br/>
+			점프 공격과는 달리 판정이 착지 전까지 유지가 안됩니다. 따라서 쓰러져 있는 적에게는 데미지를 줄 수 없습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c12.png" width="75" height="83" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">슬라이딩</span><br/>
+			<br/>
+			<br/>
+			돈과 포션을 습득할 때, 빠르게 이동할 때 주로 씁니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c13.png" width="261" height="63" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">백스텝</span><br/>
+			<br/>
+			<br/>
+			화살표만큼 뒤로 살짝 점프를 합니다.<br/>
+			<br/>
+			이론상 파이터 처럼 '백콤'을 넣을 수는 있지만 점프 공격의 발동이 느려서 많은 히트수를 넣기가 상당히 어렵습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c14.png" width="205" height="127" /></td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">D키(아이템)</span><br/>
+			<br/>
+			<br/>
+			아이템의 빈창을 맞춘후 D키를 누르거나 A공격후 버튼을 꾹 누르고 있으면 나가는 공격인데<br/>
+			<br/>
+			전 클래스 중 거의 최악으로 쓸모가 없는 발차기로 맞은 상대는 구석으로 날아간다는 것 뿐<br/>
+			<br/>
+			데미지도 1도트 수준이고 판정이 워낙 안좋아서 딱히 쓸 곳이 없습니다. 그냥 잊어버려도 무방한 공격.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c15.png" width="183" height="71" /></td>
+      </tr>
+	  <tr>
+        <td height="50"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style22">'클레릭의 다리는 짧다'</span>라고 이야기 하기도 하는데 사실 파이터보다 깁니다.<br/>
+			<br/>
+			다만 파이터는 몸체를 앞으로 쭉 내미는데 클레릭은 오히려 뒤로 빼기 때문에<br/>
+			<br/>
+			자세로 인해 리치차이가 많이 나며 또 판정이 워낙에 안좋은 것입니다.<br/>
+			<br/>
+			<span class="style22">'다리가 짧아 쓸모 없는게 아니라 리치/판정이 워낙 x같은 것'</span>이라 할 수 있겠습니다.</td>
+            <td align="left"><img src="img/length_of_legs.png" width="165" height="181" /></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+	  <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">D키(주문)</span><br/>
+			<br/>
+			<br/>
+			주문의 빈창을 맞춘 후 D키를 누르면 취하는 행동으로 포즈를 취하는 순간 무적시간이 잠깐 있습니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c16.png" width="50" height="79" /></td>
+      </tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><table width="640" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left"><span class="style3">가드</span><br/>
+			<br/>
+			<br/>
+			가드 커맨드<span class="style28">(서있는 방향의 반대편 방향키 + A를 누른채로 유지)</span>로 가드를 할 수 있습니다.<br/>
+			<br/>
+			연사기능을 이용할 경우 A를 누른채로 유지할 수 없으므로 가드 커맨드로 가드가 불가능 합니다.<br/>
+			<br/>
+			파이터나 드워프 같은 아이템 칸의 가드(방패)가 없다는 점은 조금 불편하기도 합니다.<br/>
+			<br/>
+			<br/></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td align="center"><img src="img/c17.png" width="70" height="79" /></td>
+	  <tr>
+        <td height="50">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="100" align="center"><a href="#top" onFocus="this.blur()" onMouseOver="window.status=' ';return true" onMouseOut="window.status=' ';return true"><b>go to Top</b></a></td>
+      </tr>
+	  <tr>
+        <td height="100" align="center" class="style7">2007 Crassus & legon. All rights reserved.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="200">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
